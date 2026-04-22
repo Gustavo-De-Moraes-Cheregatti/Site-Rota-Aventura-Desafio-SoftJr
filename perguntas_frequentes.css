@@ -1,1 +1,33 @@
 @charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.externa_logo {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    background-image: url(imagens/logo-Rota-Aventura.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 10vh;
+    width: 30vw;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #003847;
+}
+
+.subtitulo {
+    display: flex;
+    justify-content: center;
+}
