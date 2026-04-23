@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #F5EBE0
+}
+
+div.cor {
+    background-color: #F5EBE0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.fundo_logo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    height: 15vh;
+}
+
+.img {
+    background-image: url(imagens/logo-sem-o-fundo.png);
+    background-size: cover;
+    background-position: center;
+    width: 30vw;
+    height: 10vh;   
+}
+
+.recupere {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    text-align: center;      
+    height: 10vh;
+}
+
+.digite {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    text-align: center;     
+    height: 10vh;
+}
+
+.senha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.input {
+    border-radius: 10px;
+    width: 50%;
+    height: 40%;
+    padding: 15px;
+    background-color: white;
+}
+
+.botao {
+    text-align: center;
+    margin-top: 5vh;
+}
+
+a.continuar {
+    text-decoration: none;
+    background-color: #B36E00;
+    color: white;
+    border-radius: 2vh;
+    padding: 15px;
+    font-size: 16px;
+    border-bottom: 100px;
+    
+}
+
+a.clique {
+    text-decoration: none;
+    align-content: center;
+    color: #003847;
+    border-radius: 2px;
+}
+
+.ultimo {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    text-align: center;      
+    height: 10vh;
+    margin-top: 3vh;
+}
