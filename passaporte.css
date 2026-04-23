@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.externa_passaporte {
+    display: flex;
+    flex-flow: column wrap;
+    height: 30vh;
+}
+
+.externa_logo_passaporte {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_passaporte {
+    background-image: url(imagens/logo-Rota-Aventura.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 30vw;
+    height: 10vh;
+}
+
+.titulo_passaporte {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #003847;
+}
+
+.externa_topicos {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    width: 85vw;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 2em;
+}
+
+.titulo_topico {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #003847;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.fundo_final {
+    display: flex;
+    justify-content: center;
+}
+
+.final {
+    width: 90vw;
+    height: 28vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #003847;
+}
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+}

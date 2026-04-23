@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.externa_seguro_viagem {
+    display: flex;
+    flex-flow: column wrap;
+    height: 30vh;
+}
+
+.externa_logo_seguro_viagem {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_seguro_viagem {
+    background-image: url(imagens/logo-Rota-Aventura.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 30vw;
+    height: 10vh;
+}
+
+.titulo_seguro_viagem {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #003847;
+}

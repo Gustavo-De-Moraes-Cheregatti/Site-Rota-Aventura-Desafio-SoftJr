@@ -6,15 +6,20 @@
     box-sizing: border-box;
 }
 
-.externa_logo {
-    width: 100%;
+.externa_perg_frequentes {
+    flex-flow:column wrap;
+    display: flex;
+    height: 30vh;
+}
+
+.externa_logo_perg_frequentes {
     height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.logo {
+.logo_perg_frequentes {
     background-image: url(imagens/logo-Rota-Aventura.jpeg);
     background-size: cover;
     background-position: center;
@@ -24,10 +29,83 @@
 
 h2 {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
     color: #003847;
 }
 
-.subtitulo {
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #003847;
+}
+
+.titulo_perg_frequentes {
     display: flex;
     justify-content: center;
+}
+
+.img_perg_frequentes {
+    background-image: url(imagens/fundo-perguntas-frequentes.png);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 30vh;
+}
+
+a {
+    text-decoration: none;
+    color: #003847;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.fundo_opcoes_perg {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    height: 60vh;
+}
+
+.opcoes_perg {
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0.123);
+    width: 84%;
+    height: 12vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items:center;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.escrita_perg {
+    width: 90%;
+    display: flex;
+}
+
+.seta_perg {
+    background-image: url(imagens/seta-superior-direita-azul.png);
+    background-size: cover;
+    background-position: center;
+    width: 7%;
+    height: 30%;
+    align-self: center;
+}
+
+.escrita_final {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    height: 10vh;
+}
+
+.icone_whats {
+    background-image: url(imagens/whatsapp.png);
+    background-size: cover;
+    background-position: center;
+    width: 5%;
+    height: 30%;
 }
