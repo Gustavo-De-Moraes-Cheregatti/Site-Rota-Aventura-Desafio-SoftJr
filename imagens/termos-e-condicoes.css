@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.rove {
+    background-image: url(imagens/logo-sem-o-fundo.png);
+    background-size: cover;
+    background-position: center;
+    width: 30vw;
+    height: 10vh;   
+}
