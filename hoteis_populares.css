@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.externa_hoteis_populares {
+    height: 36vh;
+}
+
+.externa_logo_hoteis_populares {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_hoteis_populares {
+    background-image: url(imagens/logo-Rota-Aventura.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 30vw;
+    height: 10vh;
+}
+
+.titulo_hoteis_populares {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color:  #003847;
+    font-size: 30px;
+}
+
+.externa_subtitulo_hoteis_populares {
+    height: 9vh;
+    align-content: center;
+}
+
+.subtitulo_hoteis_populares {
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    color: #B36E00;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.externa_quadrado_hotel_hoteis_populares {
+    height: 40vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+}
+
+.quadrado_hotel_hoteis_populares {
+    border: 2px solid #F5EBE0;
+    border-radius: 15px;
+    background-color: #F5EBE0;
+    display: flex;
+}
+
+.titulo_quadrado_hotel_hoteis_populares {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h4 {
+    width: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #003847;
+    font-size: 22px;
+}
+
+.avaliacao_quadrado_hoteis_populares {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
