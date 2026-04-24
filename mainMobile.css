@@ -1,163 +1,387 @@
-@media (min-width: 400px) and (max-width: 769px){
-    
-    *{
+@media (min-width:400px)  {
+
+    * {
+
         font-family: Arial, Helvetica, sans-serif;
     }
 
-    body{
+    body {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+
     }
+
 
     /*Cabeçalho*/
 
-    main{
-        width: 95%;
-        margin: auto;
+    main {
+
+        width:95%;
+        margin:auto;
     }
 
-    .one{
-        margin-top: 2vh;
+    .one {
+        margin-top:2vh;
+        display:flex;
+        justify-content:space-around;
+        align-items:flex-start;
+    }
+
+    .cabecalho {
+
+        display:flex;
+        flex-direction:column;
+    }
+
+    .cabecalho a {
+        text-decoration:none;
+        color:black;
+        display:flex;
+        flex-direction:column;
+    }
+
+    .cabecalho a img {
+        display:block;
+        margin:0 auto;
+    }
+
+    .menuGrup {
         display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
-
+        flex-direction:column;
     }
 
-    .cabecalho{
-        display: flex;
-        flex-direction: column;
+    #btn1 {
+        background-color:white;
+        border:none;
     }
 
-    .cabecalho a{
-        text-decoration: none;
-        color: black;
-        display: flex;
-        flex-direction: column;
+    #menu {
+        width:6vw;
+        height:6vh;
     }
 
-    .cabecalho a img{
-        display: block;
-        margin: 0 auto;
+    #logo {
+        width:18vw;
+        height:8vh;
     }
 
-   .menuGrup{
-    display: flex;
-    flex-direction: column;
-   }
-
-    #btn1{
-        background-color: white;
-        border: none;
-
+    #user {
+        height:5vh;
     }
 
-    #menu{
-        width: 6vw;
-        height: 6vh;
+    #btn2 {
+        background-color:white;
+        border:none;
     }
 
-    #logo{
-        width: 18vw;
-        height: 8vh;
-    }
+    .dsp {
+        display:flex;
 
-    #user{
-        width: 7vw;
-        height: 6vh;
     }
-
-    #btn2{
-        background-color: white;
-        border: none;
-    }
-
-    .dsp{
-        display: flex;
-    }
-
     /*Final Cabecalho*/
 
     /*Personalize seu pacote*/
 
-    
-
- 
-    .pacotePerson{
-        background-image: url('imagens/fundo.png');
-        background-size: cover;
+    .pacotePerson {
+        background-image:url('imagens/fundo.png');
+        background-size:cover;
         /* position: absolute; */
-        position: relative;
-        text-align: center;
-        padding: 20px;
+        position:relative;
+        text-align:center;
+        padding:20vh;
+
+    }
+
+    .ipt2 {
+        background-color:#f5ebe09c;
+        justify-content:center;
+        gap:1vh;
+        padding:2vh;
+        border-radius:2vh;
+        width:90%;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        position:absolute;
+        bottom:0;
+        left:50%;
+        transform:translate(-50%,50%);
+        width:80%;
+        max-width:600px;
+        box-shadow:0 10px 20px rgba(0,0,0, 0.3);
+    }
+
+    .ipt2 h2 {
+
+        color:#003847;
+        margin-bottom:10px;
     }
 
 
-    .ipt2{
-        background-color: rgb(214, 48, 48);
-        display: flex;
-        justify-content: center;
-        gap: 4vh;
-        padding: 3vh;
-        border-radius: 2vh;
-        width: 90%;
+    .ipt3 {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
     }
 
-    .ipt3{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    } 
-
-    .ipt{
-        margin-bottom: 2vw;
-        width: 100%;
-        padding: 10px;
-        border-radius: 2vh;
-        padding: 1vh;
-        cursor: pointer;
-        background-color: rgb(255, 255, 255);
-        color: black;
-        border: none;
+    .ipt {
+        margin-bottom:2vw;
+        width:100%;
+        padding:10px;
+        border-radius:2vh;
+        padding:1vh;
+        cursor:pointer;
+        background-color: rgb(255,255,255);
+        color:black;
+        border:none;
     }
 
-    #btn3{
-        color: white;
-        background-color: #003847;
-        border: none;
-        height: 36%;
-        width: 100%;
-        border-radius: 2vh;
-        
+    #btn3 {
+
+        color:white;
+        background-color:#003847;
+        border:none;
+        height:3vh;
+        width:70%;
+        border-radius:2vh;
+    }
+
+    .teste {
+        padding-top:30vh;
     }
     /*Final personalize seu pacote*/
 
+
     /*Promoção*/
-    
-    .fundo2{
-        background-image: url('imagens/fundo2.png');
-        background-size: cover;
-        /* position: absolute; */
-        position: relative;
-        text-align: center;
-        padding: 20px;
-        align-items: flex-end;
-    }
-
-    .sobrep{
+    .fundo2 {
+        background-image:url('imagens/fundo2.png');
+        background-size:cover;
         border-radius: 2vh;
-        width: 50%;
-        margin-top: 5vh;
-        background-color: rgba(255, 255, 255, 0.671);
+        /* position: absolute; */
+        position:relative;
+        text-align:center;
+        padding:20px;
+        display: flex;
+        align-items:flex-end;
+        justify-content: flex-end
+        ;
     }
 
-    .sobrep h4{
-        
-       color: blueviolet;
+    .sobrep {
+        border-radius:2vh;
+        width:60%;
+        margin-top:5vh;
+        background-color:rgba(255, 255, 255, 0.678);
+
     }
 
+    .sobrep h4 {
+        width: 80%;
+        font-size: 18px;
+        color:#003847;
+        margin: auto;
+        padding: 2vh;
+       
+    }
+
+    .sobrep h5{
+        width: 80%;
+        font-weight: bold;
+        font-size: 18px;
+        margin: auto;
+        padding: 1vh;
+    }
+
+    .sobrep p {
+       
+        width: 80%;
+        color: #B36E00;
+        font-weight: bold;
+        font-size: 18px;
+        margin: auto;
+        padding: 1vh;
+    }
+
+    #zapp{
+        margin-bottom: 1vh;
+    }
 
     /*Fim Promoção*/
-    
+
+    /*Inico Pacotes*/
+
+    .container1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .cards{
+        display: flex;
+    }
+
+    .cardmain{
+        width: 48%;
+        text-align: center;
+        background-color: #F5EBE0;
+        border-radius: 2vh;
+        justify-content: center;
+        margin-right: 2vh;
+        
+    }
+
+    .imgFundo3{
+        background-image: url('imagens/Rio-de-Janeiro.jpg');
+        width: 45vw;
+        height: 20vh;
+        background-size:cover;
+        border-radius: 2vh;
+    }
+
+    .starTamImg{
+        width: 4vw;
+        height: 3vh;
+    }
+
+    .txt1{
+        display: flex;
+        text-align: center;
+    }
+
+    .container1 h2{
+        text-align: center;
+    }
+    .pCor{
+        color: #B36E00;
+    }
+
+    .pTam{
+        font-size: 15px;
+    }
+
+    .redir{
+        width: 3vw;
+        height: 3vh;
+    }
+
+    .money{
+        color: rgb(28, 105, 34);
+    }
+
+    .btn4{
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        height: 7vh;
+        width: 27vw;
+        background-color: #B36E00;
+        border: transparent;
+        color: white;
+        border-radius: 2vh;
+    }
+
+    .manuBtn{
+        padding-bottom: 5vh;
+        text-align: -webkit-center;
+    }
+
+    /*final pacotes*/
+
+    /*inicio hotel*/
+
+    .htl{
+        text-align: center;
+        
+    }
+
+    .htl2 {
+        font-size: 18px;
+    }
+
+    .container2{
+        display: flex;
+        overflow: hidden;
+        
+    }
+
+    .hostel1{
+        background-image: url("imagens/Porto-de-Galinhas-pousada-piscina.webp");
+        width: 45vw;
+        height: 26vh;
+        background-size:cover;
+        text-align: center;
+        justify-content: flex-end;
+        margin-top: 3vh;
+        border-radius: 2vh;
+        margin-right: 2vh;
+    }
+
+     .hostel2{
+        background-image: url("imagens/Chile.jpg");
+        width: 45vw;
+        height: 26vh;
+        background-size:cover;
+        text-align: center;
+        justify-content: flex-end;
+        margin-top: 3vh;
+        border-radius: 2vh;
+        margin-right: 2vh;
+    }
+
+     .hostel3{
+        background-image: url("imagens/Hotel_California.jpg");
+        width: 45vw;
+        height: 26vh;
+        background-size:cover;
+        text-align: center;
+        justify-content: flex-end;
+        margin-top: 3vh;
+        border-radius: 2vh;
+        margin-right: 2vh;
+    }
+
+     .hostel4{
+        background-image: url("imagens/Rio-de-Janeiro.jpg");
+        width: 45vw;
+        height: 26vh;
+        background-size:cover;
+        text-align: center;
+        justify-content: flex-end;
+        margin-top: 3vh;
+        border-radius: 2vh;
+        margin-right: 2vh;
+    }
+
+    .cidade{
+        border-radius: 2vh;
+        text-align: center;
+        width: 25vh;
+        background-color: #f5ebe0b9;
+    }
+
+    .cidade3{
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-content: flex-end;
+    }
+
+    .cidade2{
+        display: flex;
+        justify-content: center;
+        text-align: end;
+    }
+
+    /*final hotel*/
+
+    /*inicio fotoG*/
+   .fotoG2{
+    display: none;
+   }
+    /*final fotoG*/
+
 }
