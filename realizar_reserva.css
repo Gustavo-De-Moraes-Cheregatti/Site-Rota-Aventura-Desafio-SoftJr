@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.externa_realizar_reserva {
+    flex-flow: column wrap;
+    display: flex;
+    height: 36vh;
+}
+
+.externa_logo_realizar_reserva {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_realizar_reserva {
+    background-image: url(imagens/logo-Rota-Aventura.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 30vw;
+    height: 10vh
+}
+
+.titulo_realizar_reserva {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #003847;
+}
+
+.externa_subtitulo_realizar_reserva {
+    align-content: center;
+}
+
+.subtitulo_realizar_reserva {
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #003847;
+    text-align: center;
+    width: 70%;
+}
+
+.externa_caixas_realizar_reserva {
+    display: flex;
+    flex-flow: column wrap;
+    height: 70vh;
+    justify-content: space-evenly;
+}
+
+.caixa_realizar_reserva {
+    display: flex;
+    justify-content: center;
+}
+
+#input_realizar_reserva {
+    width: 90%;
+    height: 8vh;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+    border-color: rgba(0, 0, 0, 0.123);
+    border-style: solid;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+    padding-left: 15px;
+    font-size: 18px;
+}
+
+input::placeholder {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 18px;
+}
+
+input:focus {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    outline: none;
+}
+
+.externa_botao_pagamento_realizar_reserva {
+    height: 15vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.botao_pagamento_realizar_reserva {
+    background-color: #B36E00;
+    width: 60%;
+    height: 60%;
+    border: 2px solid #B36E00;
+    border-radius: 15px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}

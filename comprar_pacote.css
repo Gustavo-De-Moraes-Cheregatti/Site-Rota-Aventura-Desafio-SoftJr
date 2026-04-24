@@ -6,18 +6,18 @@
     box-sizing: border-box;
 }
 
-.externa_seguro_viagem {
-    height: 34vh;
+.externa_comprar_pacote {
+    height: 38vh;
 }
 
-.externa_logo_seguro_viagem {
+.externa_logo_comprar_pacote {
     height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.logo_seguro_viagem {
+.logo_comprar_pacote {
     background-image: url(imagens/logo-Rota-Aventura.jpeg);
     background-size: cover;
     background-position: center;
@@ -25,7 +25,7 @@
     height: 10vh;
 }
 
-.titulo_seguro_viagem {
+.titulo_comprar_pacote {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -33,11 +33,11 @@
 
 h2 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
     color: #003847;
-}
+    font-size: 30px;
+}   
 
-.externa_topicos_seguro_viagem {
+.externa_topicos_comprar_pacote {
     display: flex;
     justify-content: center;
 }
@@ -49,7 +49,7 @@ ul {
     gap: 2em;
 }
 
-.titulo_topico_seguro_viagem {
+.titulo_topico_comprar_pacote {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     color: #003847;
@@ -61,12 +61,12 @@ p {
     text-align: justify;
 }
 
-.fundo_final_seguro_viagem {
+.fundo_final_comprar_pacote {
     display: flex;
     justify-content: center;
 }
 
-.final_seguro_viagem {
+.final_comprar_pacote {
     width: 90%;
     height: 28vh;
     display: flex;
