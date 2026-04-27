@@ -32,3 +32,30 @@ body {
     padding: 15px;
     
 }
+
+.bc {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bcsd {
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.bcse {
+    text-align: center;
+    margin-top: 5vh;
+    
+}
+
+.bca {
+    text-decoration: none;
+    background-color: #B36E00;
+    color: white;
+
+    border-radius: 2vh;
+    padding: 15px;
+    font-size: 16px;
+    border-bottom: 100px;
+}
