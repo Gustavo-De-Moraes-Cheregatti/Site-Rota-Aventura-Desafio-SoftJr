@@ -103,3 +103,9 @@ a {
     color: black;
     font-size: 18px;
 }
+
+.direcionar_formas_pagamento {
+    display: block;
+    width: 100%;
+    height: 100%;
+}

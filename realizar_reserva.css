@@ -117,3 +117,9 @@ a {
     color: white;
     text-decoration: none;
 }
+
+.direcionar_realizar_reserva {
+    display: block;
+    width: 100%;
+    height: 100%;
+}

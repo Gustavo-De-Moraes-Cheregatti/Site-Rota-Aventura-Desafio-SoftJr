@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5ebe0;
+}
+
+.locim {
+    background-image: url(imagens/logo-sem-o-fundo.png);
+    background-size: cover;
+    background-position: center;
+    width: 30vw;
+    height: 10vh;
+    
+    display: block;
+    margin-top: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lch2 {
+    text-align: center;
+}
+
+.lcs {
+    text-align: center;
+    margin-top: 10%;
+}
+
+ .ldc {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 80%;
+
+    height: 40%;
+    padding: 15px;
+ }
+
+ .louc {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.blocd {
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.bloce {
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.blc {
+    text-decoration: none;
+    background-color: #B36E00;
+    color: white;
+
+    border-radius: 2vh;
+    padding: 15px;
+    font-size: 16px;
+    border-bottom: 100px;
+}
+
+.locimgs {
+    display: flex;
+    margin: 10%;
+    
+}
+
+.locimg1 {
+    background-image: url(imagens/google-normal.jpg);
+    background-color: white;
+    border-radius: 90%;
+
+    background-size: cover;
+    background-position: center;
+    width: 11vw;
+    height: 6vh;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.locimg2 {
+    background-image: url(imagens/apple-logo-fundo.webp);
+    background-color: white;
+    border-radius: 90%;
+
+    background-size: cover;
+    background-position: center;
+    width: 11vw;
+    height: 6vh;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.locimg3 {
+    background-image: url(imagens/facebook-normal.jpg);
+    background-color: white;
+    border-radius: 100%;
+
+    background-size: cover;
+    background-position: center;
+    width: 11vw;
+    height: 6vh;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lca {
+    text-decoration: none;
+    color: #003847;
+}
