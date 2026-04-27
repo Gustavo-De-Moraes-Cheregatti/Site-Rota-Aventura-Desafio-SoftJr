@@ -1,4 +1,4 @@
-@media (min-width:400px)  {
+@media (min-width:400px) and (max-width: 768px){
 
     * {
 
@@ -109,7 +109,7 @@
         transform:translate(-50%,50%);
         width:80%;
         max-width:600px;
-        box-shadow:0 10px 20px rgba(0,0,0, 0.3);
+        box-shadow:0 10px 20px rgba(0,0,0, 0.2);
     }
 
     .ipt2 h2 {
@@ -147,6 +147,11 @@
         border-radius:2vh;
     }
 
+    #btn3 a{
+        text-decoration: none;
+        color: white;
+    }
+
     .teste {
         padding-top:30vh;
     }
@@ -164,8 +169,8 @@
         padding:20px;
         display: flex;
         align-items:flex-end;
-        justify-content: flex-end
-        ;
+        justify-content: flex-end;
+        margin-bottom: 2vh;
     }
 
     .sobrep {
@@ -173,6 +178,7 @@
         width:60%;
         margin-top:5vh;
         background-color:rgba(255, 255, 255, 0.678);
+        box-shadow:0 10px 20px rgba(0, 0, 0, 0.61);
 
     }
 
@@ -225,10 +231,12 @@
     .cardmain{
         width: 48%;
         text-align: center;
-        background-color: #F5EBE0;
+        background-color: #f5ebe0c0;
         border-radius: 2vh;
         justify-content: center;
         margin-right: 2vh;
+        box-shadow: 0px 5px 10px rgba(0,0,0, 0.2);
+        margin-bottom: 2vh;
         
     }
 
@@ -287,6 +295,22 @@
         text-align: -webkit-center;
     }
 
+    .btn4 a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .bot{text-align: center;
+    }
+
+    .bot button{
+        background-color: transparent;
+        border: solid 1px #0038478f;
+        width: 1vh;
+        height: 2vh;
+        border-radius: 100%;
+    }
+
     /*final pacotes*/
 
     /*inicio hotel*/
@@ -297,6 +321,7 @@
     }
 
     .htl2 {
+        margin-bottom: 2vh;
         font-size: 25px;
     }
 
@@ -329,6 +354,7 @@
         margin-top: 3vh;
         border-radius: 2vh;
         margin-right: 2vh;
+        margin-bottom: 2vh;
     }
 
      .hostel3{
@@ -377,6 +403,11 @@
         text-align: end;
     }
 
+    .cidade2 a{
+        text-decoration: none;
+        color: black;
+    }
+
     /*final hotel*/
 
     /*inicio fotoG*/
@@ -388,12 +419,16 @@
     /*Passeio Inicio*/
 
     .cardmain2{
-        width: 48%;
+        display: flex;
+        width: 100%;
         text-align: center;
-        background-color: #F5EBE0;
+        background-color: #f5ebe044;
         border-radius: 2vh;
         justify-content: center;
         margin-right: 2vh;
+        border: solid 0.5px #0038470e;
+        box-shadow:0 10px 20px rgba(0,0,0, 0.2);
+        margin-bottom: 2vh;
     }
 
    .PasseioZap{
@@ -412,9 +447,9 @@
    }
 
    .imgFundo4{
-        background-image: url('imagens/lancha.png');
-        width: 45vw;
-        height: 20vh;
+        background-image: url('imagens/lancha3.jpg');
+        width: 100%;
+        height: 30vh;
         background-size:cover;
         border-radius: 2vh;
    }
@@ -425,6 +460,99 @@
     font-size: 25px;
    }
 
+   .c2{
+    width: 100%;
+    margin: auto;
+   }
+
+   .c2 h4{
+    color: #003847;
+   }
+
     /*Passeio Fim*/
+
+
+    /*Quem somos inicio*/
+   .pnulSec{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    background-color: #F5EBE0;
+
+   }
+
+   .pnulSec H4{
+    font-size: 20px;
+    padding-top: 5vh;
+    margin-top: 5vh;
+    color: #003847;
+   }
+
+   .pnulSec p{
+    padding: 3vh;
+    margin: auto;
+    text-align: center;
+    width: 90%;
+    padding-bottom: 4vh;
+   }
+
+   #amg{
+    width: 50vh;
+    border-radius: 2vh;
+   }
+
+    /*Quem somos final*/
+
+    .linha{
+        margin-top: 8vh;
+        color: #003847;
+        width: 80%;
+        font-size: 30px;
+        margin-bottom: 8vh;
+    }
+
+    /*Footer começo*/
+
+    .footer{
+        align-items: center;
+        text-align: center;
+        width: 70%;
+        margin: auto;
+    }
+
+    .footer a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .imgFooter{
+        width: 3vh;
+        height: 3vh;
+        margin-right: 1.5vh;
+    }
+
+    .a2{
+        padding-bottom: 3vh;
+    }
+
+    #mapp{
+        margin-top: 3vh;
+        width: 42vh;
+        height: 28vh;
+    }
+
+    .a3{
+        margin-bottom: 3vh;
+    }
+
+     .footer2{
+        align-items: center;
+        text-align: center;
+        width: 70%;
+        margin: auto;
+    }
+
+    /*Footer final*/
 
 }
