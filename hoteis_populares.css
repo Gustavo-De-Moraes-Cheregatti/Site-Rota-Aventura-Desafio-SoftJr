@@ -54,7 +54,7 @@ h3 {
 }
 
 .quadrado_hotel_hoteis_populares {
-    height: 50vh;
+    height: 60vh;
     border: 2px solid #F5EBE0;
     border-radius: 15px;
     background-color: #F5EBE0;
@@ -64,7 +64,7 @@ h3 {
 
 .titulo_quadrado_hotel_hoteis_populares {
     width: 100%;
-    height: 20%;
+    height: 15%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -110,18 +110,35 @@ h4 {
 
 .externa_comodidades_hoteis_populares {
     width: 45%;
+    height: 20vh;
     display: flex;
-
 }
 
 .comodidade_hoteis_populares {
-
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    width: 90%;
 }
 
-.icone_comodidade_hoteis_populares {
+.wifi_comodidade_hoteis_populares {
     background-image: url(imagens/wi-fi.png);
     background-size: cover;
     background-position: center;
-    width: 10%;
-    height: 100%;
+    width: 15%;
+    height: 15%;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #003847;
+    font-size: 20px;
+}
+
+.cafe_comodidade_hoteis_populares {
+    background-image: url(imagens/caneca-de-cafe.png);
+    background-size: cover;
+    background-position: center;
+    width: 15%;
+    height: 15%;
 }
