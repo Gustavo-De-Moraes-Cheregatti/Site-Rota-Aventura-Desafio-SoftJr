@@ -86,3 +86,9 @@ a {
     color: black;
     font-size: 18px;
 }
+
+.direcionar_comprar_pacote {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
