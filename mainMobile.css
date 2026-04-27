@@ -297,12 +297,13 @@
     }
 
     .htl2 {
-        font-size: 18px;
+        font-size: 25px;
     }
 
     .container2{
         display: flex;
         overflow: hidden;
+        margin-bottom: 2vh;
         
     }
 
@@ -383,5 +384,47 @@
     display: none;
    }
     /*final fotoG*/
+
+    /*Passeio Inicio*/
+
+    .cardmain2{
+        width: 48%;
+        text-align: center;
+        background-color: #F5EBE0;
+        border-radius: 2vh;
+        justify-content: center;
+        margin-right: 2vh;
+    }
+
+   .PasseioZap{
+    display: block;
+   }
+
+   .redir2{
+        width: 5vw;
+        height: 3vh;
+        margin-bottom: 2vh;
+
+   }
+
+   .color1{
+    color: #003847;
+   }
+
+   .imgFundo4{
+        background-image: url('imagens/lancha.png');
+        width: 45vw;
+        height: 20vh;
+        background-size:cover;
+        border-radius: 2vh;
+   }
+
+
+   .pssio{
+    text-align: center;
+    font-size: 25px;
+   }
+
+    /*Passeio Fim*/
 
 }
