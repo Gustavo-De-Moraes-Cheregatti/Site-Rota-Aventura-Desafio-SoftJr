@@ -1,7 +1,6 @@
-@media (min-width:400px) and (max-width: 768px){
+ @media(min-width: 1024px){
 
-    * {
-
+    *{
         font-family: Arial, Helvetica, sans-serif;
     }
 
@@ -9,126 +8,120 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        
     }
 
-
-    /*Cabeçalho*/
-
     main {
-
-        width:95%;
+        width:90%;
         margin:auto;
     }
 
-    .one {
-        margin-top:2vh;
-        display:flex;
-        justify-content:space-around;
-        align-items:flex-start;
-    }
+    /*Inico cabecalho*/
 
-    .cabecalho {
-
-        display:flex;
-        flex-direction:column;
-    }
-
-    .cabecalho a {
-        text-decoration:none;
-        color:black;
-        display:flex;
-        flex-direction:column;
-    }
-
-    .cabecalho a img {
-        display:block;
-        margin:0 auto;
-    }
-
-    .menuGrup {
+    .one{
+        width: 90%;
         display: flex;
-        flex-direction:column;
+
+        justify-content: space-between;
     }
 
-    #btn1 {
-        background-color:white;
-        border:none;
+    #header{justify-content: space-between;
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
     }
-
-    #menu {
-        width:6vw;
-        height:6vh;
-    }
-
-    #logo {
-        width:18vw;
-        height:8vh;
-    }
-
-    #user {
-        height:5vh;
-    }
-
-    #btn2 {
-        background-color:white;
-        border:none;
-    }
-
-    .dsp1 {
-        display:none;
-
-    }
-
-    #esconder2{
+    .dsp2{
         display: block;
     }
 
-    #esconder3{
+    .dsp1{
         display: none;
     }
 
-    .dsp2{
+    .dsp{
         display: none;
     }
 
+    #btn1{
+        display: none;
+    }
 
+    #logo{
+        width: 30vh;
+        height: 21vh;
+    }
 
-    /*Final Cabecalho*/
+    .cabecalho1{
+       padding-top: 8vh;
+    }
 
-    /*Personalize seu pacote*/
+    .cabecalho1 a{
+        text-decoration: none;
+        color: #003847;
+        font-size: 25px;
+        margin-right: 5vh;
+    }
 
-    .pacotePerson {
+    .cabecalho1 a:hover{
+        cursor: pointer;
+    }
+
+    #btn2{
+        background-color: transparent;
+        border: none;
+        width: 20vh;
+    }
+
+    #user{
+        display: none;
+    }
+
+    .hm{
+        display: none;
+    }
+
+    #btn2{
+        display: none;
+    }
+
+    #esconder{
+        display: none;
+    }
+
+    #esconder2{
+        display: none;
+    }
+    /*Final do cabecalho*/
+
+    /*Inicio personalize o pacote*/
+
+     .pacotePerson {
         background-image:url('imagens/fundo.png');
         background-size:cover;
         /* position: absolute; */
         position:relative;
         text-align:center;
-        padding:20vh;
-
+        padding:42vh;
+        display: flex;
+        justify-content: space-around;
     }
 
     .ipt2 {
-        background-color:#f5ebe09c;
+        /* background-color: orange; */
+        flex-direction: column;
+        background-color:#f5ebe09c; 
         justify-content:center;
         gap:1vh;
         padding:2vh;
         border-radius:2vh;
         width:90%;
         display:flex;
-        flex-direction:column;
         align-items:center;
         position:absolute;
-        bottom:0;
-        left:50%;
-        transform:translate(-50%,50%);
-        width:80%;
-        max-width:600px;
         box-shadow:0 10px 20px rgba(0,0,0, 0.2);
     }
 
     .ipt2 h2 {
-
+        
         color:#003847;
         margin-bottom:10px;
     }
@@ -136,8 +129,10 @@
 
     .ipt3 {
         display:flex;
-        flex-direction:column;
-        align-items:center;
+    }
+
+    .ipt3 input{
+        margin-right: 5vh;
     }
 
     .ipt {
@@ -158,7 +153,7 @@
         background-color:#003847;
         border:none;
         height:3vh;
-        width:70%;
+        width:50%;
         border-radius:2vh;
     }
 
@@ -168,43 +163,52 @@
     }
 
     .teste {
-        padding-top:0vh;
+        display: none;
     }
-    /*Final personalize seu pacote*/
 
 
-    /*Promoção*/
+    .olay{
+        display: flex;
+    }
+
+    /*Fim personalize o pacote*/
+
+
+    /*Promocao inicio*/
     .fundo2 {
+        height: 65vh;
+        width: 90%;
         background-image:url('imagens/fundo2.png');
         background-size:cover;
         border-radius: 2vh;
         /* position: absolute; */
         position:relative;
         text-align:center;
-        padding:20px;
+        padding:20px; 
         display: flex;
         align-items:flex-end;
         justify-content: flex-end;
         margin-bottom: 2vh;
-        margin-top: 28vh;
+        margin-top: 3vh;
     }
 
     .sobrep {
+        height: 40vh;
         border-radius:2vh;
-        width:60%;
-        margin-top:5vh;
-        background-color:rgba(255, 255, 255, 0.678);
+        width:28%;
+        
+        background-color:rgba(255, 255, 255, 0.747);
         box-shadow:0 10px 20px rgba(0, 0, 0, 0.61);
 
     }
 
     .sobrep h4 {
         width: 80%;
-        font-size: 18px;
+        font-size: 25px;
         color:#003847;
         margin: auto;
         padding: 2vh;
-       
+       margin-top: 6vh;
     }
 
     .sobrep h5{
@@ -229,9 +233,14 @@
         margin-bottom: 1vh;
     }
 
-    /*Fim Promoção*/
+    #Promocao{
+        justify-content: center;
+        display: flex;
+    }
+    /*Promocao final*/
 
-    /*Inico Pacotes*/
+    /*Pacotes inico*/
+
 
     .container1{
         width: 100%;
@@ -242,10 +251,11 @@
 
     .cards{
         display: flex;
+        justify-content: center;
     }
 
     .cardmain{
-        width: 48%;
+        width: 19%;
         text-align: center;
         background-color: #f5ebe0c0;
         border-radius: 2vh;
@@ -258,14 +268,14 @@
 
     .imgFundo3{
         background-image: url('imagens/Rio-de-Janeiro.jpg');
-        width: 45vw;
+        width: 17vw;
         height: 20vh;
         background-size:cover;
         border-radius: 2vh;
     }
 
     .starTamImg{
-        width: 4vw;
+        width: 1.5vw;
         height: 3vh;
     }
 
@@ -286,12 +296,8 @@
     }
 
     .redir{
-        width: 3vw;
-        height: 3vh;
-    }
-
-    .redir input{
-        outline: none;
+        width: 1.5vw;
+        height: 3.5vh;
     }
 
     .money{
@@ -303,7 +309,7 @@
         display: flex;
         justify-content: space-around;
         height: 7vh;
-        width: 27vw;
+        width: 7vw;
         background-color: #B36E00;
         border: transparent;
         color: white;
@@ -331,9 +337,11 @@
         border-radius: 100%;
     }
 
-    /*final pacotes*/
+    /*Fim Pacotes*/
 
-    /*inicio hotel*/
+
+    /*Hotel inicio*/
+
 
     .htl{
         text-align: center;
@@ -427,152 +435,5 @@
         text-decoration: none;
         color: black;
     }
-
-    /*final hotel*/
-
-    /*inicio fotoG*/
-   .fotoG2{
-    display: none;
-   }
-    /*final fotoG*/
-
-    /*Passeio Inicio*/
-
-    .cardmain2{
-        display: flex;
-        width: 100%;
-        text-align: center;
-        background-color: #f5ebe044;
-        border-radius: 2vh;
-        justify-content: center;
-        margin-right: 2vh;
-        border: solid 0.5px #0038470e;
-        box-shadow:0 10px 20px rgba(0,0,0, 0.2);
-        margin-bottom: 2vh;
-    }
-
-   .PasseioZap{
-    display: block;
-   }
-
-   .redir2{
-        width: 5vw;
-        height: 3vh;
-        margin-bottom: 2vh;
-
-   }
-
-   .color1{
-    color: #003847;
-   }
-
-   .imgFundo4{
-        background-image: url('imagens/lancha3.jpg');
-        width: 100%;
-        height: 30vh;
-        background-size:cover;
-        border-radius: 2vh;
-   }
-
-
-   .pssio{
-    text-align: center;
-    font-size: 25px;
-   }
-
-   .c2{
-    width: 100%;
-    margin: auto;
-   }
-
-   .c2 h4{
-    color: #003847;
-   }
-
-    /*Passeio Fim*/
-
-
-    /*Quem somos inicio*/
-   .pnulSec{
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    align-items: center;
-    background-color: #F5EBE0;
-
-   }
-
-   .pnulSec H4{
-    font-size: 20px;
-    padding-top: 5vh;
-    margin-top: 5vh;
-    color: #003847;
-   }
-
-   .pnulSec p{
-    padding: 3vh;
-    margin: auto;
-    text-align: center;
-    width: 90%;
-    padding-bottom: 4vh;
-   }
-
-   #amg{
-    width: 50vh;
-    border-radius: 2vh;
-   }
-
-    /*Quem somos final*/
-
-    .linha{
-        margin-top: 8vh;
-        color: #003847;
-        width: 80%;
-        font-size: 30px;
-        margin-bottom: 8vh;
-    }
-
-    /*Footer começo*/
-
-    .footer{
-        align-items: center;
-        text-align: center;
-        width: 70%;
-        margin: auto;
-    }
-
-    .footer a{
-        text-decoration: none;
-        color: black;
-    }
-
-    .imgFooter{
-        width: 3vh;
-        height: 3vh;
-        margin-right: 1.5vh;
-    }
-
-    .a2{
-        padding-bottom: 3vh;
-    }
-
-    #mapp{
-        margin-top: 3vh;
-        width: 42vh;
-        height: 28vh;
-    }
-
-    .a3{
-        margin-bottom: 3vh;
-    }
-
-     .footer2{
-        align-items: center;
-        text-align: center;
-        width: 70%;
-        margin: auto;
-    }
-
-    /*Footer final*/
-
+    /*Hotel fim*/
 }
