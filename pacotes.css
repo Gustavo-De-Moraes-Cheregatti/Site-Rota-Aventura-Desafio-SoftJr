@@ -1,10 +1,72 @@
 @charset "UTF-8";
 
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.header {
+.mae{
     background-color: #003847;
-    
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    height: 15vh;
+}
+
+.pcor {
+    background-color: #ffffff;
+    border: 2px solid white;
+    border-radius: 15px;
+    opacity: 60%;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pimg {
+    background-image: url(imagens/logo-sem-o-fundo.png);
+    background-size: cover;
+    background-position: center;
+    width: 20vw;
+    height: 8vh;
+    /* margin-top: 25%;
+    margin-left: 10%;
+    margin-right: auto;  */
+}
+
+.hch {
+    color: #B36E00;
+    text-align: center;
+}
+
+.cartao {
+    align-items: center;
+    justify-content: center;
+    box-shadow: -3px 3px 10px 0px gray;
+    border-radius: 5%;
+    background-color: gray;
+}
+
+.opcard {
+    width: 90%;
+    height: 50%;
+
+    border-bottom: 5%;
+}
+
+.copa {
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    width: 50%;
+    height: 40%;
+    border-radius: 5%;
 }
