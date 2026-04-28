@@ -24,7 +24,7 @@
     background-size: cover;
     background-position: center;
     width: 30vw;
-    height: 10vh
+    height: 12vh;
 }
 
 .titulo_realizar_reserva {
@@ -122,4 +122,85 @@ a {
     display: block;
     width: 100%;
     height: 100%;
+}
+
+hr {
+    display: none;
+}
+
+.externa_caixas_forma_pagamento {
+    display: none;
+}
+
+/* =========================================== Desktop =============================================== */
+
+@media screen and (min-width: 1024px) {
+
+    .externa_geral_realizar_reserva_desktop {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .externa_logo_realizar_reserva {
+        display: none;
+    }
+
+    .externa_realizar_reserva {
+        width: 45%;
+        height: 18vh;
+        justify-content: center;
+    }
+
+    .titulo_realizar_reserva {
+        display: flex;
+        flex-flow: row wrap;
+        align-content: center;
+    }
+
+    .externa_titulo_realizar_reserva_desktop {
+        display: flex;
+        width: 80%;
+        height: fit-content;
+    }
+
+    .externa_subtitulo_realizar_reserva {
+        display: flex;
+        flex-flow: row wrap;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .subtitulo_realizar_reserva {
+        width: 80%;
+        height: fit-content;
+    }
+
+    h3 {
+        width: 100%;
+        text-align: start;
+    }
+
+    .externa_caixas_realizar_reserva {
+        width: 45%;
+        height: 82vh;
+    }
+
+    hr {
+        height: 100%;
+        display: block;
+        border-color: #003847;
+        border-width: 1px;
+    }
+
+    .externa_botao_pagamento_realizar_reserva {
+        width: 30%;
+    }
+
+    .externa_caixas_forma_pagamento {
+        display: flex;
+        flex-flow: column wrap;
+        width: 45%;
+        height: 50vh;
+        justify-content: space-evenly;
+    }
 }
