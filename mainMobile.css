@@ -15,17 +15,29 @@
 
     /*Cabeçalho*/
 
-    main {
+    /* #header{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    } */
 
+    main {
         width:95%;
         margin:auto;
     }
 
     .one {
-        margin-top:2vh;
         display:flex;
         justify-content:space-around;
         align-items:flex-start;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        background-color: white;
     }
 
     .cabecalho {
@@ -233,6 +245,10 @@
 
     /*Inico Pacotes*/
 
+    .esconde5{
+        display: none;
+    }
+
     .container1{
         width: 100%;
         display: flex;
@@ -243,6 +259,7 @@
     .cards{
         display: flex;
     }
+
 
     .cardmain{
         width: 48%;
@@ -438,6 +455,12 @@
 
     /*Passeio Inicio*/
 
+    .desp{
+        display: flex;
+        overflow: hidden;
+        margin-bottom: 2vh;
+    }
+
     .cardmain2{
         display: flex;
         width: 100%;
@@ -447,7 +470,7 @@
         justify-content: center;
         margin-right: 2vh;
         border: solid 0.5px #0038470e;
-        box-shadow:0 10px 20px rgba(0,0,0, 0.2);
+        box-shadow:0 10px 10px rgba(0,0,0, 0.1);
         margin-bottom: 2vh;
     }
 
@@ -468,7 +491,7 @@
 
    .imgFundo4{
         background-image: url('imagens/lancha3.jpg');
-        width: 100%;
+        width: 43vh;
         height: 30vh;
         background-size:cover;
         border-radius: 2vh;
@@ -520,6 +543,10 @@
    #amg{
     width: 50vh;
     border-radius: 2vh;
+   }
+
+   .esconde4{
+    display: none;
    }
 
     /*Quem somos final*/

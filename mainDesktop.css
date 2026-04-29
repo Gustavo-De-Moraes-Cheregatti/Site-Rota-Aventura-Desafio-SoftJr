@@ -20,8 +20,13 @@
     .one{
         width: 90%;
         display: flex;
-
         justify-content: space-between;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        background-color: white;
+        position: fixed;
     }
 
     #header{justify-content: space-between;
@@ -46,8 +51,8 @@
     }
 
     #logo{
-        width: 30vh;
-        height: 21vh;
+        width: 21vh;
+        height: 15vh;
     }
 
     .cabecalho1{
@@ -135,7 +140,23 @@
         margin-right: 5vh;
     }
 
+    .char{
+        width: 36vh;
+    }
+
+    .ipt1{
+        width: 31vh;
+        height: 3vh;
+        margin-bottom:2vw;
+        border-radius:2vh;
+        padding:1vh;
+        cursor:pointer;
+        color:black;
+        border:none;
+    }
+
     .ipt {
+        height: 3vh;
         margin-bottom:2vw;
         width:100%;
         padding:10px;
@@ -152,7 +173,7 @@
         color:white;
         background-color:#003847;
         border:none;
-        height:3vh;
+        height:5vh;
         width:50%;
         border-radius:2vh;
     }
@@ -169,6 +190,11 @@
 
     .olay{
         display: flex;
+    }
+
+    .esconde5 h5{
+        margin-bottom: 0;
+        font-size: 16px;
     }
 
     /*Fim personalize o pacote*/
@@ -241,6 +267,10 @@
 
     /*Pacotes inico*/
 
+    .esconde6{
+        display: none;
+    }
+
 
     .container1{
         width: 100%;
@@ -251,11 +281,24 @@
 
     .cards{
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
+    }
+
+    
+    .c{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .c h4{
+        margin-bottom: 2vh;
+        font-size: 20px;
+        color: #003847;
     }
 
     .cardmain{
-        width: 19%;
+        width: 23%;
         text-align: center;
         background-color: #f5ebe0c0;
         border-radius: 2vh;
@@ -268,8 +311,8 @@
 
     .imgFundo3{
         background-image: url('imagens/Rio-de-Janeiro.jpg');
-        width: 17vw;
-        height: 20vh;
+        width: 20.7vw;
+        height: 27vh;
         background-size:cover;
         border-radius: 2vh;
     }
@@ -287,11 +330,17 @@
     .container1 h2{
         text-align: center;
     }
-    .pCor{
+    .pCor {
+        font-size: 15px;
+        margin-left: 1.7vh;
+        text-align: left;
+        padding: 0;
+        margin-top: 0;
         color: #B36E00;
     }
 
     .pTam{
+        color: #1a6726;
         font-size: 15px;
     }
 
@@ -355,15 +404,16 @@
 
     .container2{
         display: flex;
-        overflow: hidden;
+        flex-wrap: wrap;
         margin-bottom: 2vh;
-        
+        justify-content: space-around;
+        margin: auto;
     }
 
     .hostel1{
         background-image: url("imagens/Porto-de-Galinhas-pousada-piscina.webp");
-        width: 45vw;
-        height: 26vh;
+        width: 20vw;
+        height: 30vh;
         background-size:cover;
         text-align: center;
         justify-content: flex-end;
@@ -374,21 +424,20 @@
 
      .hostel2{
         background-image: url("imagens/Chile.jpg");
-        width: 45vw;
-        height: 26vh;
+         width: 20vw;
+        height: 30vh;
         background-size:cover;
         text-align: center;
         justify-content: flex-end;
         margin-top: 3vh;
         border-radius: 2vh;
         margin-right: 2vh;
-        margin-bottom: 2vh;
     }
 
      .hostel3{
         background-image: url("imagens/Hotel_California.jpg");
-        width: 45vw;
-        height: 26vh;
+        width: 20vw;
+        height: 30vh;
         background-size:cover;
         text-align: center;
         justify-content: flex-end;
@@ -399,8 +448,8 @@
 
      .hostel4{
         background-image: url("imagens/Rio-de-Janeiro.jpg");
-        width: 45vw;
-        height: 26vh;
+         width: 20vw;
+        height: 30vh;
         background-size:cover;
         text-align: center;
         justify-content: flex-end;
@@ -416,6 +465,16 @@
         background-color: #f5ebe0b9;
     }
 
+      .cidade2{
+        display: flex;
+        justify-content: center;
+        text-align: end;
+        border-radius: 2vh;
+        text-align: center;
+        width: 25vh;
+    }
+
+
     .cidade3{
         display: flex;
         flex-flow: row wrap;
@@ -425,15 +484,202 @@
         align-content: flex-end;
     }
 
-    .cidade2{
+    /* .cidade2{
         display: flex;
         justify-content: center;
         text-align: end;
-    }
+    } */
 
     .cidade2 a{
         text-decoration: none;
         color: black;
     }
     /*Hotel fim*/
+
+    /*Passeio Inicio*/
+
+    .desp{
+        justify-content: space-around;
+        margin: auto;
+        display: flex;
+        margin-bottom: 2vh;
+        flex-wrap: wrap;
+    }
+
+    .cardmain2{
+        flex-direction: column;
+        display: flex;
+        text-align: center;
+        background-color: #f5ebe044;
+        border-radius: 2vh;
+        justify-content: center;
+        margin-right: 2vh;
+        border: solid 0.5px #0038470e;
+        box-shadow:0 10px 10px rgba(0,0,0, 0.1);
+        margin-bottom: 2vh;
+    }
+
+   .PasseioZap{
+    display: block;
+   }
+
+   .redir2{
+        width: 2vw;
+        height: 4vh;
+        margin-bottom: 2vh;
+
+   }
+
+   .color1{
+    color: #003847;
+   }
+
+   .imgFundo4{
+        background-image: url('imagens/lancha2.png');
+        width: 59vh;
+        height: 30vh;
+        background-size:cover;
+        border-radius: 2vh;
+   }
+
+
+   .pssio{
+    text-align: center;
+    font-size: 25px;
+   }
+
+   .c2{
+    width: 90%;
+    margin: auto;
+   }
+
+   .c2 h4{
+    color: #003847;
+   }
+
+   .bot{
+    display: none;
+
+   }
+   
+    /*Passeio Fim*/
+
+    /*inicio fotoG*/
+   .fotoG2{
+    margin-top: 10vh;
+    background-image: url('imagens/fotoG.png');
+    display: block;
+    background-size:cover;
+    height: 75vh;
+    
+   }
+
+   /* .fotoG{
+    background-image: url('imagens/fotoG.png');
+    height: 100vh;
+    width: 100vh;
+   } */
+    /*final fotoG*/
+
+
+        /*Quem somos inicio*/
+   .pnulSec{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    background-color: #F5EBE0;
+    border-radius: 2vh;
+
+   }
+
+   .pnulSec H4{
+    font-size: 20px;
+    padding-top: 5vh;
+    margin-top: 5vh;
+    color: #003847;
+   }
+
+   .pnulSec p{
+    margin: auto;
+    text-align: start;
+    width: 90%;
+   }
+
+   .esconde4{
+    padding-bottom: 5vh;
+   }
+
+   #amg{
+    margin-bottom: 5vh;
+    height:74vh;
+    width: 146vh;
+    border-radius: 2vh;
+   }
+
+    /*Quem somos final*/
+
+    .linha{
+        margin-top: 8vh;
+        color: #003847;
+        width: 100%;
+        font-size: 30px;
+        margin-bottom: 8vh;
+    }
+
+     /*Footer começo*/
+
+    .footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    .footer a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .imgFooter{
+        width: 3vh;
+        height: 3vh;
+        margin-right: 1.5vh;
+    }
+
+    .a2{
+        padding-bottom: 3vh;
+    }
+
+    #mapp{
+        margin-top: 3vh;
+        width: 60vh;
+        height: 38vh;
+    }
+
+    .a3{
+        margin-bottom: 3vh;
+    }
+
+     .footer2{
+        align-items: center;
+
+    }
+
+   .img2{
+        margin-top: 4vh;
+        width: 6vh;
+        height: 6vh;
+        margin-right: 2vh;
+   }
+
+   #final{
+    margin-top: 10vh;
+    text-align: center;
+    font-size: 15px;
+   }
+
+    /*Footer final*/
+
+
 }
