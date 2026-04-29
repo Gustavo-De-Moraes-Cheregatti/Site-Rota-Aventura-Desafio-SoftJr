@@ -248,3 +248,36 @@ a {
     width: 100%;
     height: 100%;
 }
+
+/* =========================================== Desktop =============================================== */
+
+@media screen and (min-width: 1024px) {
+
+    .externa_hoteis_populares {
+        display: none;
+    }
+
+    .fundo_quadrados_hoteis_populares {
+        width: 60vw;
+    }
+
+    .quadrado_hotel_hoteis_populares {
+        width: 80%;
+    }
+
+    
+
+    .imagem_hotel_hoteis_populares_1 {
+        width: 40%;
+    }
+
+    .avaliacao_quadrado_hoteis_populares {
+        display: none;
+    }
+
+    .externa_comodidades_hoteis_populares {
+        display: none;
+    }
+
+
+}
