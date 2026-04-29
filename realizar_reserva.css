@@ -79,6 +79,30 @@ h3 {
     font-size: 18px;
 }
 
+#input_data_realizar_reserva {
+    width: 90%;
+    height: 8vh;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+    border-color: rgba(0, 0, 0, 0.123);
+    border-style: solid;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+    padding-left: 15px;
+    font-size: 18px;
+}
+
+#input_data_2_realizar_reserva {
+    width: 90%;
+    height: 8vh;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+    border-color: rgba(0, 0, 0, 0.123);
+    border-style: solid;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+    padding-left: 15px;
+    font-size: 18px;
+}
+
 input::placeholder {
     color: rgba(0, 0, 0, 0.6);
     font-size: 18px;
@@ -88,6 +112,26 @@ input:focus {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     outline: none;
+}
+
+.input_data_cinza_realizar_reserva {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.input_preto_realizar_reserva {
+    color: black;
+}
+
+.input_data_cinza_2_realizar_reserva {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.input_preto_2_realizar_reserva {
+    color: black;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(0.4);
 }
 
 .externa_botao_pagamento_realizar_reserva {
@@ -132,21 +176,31 @@ hr {
     display: none;
 }
 
+.externa_titulo_direito_realizar_reserva_desktop {
+    display: none;
+}
+
+.a_realizar_reserva_desktop {
+    display: none;
+}
+
 /* =========================================== Desktop =============================================== */
 
 @media screen and (min-width: 1024px) {
 
     .externa_geral_realizar_reserva_desktop {
         display: flex;
-        flex-flow: column wrap;
     }
 
     .externa_logo_realizar_reserva {
         display: none;
     }
 
+    .externa_lado_esquerdo_realizar_reserva_desktop {
+        width: 50%;
+    }
+
     .externa_realizar_reserva {
-        width: 45%;
         height: 18vh;
         justify-content: center;
     }
@@ -155,6 +209,7 @@ hr {
         display: flex;
         flex-flow: row wrap;
         align-content: center;
+        align-content: flex-end;
     }
 
     .externa_titulo_realizar_reserva_desktop {
@@ -181,26 +236,57 @@ hr {
     }
 
     .externa_caixas_realizar_reserva {
-        width: 45%;
         height: 82vh;
     }
 
     hr {
-        height: 100%;
+        height: 100vh;
         display: block;
         border-color: #003847;
         border-width: 1px;
     }
 
+    .externa_lado_direito_realizar_reserva_desktop {
+        width:50%;
+    }
+
+    .titulo_direito_realizar_reserva_desktop {
+        display: flex;
+        height: 18vh;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: flex-end;
+    }
+
+    .externa_titulo_direito_realizar_reserva_desktop {
+        display: flex;
+        flex-flow: row wrap;
+        width: 80%;
+        height: 50%;
+        align-content: center;
+    }
+
     .externa_botao_pagamento_realizar_reserva {
-        width: 30%;
+        width: 100%;
+        justify-content: center;
     }
 
     .externa_caixas_forma_pagamento {
         display: flex;
         flex-flow: column wrap;
-        width: 45%;
-        height: 50vh;
+        height: 56vh;
         justify-content: space-evenly;
+    }
+
+    .botao_pagamento_realizar_reserva {
+        width: 40%;
+    }
+
+    .a_realizar_reserva_desktop {
+        display: block;
+    }
+
+    .a_realizar_reserva_mobile {
+        display: none;
     }
 }
