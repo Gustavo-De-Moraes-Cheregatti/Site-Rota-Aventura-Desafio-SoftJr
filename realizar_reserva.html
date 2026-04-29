@@ -8,64 +8,84 @@
 </head>
 <body>
     <div class="externa_geral_realizar_reserva_desktop">
-        <div class="externa_realizar_reserva">                      <!-- Começo Div "Header" -->
-            <div class="externa_logo_realizar_reserva">
-                <div class="logo_realizar_reserva"><a href="mainMobile.html" class="direcionar_realizar_reserva"></a></div>
-            </div>
-            <div class="titulo_realizar_reserva">
-                <div class="externa_titulo_realizar_reserva_desktop">
-                    <h2>Realizar Reserva</h2>
+        <div class="externa_lado_esquerdo_realizar_reserva_desktop">
+            <div class="externa_realizar_reserva">                      <!-- Começo Div "Header" -->
+                <div class="externa_logo_realizar_reserva">
+                    <div class="logo_realizar_reserva"><a href="mainMobile.html" class="direcionar_realizar_reserva"></a></div>
                 </div>
-            </div>
-            <div class="externa_subtitulo_realizar_reserva">
-                <div class="subtitulo_realizar_reserva">
-                    <h3>Insira seus Dados</h3>
+                <div class="titulo_realizar_reserva">
+                    <div class="externa_titulo_realizar_reserva_desktop">
+                        <h2>Realizar Reserva</h2>
+                    </div>
                 </div>
-            </div>
-        </div>                                                      <!-- Fim Div "Header" -->
-        <div class="externa_caixas_realizar_reserva">               <!-- Começo Div Input -->
-            <div class="caixa_realizar_reserva">
-                <input type="text" id="input_realizar_reserva" placeholder="Nome">
-            </div>
-            <div class="caixa_realizar_reserva">
-                <input type="text" id="input_realizar_reserva" placeholder="Sobrenome">
-            </div>
-            <div class="caixa_realizar_reserva">
-                <input type="text" id="input_realizar_reserva" placeholder="E-mail">
-            </div>
-            <div class="caixa_realizar_reserva">
-                <input type="text" id="input_realizar_reserva" placeholder="Telefone">
-            </div>
-            <div class="caixa_realizar_reserva">
-                <input type="text" id="input_realizar_reserva" placeholder="País">
-            </div>
-            <div class="caixa_realizar_reserva">
-                <input type="text" id="input_realizar_reserva" placeholder="Data de Nascimento">
-            </div>
-        </div>                                                      <!-- Fim Div Input -->
+                <div class="externa_subtitulo_realizar_reserva">
+                    <div class="subtitulo_realizar_reserva">
+                        <h3>Insira seus Dados</h3>
+                    </div>
+                </div>
+            </div>                                                      <!-- Fim Div "Header" -->
+            <div class="externa_caixas_realizar_reserva">               <!-- Começo Div Input -->
+                <div class="caixa_realizar_reserva">
+                    <input type="text" id="input_realizar_reserva" placeholder="Nome">
+                </div>
+                <div class="caixa_realizar_reserva">
+                    <input type="text" id="input_realizar_reserva" placeholder="Sobrenome">
+                </div>
+                <div class="caixa_realizar_reserva">
+                    <input type="email" id="input_realizar_reserva" placeholder="E-mail">
+                </div>
+                <div class="caixa_realizar_reserva">
+                    <input type="tel" id="input_realizar_reserva" placeholder="Telefone">
+                </div>
+                <div class="caixa_realizar_reserva">
+                    <input type="text" id="input_realizar_reserva" placeholder="País">
+                </div>
+                <div class="caixa_realizar_reserva">            <!-- Input Data -->
+                    <input id="input_data_realizar_reserva"  
+                           class="input_data_cinza_realizar_reserva"            
+                        type="text"
+                        placeholder="Data de Nascimento"
+                        onfocus="this.type='date'"
+                        onblur="if(!this.value) this.type='text'">
+                </div>
+            </div>                                                      <!-- Fim Div Input -->
+        </div>
 
         <hr>
 
-        <div class="externa_caixas_forma_pagamento">
-            <div class="caixa_realizar_reserva">
-                <input type="text" id="input_realizar_reserva" placeholder="Nome do Titular do Cartão">
+        <div class="externa_lado_direito_realizar_reserva_desktop">
+            <div class="titulo_direito_realizar_reserva_desktop">
+                <div class="externa_titulo_direito_realizar_reserva_desktop">
+                    <h3>Forma de Pagamento</h3>
+                </div>
             </div>
-            <div class="caixa_realizar_reserva">
-                <input type="text" id="input_realizar_reserva" placeholder="Número do Cartão">
+            <div class="externa_caixas_forma_pagamento">
+                <div class="caixa_realizar_reserva">
+                    <input type="text" id="input_realizar_reserva" placeholder="Nome do Titular do Cartão">
+                </div>
+                <div class="caixa_realizar_reserva">
+                    <input type="text" id="input_realizar_reserva" placeholder="Número do Cartão">
+                </div>
+                <div class="caixa_realizar_reserva">
+                    <input type="text" id="input_realizar_reserva" placeholder="CVV">
+                </div>
+                <div class="caixa_realizar_reserva">        <!-- input Data -->
+                    <input id="input_data_2_realizar_reserva" 
+                           class="input_data_cinza_2_realizar_reserva"
+                        type="text"
+                        placeholder="Data de validade" 
+                        onfocus="this.type='date'"
+                        onblur="if(this.type) this.type='text'">   <!-- O input é do tipo *text*, pois somente esse tipo aceita o *placeholder* (escrita antes da informação ser adicionada), porém, quando ele for selecionado (*onfocus*), ele muda para o tipo *date*, mas se o usuário clicar fora sem ter selecionado uma data (*onblur*), ele retorna para o tipo *text* -->
+                </div>
             </div>
-            <div class="caixa_realizar_reserva">
-                <input type="text" id="input_realizar_reserva" placeholder="CVV">
-            </div>
-            <div class="caixa_realizar_reserva">
-                <input type="text" id="input_realizar_reserva" placeholder="Data de validade">
-            </div>
-        </div>
-
-        <div class="externa_botao_pagamento_realizar_reserva">
-            <div class="botao_pagamento_realizar_reserva">
-                <a href="forma-de-pagamento.html">Forma de Pagamento</a>
+            <div class="externa_botao_pagamento_realizar_reserva">
+                <div class="botao_pagamento_realizar_reserva">
+                    <a href="forma-de-pagamento.html" class="a_realizar_reserva_mobile">Forma de Pagamento</a>
+                    <a href="mainMobile.html" class="a_realizar_reserva_desktop">Confirmar Reserva</a>
+                </div>
             </div>
         </div>
     </div>
+    <script src="realizar_reserva.js"></script>
 </body>
 </html>
