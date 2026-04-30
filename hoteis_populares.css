@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+body {
+    max-width: 1440px;
+    margin: auto;
+}
+
 .externa_hoteis_populares {
     height: 36vh;
 }
@@ -99,7 +104,7 @@ h4 {
 }
 
 .imagem_hotel_hoteis_populares_1 {
-    background-image: url(imagens/grand-mercure-rio-de-janeiro.jpg);
+    background-image: url(imagens/Grand-Mercure-Frente.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -110,7 +115,7 @@ h4 {
 }
 
 .imagem_hotel_hoteis_populares_2 {
-    background-image: url(imagens/windsor-barra.jpg);
+    background-image: url(imagens/Windsor-Barra-Frente.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -121,7 +126,7 @@ h4 {
 }
 
 .imagem_hotel_hoteis_populares_3 {
-    background-image: url(imagens/hilton-barra-rio-de-janeiro.jpg);
+    background-image: url(imagens/Hilton-Barra-Frente.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -249,6 +254,26 @@ a {
     height: 100%;
 }
 
+hr {
+    display: none;
+}
+
+.lado_esquerdo_hoteis_populares {
+    display: none;
+}
+
+.titulo_antes_quadrado_hoteis_populares {
+    display: none;
+}
+
+.externa_botao_2_hoteis_populares {
+    display: none;
+}
+
+.externa_escrita_lado_direito_hoteis_populares {
+    display: none;
+}
+
 /* =========================================== Desktop =============================================== */
 
 @media screen and (min-width: 1024px) {
@@ -258,26 +283,278 @@ a {
     }
 
     .fundo_quadrados_hoteis_populares {
-        width: 60vw;
+        width: 70vw;
+        align-content: center;
+    }
+
+    .externa_geral_desktop_hoteis_populares {
+        display: flex;
+        height: 250vh;
+    }
+
+    .lado_esquerdo_hoteis_populares {
+        width: 30vw;
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+    }
+
+    .externa_logo_desktop_hoteis_populares {
+        width: 40%;
+        height: 20vh;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .logo_hoteis_populares {
+        height: 14vh;
+        width: 10vw;
+    }
+
+    .titulo_desktop_hoteis_populares {
+        width: 90%;
+        height: 10vh;
+        display: flex;
+        flex-flow: row wrap;
+        align-content: center;
+    }
+
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
+
+        color: #003847;
+    }
+
+    .externa_mapa_hoteis_populares {
+        background-color: #003847;
+        border: 1px solid #003847;
+        border-radius: 15px;
+        width: 16vw;
+        height: 30vh;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .mapa_hoteis_populares {
+        height: 98%;
+        width: 98%;
+        border-radius: 15px;
+    }
+
+    .subtitulo_desktop_hoteis_populares {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        height: 15vh;
+    }
+ 
+    .comodidades_desktop_hoteis_populares {
+        height: 55vh;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+    }
+
+    .comodidade_hoteis_populares {
+        height: 15%;
+        gap: 1em;
+    }
+
+    .wifi_comodidade_hoteis_populares {
+        width: 10%;
+        height: 70%;
+    }
+
+    .cafe_comodidade_hoteis_populares {
+        width: 10%;
+        height: 70%;
+    }
+
+    .elevador_comodidade_hoteis_populares {
+        width: 10%;
+        height: 70%;
+    }
+
+    .ar_condicionado_comodidade_hoteis_populares {
+        width: 10%;
+        height: 70%;
+    }
+
+    .boa_localizacao_comodidade_hoteis_populares {
+        width: 10%;
+        height: 70%;
+    }
+
+    .piscina_comodidade_hoteis_populares {
+        width: 10%;
+        height: 70%;
+    }
+
+    hr {
+        display: block;
+        height: 100%;
+        border-color: #003847;
+        border-width: 2px;
+    }
+
+    .titulo_antes_quadrado_hoteis_populares {
+        display: flex;
+        flex-flow: row wrap;
+        width: 70%;
+        height: 20vh;
+        align-content: flex-end;
+    }
+
+    h3 {
+        font-size: 30px;
     }
 
     .quadrado_hotel_hoteis_populares {
         width: 80%;
+        align-content: space-evenly;
     }
 
-    
+    .lado_esquerdo_quadrado_desktop_hoteis_populares {
+        display: flex;
+        width: 40%;
+        height: 100%;
+        flex-flow: column wrap;
+    }
+
+    .titulo_quadrado_hotel_hoteis_populares {
+        height: 10%;
+    }
+
+    h4 {
+        width: 50%;
+        font-size: 26px;
+    }
 
     .imagem_hotel_hoteis_populares_1 {
-        width: 40%;
+        width: 100%;
+    }
+
+    .externa_imagens_pequenas_hoteis_populares {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        height: 20%;
+        justify-content: space-evenly;
+        align-content: flex-end;
+    }
+
+    .imagem_2_hotel_hoteis_populares_1 {
+        background-image: url(imagens/Grand-Mercure-Quarto.jpg);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        width: 45%;
+        height: 90%;
+        border: 2px solid #F5EBE0;
+        border-radius: 15px;
+    }
+
+    .imagem_3_hotel_hoteis_populares_1 {
+        background-image: url(imagens/Grand-Mercure-Piscina.jpg);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        width: 45%;
+        height: 90%;
+        border: 2px solid #F5EBE0;
+        border-radius: 15px;
+    }
+
+    .imagem_2_hotel_hoteis_populares_2 {
+        background-image: url(imagens/Windsor-Barra-Quarto.jpg);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        width: 45%;
+        height: 90%;
+        border: 2px solid #F5EBE0;
+        border-radius: 15px;
+    }
+
+    .imagem_3_hotel_hoteis_populares_2 {
+        background-image: url(imagens/windsor-barra.jpg);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        width: 45%;
+        height: 90%;
+        border: 2px solid #F5EBE0;
+        border-radius: 15px;
+    }
+
+    .imagem_2_hotel_hoteis_populares_3 {
+        background-image: url(imagens/Hilton-barra-Quarto.jpg);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        width: 45%;
+        height: 90%;
+        border: 2px solid #F5EBE0;
+        border-radius: 15px;
+    }
+
+    .imagem_3_hotel_hoteis_populares_3 {
+        background-image: url(imagens/Hilton-Barra-Piscina.jpg);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        width: 45%;
+        height: 90%;
+        border: 2px solid #F5EBE0;
+        border-radius: 15px;
+    }
+
+    .externa_botao_2_hoteis_populares {
+        display: flex;
+        flex-flow: row wrap;
+        height: 20%;
+        align-content: flex-end;
+    }
+
+    .fundo_botao_2_hoteis_populares {
+        display: flex;
+        width: 100%;
+        height: 50%;
+        justify-content: center;
     }
 
     .avaliacao_quadrado_hoteis_populares {
         display: none;
     }
 
-    .externa_comodidades_hoteis_populares {
+    .fundo_comodidades_hoteis_populares {
         display: none;
     }
 
+    .fundo_botao_hoteis_populares {
+        display: none;
+    }
 
+    .lado_direito_quadrado_desktop_hoteis_populares {
+        width: 50%;
+        height: 100%;
+        display: flex;
+    }
+
+    .externa_escrita_lado_direito_hoteis_populares {
+        display: flex;
+        height: 80%;
+        flex-flow: row wrap;
+        align-content: center;
+    }
+
+    p {
+        font-size: 24px;
+        text-align: justify;
+    }
 }

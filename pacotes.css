@@ -19,12 +19,60 @@ body {
     height: 15vh;
 }
 
+input:focus {
+    outline: none;
+}
+
+.oinput {
+    border-radius: 15px;
+    width: 95%;
+    height: 3.5vh;
+    margin-bottom: 10px;
+    margin-left: 3%;
+    padding: 5px;
+}
+
+.oinput1 {
+    border-radius: 15px;
+    width: 46%;
+    height: 3.5vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+#input-calendario {
+    border-radius: 15px;
+    width: 46%;
+    height: 3.5vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.oinputCor-cinza {
+    color: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+}
+
+.oinputCor-preto {
+    color: black;
+}
+
+.osdois {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(0.4);
+}
+
 .pcor {
     background-color: #ffffff;
     border: 2px solid white;
     border-radius: 15px;
     opacity: 60%;
-    width: 80%;
+    width: 90%;
     height: 80%;
     display: flex;
     justify-content: space-evenly;
@@ -34,10 +82,10 @@ body {
 .pimg {
     background-image: url(imagens/logo-sem-o-fundo.png);
     background-size: cover;
-    background-position: center;
     width: 20vw;
     height: 8vh;
     display: flex;
+    background-position: center;
 }
 
 .hch {
@@ -54,9 +102,9 @@ body {
     box-shadow: -3px 3px 10px 0px #FFF4DD;
     border-radius: 5%;
     background-color: #FFF4DD;
-    width: 80%;
+    width: 90%;
     height: 50%;
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
 .opcard {
@@ -90,10 +138,15 @@ body {
    justify-content: space-between;
 }
 
+.dimgp {
+    display: flex;
+    
+}
+
 .verdinho {
     background-color: #4B8848;
-    width: 35%;
-    height: 17%;
+    width: 9vw;
+    height: 4vh;
     color: white;
 
     display: flex;
@@ -101,7 +154,7 @@ body {
     border-radius:25%;
     align-items: center;
 
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 .verdao {
@@ -110,10 +163,10 @@ body {
     display: flex;
     justify-content: center;
 
-    border-radius: 15%;
     width: 40vw;
-    height: 5vh;
+    height: 4vh;
     align-items: center;
+    border-radius: 15px;
 }
 
 .colunas {
@@ -133,4 +186,11 @@ body {
 
 .blu {
     color: #003847;
+}
+
+.wifi {
+    display: flex;
+    width: 3vh;
+    height: 4vw;
+    margin-right: 5px;
 }
