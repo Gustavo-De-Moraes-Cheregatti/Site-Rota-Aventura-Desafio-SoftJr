@@ -6,6 +6,7 @@
     <title>Rota Aventura</title>
     <link rel="stylesheet" href="mainMobile.css">
     <link rel="stylesheet" href="mainDesktop.css">
+    
 </head>
 <body>
     <main>
@@ -72,21 +73,77 @@
 
                     <div class="olay">
                         <div class="ipt3">
-                        <input type="text" placeholder="Origem" class="ipt1">
-                        <input type="text" placeholder="Destino" class="ipt1">
+                        <input type="text" placeholder="Origem" class="ipt">
+                        <input type="text" placeholder="Destino" class="ipt">
                     </div>
                     <div class="ipt3">
-                        <input type="date" placeholder="Ida" class="ipt">
-                        <input type="date" placeholder="Volta" class="ipt">
+                        <input  class="ipt"
+                            type="text"
+                            placeholder="Data de Ida" 
+                            onfocus="this.type='date'"
+                            onblur="if(this.type) this.type='text'" type="date" placeholder="Ida" class="ipt">
+
+
+
+                        <input class="ipt"
+                            type="text"
+                            placeholder="Data de Volta" 
+                            onfocus="this.type='date'"
+                            onblur="if(this.type) this.type='text'" type="date" placeholder="Ida" class="ipt">
+
+
                     </div>
                     <div class="ipt3">
                         <input type="text" placeholder="Passageiros e quartos" class="ipt">
                         <button id="btn3"><a href="https://web.whatsapp.com/" target="_blank">Buscar</a></button>
                     </div>
                 </div>
+
                 <div class="teste">
             </div>
             </div>
+
+
+
+             <div class="ipt4">
+                    <div>
+                        <h2>Personalize seu Pacote</h2>
+                    </div>
+
+                    <div class="olay">
+                        <div class="ipt3">
+                        <input type="text" placeholder="Origem" class="ipt1">
+                        <input type="text" placeholder="Destino" class="ipt1">
+                    </div>
+                    <div class="ipt3">
+                        <input  class="ipt"
+                            type="text"
+                            placeholder="Data de Ida" 
+                            onfocus="this.type='date'"
+                            onblur="if(this.type) this.type='text'" type="date" placeholder="Ida" class="ipt">
+
+
+
+                        <input class="ipt"
+                            type="text"
+                            placeholder="Data de Volta" 
+                            onfocus="this.type='date'"
+                            onblur="if(this.type) this.type='text'" type="date" placeholder="Ida" class="ipt">
+
+
+                    </div>
+                    <div class="ipt3">
+                        <input type="text" placeholder="Passageiros e quartos" class="ipt">
+                        <button id="btn3"><a href="https://web.whatsapp.com/" target="_blank">Buscar</a></button>
+                    </div>
+                </div>
+
+                <div class="teste">
+            </div>
+            </div>
+
+
+
             <div class="teste">
             </div>
 
@@ -101,9 +158,10 @@
                     <h4>
                         Promoção!!!
                     </h4>
-                    <h5>
+                    <h4>
                         Pacotes para Alagoas a partir de R$ 3.500,00
-                    </h5>
+                    </h4>
+                    <h5 id="esconde7">Inclui passagem aérea de ida e volta, bagagem despachada de pequeno porte e hospedagem com café da manhã.</h5>
                     <p>Para mais detalhes entre em contato. </p>
                     <div>
                     <a href="https://web.whatsapp.com/" target="_blank"><img src="imagens/whatsappColorido.png" alt="" id="zapp"></a></div>
@@ -136,18 +194,23 @@
                         </div>
 
                     </div>
-                    <p class="pCor">Mais Vendidos</p>
+
+                    
+                        <div>
+                        <p class="pCor">Mais Vendidos</p>
+                    </div>
 
                     <div class="esconde6">
                         <p>4 dias a partir de: </p>
-                        <p class="money">R$ 5.000,00</p>
+                        <p class="money">R$ 2.500,00</p>
                     </div>
 
-                    <div class="esconde5">
-                        <h5>A partir de : R$ 5.000,00 | 4 dias</h5>
+                    <div class="tx2">
+                        <div class="esconde5">
+                            <h5>A partir de : R$ 2.500,00 | 6 dias</h5>
+                        </div>
+                        <p class="pTam">Em até 12x sem juros</p>
                     </div>
-
-                    <p class="pTam">Em até 12x sem juros</p>
 
                     <div class="manuBtn">
                         <button class="btn4">
@@ -160,10 +223,10 @@
 
                 <div class="cardmain">
 
-                    <div class="imgFundo3"></div>
+                    <div class="imgFundo5"></div>
 
                     <div class="c">
-                        <h4>Rio de Janeiro</h4>
+                        <h4>Salvador</h4>
 
                         <div class="star">
                             <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
@@ -174,17 +237,21 @@
                         </div>
 
                     </div>
-                    <p class="pCor">Mais Vendidos</p>
+ 
+                        <p class="pCor">Mais Vendidos</p>
 
-                    <div class="esconde5">
-                        <h5>A partir de : R$ 5.000,00 | 4 dias</h5>
+                    <div class="tx2">
+                        <div class="esconde5">
+                            <h5>A partir de : R$ 1.000,00 | 8 dias</h5>
+                        </div>
+                        <p class="pTam">Em até 12x sem juros</p>
                     </div>
 
                     <div class="esconde6">
                         <p>4 dias a partir de: </p>
-                        <p class="money">R$ 5.000,00</p>
+                        <p class="money">R$ 1.000,00</p>
                     </div>
-                    <p class="pTam">Em até 12x sem juros</p>
+                    
 
                     <div class="manuBtn">
                         <button class="btn4">
@@ -197,10 +264,10 @@
 
                 <div class="cardmain">
 
-                    <div class="imgFundo3"></div>
+                    <div class="imgFundo6"></div>
 
                     <div class="c">
-                        <h4>Rio de Janeiro</h4>
+                        <h4>Bonito</h4>
 
                         <div class="star">
                             <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
@@ -211,17 +278,21 @@
                         </div>
 
                     </div>
-                    <p class="pCor">Mais Vendidos</p>
+                   
+                        <p class="pCor">Mais Vendidos</p>
+                   
 
                     <div class="esconde6">
                         <p>4 dias a partir de: </p>
-                        <p class="money">R$ 5.000,00</p>
-                    </div>
-                    <div class="esconde5">
-                        <h5>A partir de : R$ 5.000,00 | 4 dias</h5>
+                        <p class="money">R$ 3.000,00</p>
                     </div>
 
-                    <p class="pTam">Em até 12x sem juros</p>
+                    <div class="tx2">
+                        <div class="esconde5">
+                            <h5>A partir de : R$ 3.000,00 | 6 dias</h5>
+                        </div>
+                        <p class="pTam">Em até 12x sem juros</p>
+                    </div>
 
                     <div class="manuBtn">
                         <button class="btn4">
@@ -234,10 +305,10 @@
 
                 <div class="cardmain">
 
-                    <div class="imgFundo3"></div>
+                    <div class="imgFundo7"></div>
 
                     <div class="c">
-                        <h4>Rio de Janeiro</h4>
+                        <h4>Pantanal</h4>
 
                         <div class="star">
                             <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
@@ -248,16 +319,21 @@
                         </div>
 
                     </div>
-                    <p class="pCor">Mais Vendidos</p>
+                   
+                        <p class="pCor">Mais Vendidos</p>
+                  
 
                     <div class="esconde6">
                         <p>4 dias a partir de: </p>
                         <p class="money">R$ 5.000,00</p>
                     </div>
-                    <div class="esconde5">
-                        <h5>A partir de : R$ 5.000,00 | 4 dias</h5>
+
+                    <div class="tx2">
+                        <div class="esconde5">
+                            <h5>A partir de : R$ 5.000,00 | 4 dias</h5>
+                        </div>
+                        <p class="pTam">Em até 12x sem juros</p>
                     </div>
-                    <p class="pTam">Em até 12x sem juros</p>
 
                   <div class="manuBtn">
                         <button class="btn4">
@@ -294,63 +370,69 @@
                         </div>
                     </div>
 
-                    </div>
-
-                <div class="hostel2">
-                    <div class="cidade3">
-                        <div class="cidade2">
-                            <p class="cidade">Chile</p>
-                        </div>
-                    </div>
-                </div>
-
-                 <div class="hostel2">
-                    <div class="cidade3">
-                        <div class="cidade2">
-                            <p class="cidade">Chile</p>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="hostel2">
                     <div class="cidade3">
                         <div class="cidade2">
-                            <p class="cidade">Chile</p>
+                            <p class="cidade"><a href="hoteis_populares.html">Amazonas</a></p>
+                        </div>
+                    </div>
+
+                </div>
+
+                 <div class="hostel3">
+                    <div class="cidade3">
+                        <div class="cidade2">
+                            <p class="cidade"><a href="hoteis_populares.html">Cataratas</a></p>
+                        </div>
+                    </div>
+
+                </div>
+
+               <div class="hostel4">
+                    <div class="cidade3">
+                        <div class="cidade2">
+                            <p class="cidade"><a href="hoteis_populares.html">Gramado</a></p>
                         </div>
                     </div>
 
                 </div>
                     
-                <div class="hostel2">
+                <div class="hostel5">
                     <div class="cidade3">
                         <div class="cidade2">
-                            <p class="cidade">Chile</p>
+                            <p class="cidade"><a href="hoteis_populares.html">Paraty</a></p>
                         </div>
                     </div>
+
                 </div>
 
-                <div class="hostel2">
+                <div class="hostel6">
                     <div class="cidade3">
                         <div class="cidade2">
-                            <p class="cidade">Chile</p>
+                            <p class="cidade"><a href="hoteis_populares.html">São Paulo</a></p>
                         </div>
                     </div>
+
                 </div>
 
-                <div class="hostel2">
+                <div class="hostel7">
                     <div class="cidade3">
                         <div class="cidade2">
-                            <p class="cidade">Chile</p>
+                            <p class="cidade"><a href="hoteis_populares.html">Jericoara</a></p>
                         </div>
                     </div>
+
                 </div>
 
-                <div class="hostel2">
+               <div class="hostel8">
                     <div class="cidade3">
                         <div class="cidade2">
-                            <p class="cidade">Chile</p>
+                            <p class="cidade"><a href="hoteis_populares.html">Maranhão</a></p>
                         </div>
                     </div>
+
                 </div>
 
             </div>
@@ -368,10 +450,10 @@
                 <div class="desp">
                     <div class="cardmain2">
 
-                        <div class="imgFundo4"></div>
+                        <div class="imgFundo9"></div>
 
                         <div class="c2">
-                            <h4>Lancha</h4>
+                            <h4>Passeio de Lancha (Angra dos Reis, RJ)</h4>
 
                             <p class="pCor2">Lorem ipsum dolor sit amet consectetur adipisicing elit.!</p>
 
@@ -386,10 +468,10 @@
                     </div>
                     <div class="cardmain2">
 
-                        <div class="imgFundo4"></div>
+                        <div class="imgFundo10"></div>
 
                         <div class="c2">
-                            <h4>Lancha</h4>
+                            <h4>Flutuação no Rio Sucuri(Bonito, MS)</h4>
 
                             <p class="pCor2">Lorem ipsum dolor sit amet consectetur adipisicing elit.!</p>
 
@@ -404,10 +486,10 @@
                     </div>
                     <div class="cardmain2">
 
-                        <div class="imgFundo4"></div>
+                        <div class="imgFundo11"></div>
 
                         <div class="c2">
-                            <h4>Lancha</h4>
+                            <h4>Trilha Morro do Pai Inácio (Chapada Diamantina, BA)</h4>
 
                             <p class="pCor2">Lorem ipsum dolor sit amet consectetur adipisicing elit.!</p>
 
@@ -422,10 +504,10 @@
                     </div>
                     <div class="cardmain2">
 
-                        <div class="imgFundo4"></div>
+                        <div class="imgFundo12"></div>
 
                         <div class="c2">
-                            <h4>Lancha</h4>
+                            <h4>Passeio de Jangada (Ceará, BH)</h4>
 
                             <p class="pCor2">Lorem ipsum dolor sit amet consectetur adipisicing elit.!</p>
 
@@ -440,10 +522,10 @@
                     </div>
                     <div class="cardmain2">
 
-                        <div class="imgFundo4"></div>
+                        <div class="imgFundo13"></div>
 
                         <div class="c2">
-                            <h4>Lancha</h4>
+                            <h4>Expediçã nos Lençóis Maranhenses (MA)</h4>
 
                             <p class="pCor2">Lorem ipsum dolor sit amet consectetur adipisicing elit.!</p>
 
@@ -459,10 +541,10 @@
 
                     <div class="cardmain2">
 
-                        <div class="imgFundo4"></div>
+                        <div class="imgFundo14"></div>
 
                         <div class="c2">
-                            <h4>Lancha</h4>
+                            <h4>Cultura e Ritmo (Salvador, BA)</h4>
 
                             <p class="pCor2">Lorem ipsum dolor sit amet consectetur adipisicing elit.!</p>
 
@@ -516,11 +598,23 @@ O que nos move? Acreditamos que o mundo é grande demais para ficar parado no me
                     <img src="imagens/whatsappju.png" alt=""class="img2">
                 </div>
                 </div>
-                <div>
+
+                <div class="map2">
+                    <div class="bordamap">  
+                    <div>
                     <!-- <a href="Largo Engenheiro Paulo de Almeida Sandeville 15 - Jardim Santo Andre, São João da Boa Vista - SP, 13870-377" ><img src="imagens/map.png" alt="" id="mapp"></a> -->
 
                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3700.210539988173!2d-46.79292404868776!3d-21.964881200131476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1777319574225!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="mapp"></iframe>
                 </div>
+
+                </div>
+
+                
+
+
+
+                </div>
+                
 
                 <div class="footer2" id="fto3">
                     <h3 id="termoMain"> Termos</h3>
@@ -545,7 +639,7 @@ O que nos move? Acreditamos que o mundo é grande demais para ficar parado no me
                 <p>All dispositve</p>
             </div>
         </section>
-
+        <script src="realizar_reserva.js"></script>
     </main>
 </body>
 </html>

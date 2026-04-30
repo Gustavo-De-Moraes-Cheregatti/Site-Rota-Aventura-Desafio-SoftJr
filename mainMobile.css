@@ -24,8 +24,16 @@
     } */
 
     main {
-        width:95%;
+        width:90%;
         margin:auto;
+    }
+
+ 
+    .ipt2{
+        display: block;
+    }
+    .ipt4{
+        display: none;
     }
 
     .one {
@@ -33,9 +41,8 @@
         justify-content:space-around;
         align-items:flex-start;
         position: fixed;
-        width: 100%;
+        width: 90%;
         top: 0;
-        left: 0;
         z-index: 1000;
         background-color: white;
     }
@@ -74,7 +81,7 @@
     }
 
     #logo {
-        width:18vw;
+        width:26vw;
         height:8vh;
     }
 
@@ -210,6 +217,8 @@
 
     }
 
+    
+
     .sobrep h4 {
         width: 80%;
         font-size: 18px;
@@ -262,7 +271,7 @@
 
 
     .cardmain{
-        width: 48%;
+        width: 50%;
         text-align: center;
         background-color: #f5ebe0c0;
         border-radius: 2vh;
@@ -275,6 +284,30 @@
 
     .imgFundo3{
         background-image: url('imagens/Rio-de-Janeiro.jpg');
+        width: 45vw;
+        height: 20vh;
+        background-size:cover;
+        border-radius: 2vh;
+    }
+
+    .imgFundo5{
+        background-image: url('imagens/bahia.png');
+        width: 45vw;
+        height: 20vh;
+        background-size:cover;
+        border-radius: 2vh;
+    }
+
+    .imgFundo6{
+        background-image: url('imagens/bonito.png');
+        width: 45vw;
+        height: 20vh;
+        background-size:cover;
+        border-radius: 2vh;
+    }
+
+    .imgFundo7{
+        background-image: url('imagens/pantanal.png');
         width: 45vw;
         height: 20vh;
         background-size:cover;
@@ -348,6 +381,10 @@
         border-radius: 100%;
     }
 
+    #esconde7{
+        display: none;
+    }
+
     /*final pacotes*/
 
     /*inicio hotel*/
@@ -382,7 +419,7 @@
     }
 
      .hostel2{
-        background-image: url("imagens/Chile.jpg");
+        background-image: url("imagens/hotelAmazonas.png");
         width: 45vw;
         height: 26vh;
         background-size:cover;
@@ -395,7 +432,7 @@
     }
 
      .hostel3{
-        background-image: url("imagens/Hotel_California.jpg");
+        background-image: url("imagens/hotelcataratas.png");
         width: 45vw;
         height: 26vh;
         background-size:cover;
@@ -407,7 +444,55 @@
     }
 
      .hostel4{
-        background-image: url("imagens/Rio-de-Janeiro.jpg");
+        background-image: url("imagens/hotelGramado.png");
+        width: 45vw;
+        height: 26vh;
+        background-size:cover;
+        text-align: center;
+        justify-content: flex-end;
+        margin-top: 3vh;
+        border-radius: 2vh;
+        margin-right: 2vh;
+    }
+
+    .hostel5{
+        background-image: url("imagens/hotelJericoara.png");
+        width: 45vw;
+        height: 26vh;
+        background-size:cover;
+        text-align: center;
+        justify-content: flex-end;
+        margin-top: 3vh;
+        border-radius: 2vh;
+        margin-right: 2vh;
+    }
+
+    .hostel6{
+        background-image: url("imagens/hotelParaty.png");
+        width: 45vw;
+        height: 26vh;
+        background-size:cover;
+        text-align: center;
+        justify-content: flex-end;
+        margin-top: 3vh;
+        border-radius: 2vh;
+        margin-right: 2vh;
+    }
+
+    .hostel7{
+        background-image: url("imagens/hotelSaoPaulo.png");
+        width: 45vw;
+        height: 26vh;
+        background-size:cover;
+        text-align: center;
+        justify-content: flex-end;
+        margin-top: 3vh;
+        border-radius: 2vh;
+        margin-right: 2vh;
+    }
+
+    .hostel8{
+        background-image: url("imagens/hotel-italia.avif");
         width: 45vw;
         height: 26vh;
         background-size:cover;
@@ -421,7 +506,7 @@
     .cidade{
         border-radius: 2vh;
         text-align: center;
-        width: 25vh;
+        width: 21vh;
         background-color: #f5ebe0b9;
     }
 
@@ -462,8 +547,9 @@
     }
 
     .cardmain2{
+        height: 30vh;
         display: flex;
-        width: 100%;
+        width: 99%;
         text-align: center;
         background-color: #f5ebe044;
         border-radius: 2vh;
@@ -489,8 +575,48 @@
     color: #003847;
    }
 
-   .imgFundo4{
+   .imgFundo9{
         background-image: url('imagens/lancha3.jpg');
+        width: 43vh;
+        height: 30vh;
+        background-size:cover;
+        border-radius: 2vh;
+   }
+
+   .imgFundo10{
+        background-image: url('imagens/passeioBonito.png');
+        width: 43vh;
+        height: 30vh;
+        background-size:cover;
+        border-radius: 2vh;
+   }
+
+   .imgFundo11{
+        background-image: url('imagens/passeioChapada.png');
+        width: 43vh;
+        height: 30vh;
+        background-size:cover;
+        border-radius: 2vh;
+   }
+
+   .imgFundo12{
+        background-image: url('imagens/passeioJangada.png');
+        width: 43vh;
+        height: 30vh;
+        background-size:cover;
+        border-radius: 2vh;
+   }
+
+   .imgFundo13{
+        background-image: url('imagens/passeioLençol.png');
+        width: 43vh;
+        height: 30vh;
+        background-size:cover;
+        border-radius: 2vh;
+   }
+
+   .imgFundo14{
+        background-image: url('imagens/passeioSalvador.png');
         width: 43vh;
         height: 30vh;
         background-size:cover;
@@ -535,13 +661,13 @@
    .pnulSec p{
     padding: 3vh;
     margin: auto;
-    text-align: center;
+    text-align: justify;
     width: 90%;
     padding-bottom: 4vh;
    }
 
    #amg{
-    width: 50vh;
+    width: 40vh;
     border-radius: 2vh;
    }
 
@@ -564,7 +690,7 @@
     .footer{
         align-items: center;
         text-align: center;
-        width: 70%;
+        /* width: 70%; */
         margin: auto;
     }
 
@@ -583,10 +709,27 @@
         padding-bottom: 3vh;
     }
 
+    /* .bordamap{
+
+        width: 32vh;
+        height: 25vh;
+        border: solid 1px #003847;
+    } */
+
     #mapp{
-        margin-top: 3vh;
-        width: 42vh;
-        height: 28vh;
+        width: 31.8vh;
+        height: 24.9vh;
+    }
+
+    .map2 {
+        justify-content: space-around;
+        display: flex;
+    }
+
+    .bordamap{
+        width: 32vh;
+        height: 25vh;
+        border: solid 1px #003847;
     }
 
     .a3{
@@ -599,6 +742,19 @@
         width: 70%;
         margin: auto;
     }
+
+    .img2{
+        margin-top: 4vh;
+        width: 6vh;
+        height: 6vh;
+        margin-right: 2vh;
+   }
+
+    #final{
+    margin-top: 10vh;
+    text-align: center;
+    font-size: 15px;
+   }
 
     /*Footer final*/
 

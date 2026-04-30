@@ -25,3 +25,4 @@ var dateInput = document.getElementById('input_data_realizar_reserva');
       this.classList.remove('input_data_preto_2_realizar_reserva');
     }
   });
+
