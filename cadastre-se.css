@@ -3,6 +3,8 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f5ebe0;
+    max-width: 720px;
+    margin: auto;
 }
 
 .ilss {
@@ -22,7 +24,7 @@ body {
     text-align: center;
 }
 
-.loc {
+.loc1 {
     display: block;
     margin: 0 auto;
     border-radius: 10px;
@@ -31,6 +33,21 @@ body {
     height: 40%;
     padding: 15px;
     
+}
+
+.loc {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 80%;
+
+    height: 40%;
+    padding: 15px;
+    border-color: rgba(0, 0, 0, 0.123);
+    border-style: solid;
+
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+    outline: none;
 }
 
 .bc {
@@ -57,4 +74,39 @@ body {
     padding: 15px;
     font-size: 16px;
     border-bottom: 100px;
+}
+
+/*------------------------------ Inicio Desktop ------------------------------ */
+
+@media screen and (min-width: 1024px) {
+    
+    .ilss{
+       display: none;
+    }
+
+    .hlc {
+        margin-top: 5%;
+        width: 100%;
+        font-size: 40px;
+    }
+
+    .loc1 {
+        width: 90%;
+        height: 7vh;
+    }
+
+    .loc {
+        height: 50%;
+    }
+
+    .bc {
+       width: 100%;
+    }
+
+    .bca {
+        width: 100%;
+        font-size: 30px;
+       
+    }
+
 }
