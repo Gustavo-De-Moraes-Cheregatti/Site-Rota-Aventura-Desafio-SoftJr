@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+body {
+    max-width: 1440px;
+    margin: auto;
+}
+
 .externa_passaporte {
     display: flex;
     flex-flow: column wrap;
@@ -95,7 +100,7 @@ a {
 }
 
 .externa_passaporte_desktop {
-    width: 100vw;
+    width: 100%;
 }
 
 .lado_esquerdo_passaporte_desktop {
@@ -149,6 +154,14 @@ hr {
         flex-flow: column wrap;
         height: 40%;
         justify-content: space-evenly;
+    }
+
+    a {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 22px;
     }
 
     hr {

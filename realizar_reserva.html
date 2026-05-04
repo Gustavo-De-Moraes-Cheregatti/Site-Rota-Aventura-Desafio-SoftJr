@@ -75,7 +75,7 @@
                         type="text"
                         placeholder="Data de validade" 
                         onfocus="this.type='date'"
-                        onblur="if(this.type) this.type='text'">   <!-- O input é do tipo *text*, pois somente esse tipo aceita o *placeholder* (escrita antes da informação ser adicionada), porém, quando ele for selecionado (*onfocus*), ele muda para o tipo *date*, mas se o usuário clicar fora sem ter selecionado uma data (*onblur*), ele retorna para o tipo *text* -->
+                        onblur="if(!this.value) this.type='text'">   <!-- O input é do tipo *text*, pois somente esse tipo aceita o *placeholder* (escrita antes da informação ser adicionada), porém, quando ele for selecionado (*onfocus*), ele muda para o tipo *date*, mas se o usuário clicar fora sem ter selecionado uma data (*onblur*), ele retorna para o tipo *text* -->
                 </div>
             </div>
             <div class="externa_botao_pagamento_realizar_reserva">
