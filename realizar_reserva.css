@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+body {
+    max-width: 1440px;
+    margin: auto;
+}
+
 .externa_realizar_reserva {
     flex-flow: column wrap;
     display: flex;
@@ -118,7 +123,7 @@ input:focus {
     color: rgba(0, 0, 0, 0.6);
 }
 
-.input_preto_realizar_reserva {
+.input_data_preto_realizar_reserva {
     color: black;
 }
 
@@ -126,7 +131,7 @@ input:focus {
     color: rgba(0, 0, 0, 0.6);
 }
 
-.input_preto_2_realizar_reserva {
+.input_data_preto_2_realizar_reserva {
     color: black;
 }
 
@@ -279,7 +284,8 @@ hr {
     }
 
     .botao_pagamento_realizar_reserva {
-        width: 40%;
+        width: 30%;
+        height: 50%;
     }
 
     .a_realizar_reserva_desktop {

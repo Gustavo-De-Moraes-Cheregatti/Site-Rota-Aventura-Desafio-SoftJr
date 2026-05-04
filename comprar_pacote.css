@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+body {
+    max-width: 1440px;
+    margin: auto;
+}
+
 .externa_comprar_pacote {
     height: 38vh;
 }
@@ -94,7 +99,7 @@ a {
 }
 
 .externa_comprar_pacote_desktop {
-    width: 100vw;
+    width: 100%;
 }
 
 .lado_esquerdo_comprar_pacote_desktop {
@@ -148,6 +153,14 @@ hr {
         flex-flow: column wrap;
         height: 40%;
         justify-content: space-evenly;
+    }
+
+    a {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 22px;
     }
 
     hr {
