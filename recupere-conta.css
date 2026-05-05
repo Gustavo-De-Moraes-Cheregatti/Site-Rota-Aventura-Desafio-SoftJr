@@ -66,6 +66,10 @@ div.cor {
     height: 40%;
     padding: 15px;
     background-color: white;
+
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+    outline: none;
+    border: none;
 }
 
 .botao {
@@ -108,5 +112,28 @@ a.clique {
         display: none;
     }
 
-    
+    .recupere {
+        margin-top: 5%;
+        width: 100%;
+        font-size: 40px;
+    }
+
+    .digite {
+        font-size: 20px;
+    }
+
+    .input {
+        width: 80%;
+        height: 7vh;
+        font-size: 18px;
+    }
+
+    a.continuar {
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .caso {
+        font-size: 20px;
+    }
 }

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="pacotes.css">
 </head>
 <body>
-    <div class="mae">
+    <div class="mae" id="escondeDesktop">
         <div class="pcor">
                 <div class="pimg">
             </div>
@@ -21,6 +21,41 @@
                         
 
                         <input type="text" placeholder="Quem? " class="oinput1">
+
+                    </div>
+                </div>
+        </div>
+        
+    </div>
+
+    <div class="mae" id="escondeMobile">
+        <div class="pcor">
+                <div class="pimg"> </div>
+
+                <div class="inputs">
+                    
+                <div class="umso1">
+                    <div class="umso"><input type="text" placeholder="Origem" class="oinput"></div>
+                    <div class="umso"><input type="text" placeholder="Destino" class="oinput"></div>
+                </div>
+
+
+                    <div class="osdois">
+
+                        <div class="date1">
+                            <p>Ida:</p>
+                            <input type="date" placeholder="Quando?" class="oinputCor-cinza" id="input-calendario"
+                            onfocus="this.type='date'"
+                            onblur="if(!this.value) this.type='text'">
+                        </div>
+
+                        
+                <div class="date2">
+                    <p>Volta: </p>
+                            <input type="date" placeholder="Quando?" class="oinputCor-cinza" id="input-calendario"
+                            onfocus="this.type='date'"
+                            onblur="if(!this.value) this.type='text'">
+                </div>
 
                     </div>
                 </div>
