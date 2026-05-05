@@ -104,10 +104,27 @@ btnNextEsq3.addEventListener('click', () => {
 
 //inicio clickmenu
 
-function clickmenu(){
+function clickMenu(){
+    const esconder = document.getElementById('esconder');
+
     if(esconder.style.display == 'block'){
-        esconder.style.display == 'none'
-    }else
-        esconder.display = 'block'
+        esconder.style.display = 'none'
+    }else{
+        esconder.style.display = 'block'
+    }
+        
 }
+
+function clickMenu2(){
+    const oi = document.getElementById('esconder2');
+
+    if(esconder2.style.display == 'block'){
+        esconder2.style.display = 'none'
+    }else{
+        esconder2.style.display = 'block'
+    }
+        
+}
+
+
 

@@ -47,13 +47,13 @@
         background-color: white;
     }
 
-    .cabecalho {
-
+    /* .cabecalho {
         display:flex;
         flex-direction:column;
-    }
+    } */
 
     .cabecalho a {
+        margin: 0 4vh 4vh 0;
         text-decoration:none;
         color:black;
         display:flex;
@@ -66,8 +66,16 @@
     }
 
     .menuGrup {
+         height: 20vh;
         display: flex;
         flex-direction:column;
+    }
+
+    
+
+    .menuGrupo{
+        width: 14vh;
+        background-color: #ffffff;
     }
 
     #btn1 {
@@ -99,8 +107,15 @@
 
     }
 
+    #esconder{
+        text-align: center;
+        margin-top: 5vh;
+        background-color: #ffffff;
+        display: none;
+    }
+
     #esconder2{
-        display: block;
+        display: none;
     }
 
     #esconder3{
@@ -111,9 +126,9 @@
         display: none;
     }
 
-    .alte{
-        height: 20vh;
-    }
+    /* .alte{
+        height: 12vh;
+    } */
 
     /*Final Cabecalho*/
 
