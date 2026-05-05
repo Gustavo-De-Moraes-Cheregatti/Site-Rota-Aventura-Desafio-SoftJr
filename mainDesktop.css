@@ -116,10 +116,33 @@
 
     /*Inicio personalize o pacote*/
 
+    .prevBtn{
+        font-size: 15px;
+        color: #0038478f;
+    }
+
+    .nextBtn{
+        font-size: 15px;
+        color: #0038478f;
+
+    }
+
+    .prevBtn2{
+        font-size: 15px;
+        color: #0038478f;
+    }
+
+    .nextBtn2{
+        font-size: 15px;
+        color: #0038478f;
+
+    }
+
     .imgInput {
+        margin-right: 1vh;
         align-items: center;
         border-radius: 2vh;
-        width: 35vh;
+        width: 32vh;
         display: flex;
         background-color: white;
         height: 7vh;
@@ -152,9 +175,9 @@
         background-color:#f5ebe09c; 
         justify-content:center;
         gap:1vh;
-        padding:2vh;
+        height: 30vh;
         border-radius:2vh;
-        width:85%;
+        width:100%;
         display:flex;
         align-items:center;
         position:absolute;
@@ -162,8 +185,8 @@
     }
 
     .ipt4 h2{
+        color: #003847;
         font-size: 35px;
-        margin-bottom: 2vh;
     }
 
     .txt{
@@ -232,11 +255,10 @@
     } */
 
     #btn3 {
-        padding: 1vh;
         color:white;
         background-color:#003847;
         border:none;
-        height:5vh;
+        height:6.5vh;
         width:50%;
         border-radius:2vh;
         font-size: 15px;
@@ -275,9 +297,37 @@
 
 
     /*Promocao inicio*/
-    .fundo2 {
-        height: 65vh;
+
+
+    .container3{
+        display: flex;
+        margin-bottom: 2vh;
+        overflow-x: auto;
+        margin: auto;
+        width: 98%;
+        /* overflow-x: auto;  */
+        overflow: hidden;
+        
+    }
+
+    .org3{
         width: 90%;
+        margin: auto;
+    }
+
+    .org4{
+        width: 100%;
+    }
+
+    .img3{
+        width: 100%;
+    }
+
+     .fundo2 {
+        scroll-snap-align: center;
+        flex-shrink: 0;
+        height: 65vh;
+        min-width: 95vw;
         background-image:url('imagens/fundo2.png');
         background-size:cover;
         border-radius: 2vh;
@@ -335,10 +385,10 @@
         margin-bottom: 1vh;
     }
 
-    #Promocao{
+    /* #Promocao{
         justify-content: center;
         display: flex;
-    }
+    } */
     /*Promocao final*/
 
     /*Pacotes inico*/
@@ -489,14 +539,15 @@
         color: white;
     }
 
-    .bot{text-align: center;
+    .bot{
+        text-align: center;
     }
 
     .bot button{
         background-color: transparent;
         border: solid 1px #0038478f;
-        width: 1vh;
-        height: 2vh;
+        width: 3vh;
+        height: 3vh;
         border-radius: 100%;
     }
 
@@ -518,10 +569,12 @@
 
     .container2{
         display: flex;
-        flex-wrap: wrap;
+        /* overflow:hidden; */
+        /* flex-wrap: wrap; */
         margin-bottom: 2vh;
         justify-content: space-around;
         margin: auto;
+        margin-bottom: 2vh
     }
 
     .htl2{
@@ -530,7 +583,7 @@
         color: #003847;
     }
 
-    .hostel1{
+    #hostel1{
         background-image: url("imagens/Porto-de-Galinhas-pousada-piscina.webp");
         width: 20vw;
         height: 30vh;
@@ -542,7 +595,7 @@
         margin-right: 2vh;
     }
 
-     .hostel2{
+     #hostel2{
         background-image: url("imagens/hotelAmazonas.png");
          width: 20vw;
         height: 30vh;
@@ -554,7 +607,7 @@
         margin-right: 2vh;
     }
 
-     .hostel3{
+     #hostel3{
         background-image: url("imagens/hotelcataratas.png");
         width: 20vw;
         height: 30vh;
@@ -566,7 +619,7 @@
         margin-right: 2vh;
     }
 
-     .hostel4{
+     #hostel4{
         background-image: url("imagens/hotelGramado.png");
          width: 20vw;
         height: 30vh;
@@ -578,7 +631,7 @@
         margin-right: 2vh;
     }
 
-    .hostel5{
+    #hostel5{
         background-image: url("imagens/hotelParaty.png");
          width: 20vw;
         height: 30vh;
@@ -590,7 +643,7 @@
         margin-right: 2vh;
     }
 
-    .hostel6{
+    #hostel6{
         background-image: url("imagens/hotelSaoPaulo.png");
          width: 20vw;
         height: 30vh;
@@ -602,7 +655,7 @@
         margin-right: 2vh;
     }
 
-    .hostel7{
+    #hostel7{
         background-image: url("imagens/hotelJericoara.png");
          width: 20vw;
         height: 30vh;
@@ -614,7 +667,7 @@
         margin-right: 2vh;
     }
 
-    .hostel8{
+    #hostel8{
         background-image: url("imagens/hotel-italia.avif");
          width: 20vw;
         height: 30vh;
@@ -629,6 +682,9 @@
     .hotel21{
         width: 90%;
         margin: auto;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
     }
 
     .cidade{
@@ -673,6 +729,17 @@
     /*Hotel fim*/
 
     /*Passeio Inicio*/
+
+    #esconde8{
+        display: none;
+    }
+    
+    #esconde9{
+        display: none;
+    }
+
+
+
 
     .desp{
         justify-content: space-around;
@@ -775,10 +842,10 @@
     color: #003847;
    }
 
-   .bot{
+   /* .bot{
     display: none;
 
-   }
+   } */
 
    .passeio25{
     margin: auto;
