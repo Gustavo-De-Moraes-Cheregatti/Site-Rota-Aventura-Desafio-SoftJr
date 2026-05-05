@@ -111,7 +111,9 @@
         display: none;
     }
 
-
+    .alte{
+        height: 20vh;
+    }
 
     /*Final Cabecalho*/
 
@@ -123,11 +125,16 @@
         /* position: absolute; */
         position:relative;
         text-align:center;
-        padding:20vh;
 
     }
 
+    #imgOrg{
+        background-position: center;
+        height: 40vh;
+    }
+
     .ipt2 {
+        height: 44vh;
         background-color:#f5ebe09c;
         justify-content:center;
         gap:1vh;
@@ -187,15 +194,36 @@
     }
 
     .teste {
+        height: 27vh;
         padding-top:0vh;
     }
     /*Final personalize seu pacote*/
 
 
     /*Promoção*/
-    .fundo2 {
+
+    .org4{
+        width: 100%;
+    }
+
+    .org3{
+        display: flex;
+    }
+
+    .org2{
+        display: flex;
+    }
+
+    .img3{
         background-image:url('imagens/fundo2.png');
         background-size:cover;
+        width: 100%;
+        height: 44vh;
+    }
+
+
+    .fundo2 {
+        
         border-radius: 2vh;
         /* position: absolute; */
         position:relative;
@@ -205,7 +233,7 @@
         align-items:flex-end;
         justify-content: flex-end;
         margin-bottom: 2vh;
-        margin-top: 28vh;
+        
     }
 
     .sobrep {
@@ -249,6 +277,8 @@
     #zapp{
         margin-bottom: 1vh;
     }
+
+    
 
     /*Fim Promoção*/
 
@@ -368,6 +398,7 @@
     .btn4 a{
         text-decoration: none;
         color: white;
+        border: solid 1px #0038478f;
     }
 
     .bot{text-align: center;
@@ -376,8 +407,8 @@
     .bot button{
         background-color: transparent;
         border: solid 1px #0038478f;
-        width: 1vh;
-        height: 2vh;
+        width: 3vh;
+        height: 3vh;
         border-radius: 100%;
     }
 
@@ -389,6 +420,14 @@
 
     /*inicio hotel*/
 
+    .hotel21{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
     .htl{
         text-align: center;
         
@@ -399,14 +438,24 @@
         font-size: 25px;
     }
 
-    .container2{
+    /* .container2{
         display: flex;
         overflow: hidden;
         margin-bottom: 2vh;
         
+    } */
+
+    .container2{
+        display: flex;
+        /* overflow:hidden; */
+        /* flex-wrap: wrap; */
+        margin-bottom: 2vh;
+        justify-content: space-around;
+        margin: auto;
+        margin-bottom: 2vh
     }
 
-    .hostel1{
+    #hostel1{
         background-image: url("imagens/Porto-de-Galinhas-pousada-piscina.webp");
         width: 45vw;
         height: 26vh;
@@ -418,7 +467,7 @@
         margin-right: 2vh;
     }
 
-     .hostel2{
+     #hostel2{
         background-image: url("imagens/hotelAmazonas.png");
         width: 45vw;
         height: 26vh;
@@ -431,7 +480,7 @@
         margin-bottom: 2vh;
     }
 
-     .hostel3{
+     #hostel3{
         background-image: url("imagens/hotelcataratas.png");
         width: 45vw;
         height: 26vh;
@@ -443,7 +492,7 @@
         margin-right: 2vh;
     }
 
-     .hostel4{
+     #hostel4{
         background-image: url("imagens/hotelGramado.png");
         width: 45vw;
         height: 26vh;
@@ -455,7 +504,7 @@
         margin-right: 2vh;
     }
 
-    .hostel5{
+    #hostel5{
         background-image: url("imagens/hotelJericoara.png");
         width: 45vw;
         height: 26vh;
@@ -467,7 +516,7 @@
         margin-right: 2vh;
     }
 
-    .hostel6{
+    #hostel6{
         background-image: url("imagens/hotelParaty.png");
         width: 45vw;
         height: 26vh;
@@ -479,7 +528,7 @@
         margin-right: 2vh;
     }
 
-    .hostel7{
+    #hostel7{
         background-image: url("imagens/hotelSaoPaulo.png");
         width: 45vw;
         height: 26vh;
@@ -491,7 +540,7 @@
         margin-right: 2vh;
     }
 
-    .hostel8{
+    #hostel8{
         background-image: url("imagens/hotel-italia.avif");
         width: 45vw;
         height: 26vh;
@@ -540,9 +589,17 @@
 
     /*Passeio Inicio*/
 
+   .passeio25{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+   }
+
     .desp{
         display: flex;
-        overflow: hidden;
+        
         margin-bottom: 2vh;
     }
 
