@@ -1,13 +1,16 @@
-var galleryItems = document.querySelectorAll('.gallery-item');
+var galeriaItems = document.querySelectorAll('.galeria-item');
 var lightbox = document.getElementById('lightbox');
-var lightboxImg = document.getElementById('lightbox-img');
+var lightboxImg1 = document.getElementById('lightbox-img1');
+var lightboxImg2 = document.getElementById('lightbox-img2');
+var lightboxImg3 = document.getElementById('lightbox-img3');
+var lightboxImg4 = document.getElementById('lightbox-img4');
 var closeBtn = document.querySelector('.close');
 
 // Abrir lightbox
-galleryItems.forEach(item => {
+galeriaItems.forEach(item => {
     item.addEventListener('click', () => {
         lightbox.style.display = 'flex';
-        lightboxImg.src = item.src;
+        lightboxImg1.src = item.src;
     });
 });
 
