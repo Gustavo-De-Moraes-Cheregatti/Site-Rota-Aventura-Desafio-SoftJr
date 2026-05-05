@@ -1,14 +1,24 @@
 @charset "UTF-8";
 
-.gallery {
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.galeria {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
-    padding: 20px;
     justify-content: center;
 }
 
-.gallery-item {
+.galeria-item {
     width: 200px;
     height: 150px;
     object-fit: cover;
@@ -17,40 +27,171 @@
     border-radius: 8px;
 }
 
-.gallery-item:hover {
+.galeria-item:hover {
     transform: scale(1.05);
 }
 
+.externa_lightbox-content {
+    display: flex;
+    flex-flow: row wrap;
+    width: 80%;
+    height: 90%;
+    justify-content: center;
+    align-content: center;
+}
+
 .lightbox {
-    display: none;
+    display: flex;
     position: fixed;
     z-index: 1000;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 255, 85, 0.37);
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.lightbox-content {
-    max-width: 70%;
-    max-height: 70%;
-    border-radius: 5px;
+.lightbox-content1 {
+    background-image: url(imagens/Hilton-Barra-Frente.jpg);
+    display: none;
+    background-position: center;
+    background-size: cover;
+    width: 70%;
+    height: 90%;
+    border-radius: 15px;
+}
+
+.lightbox-content2 {
+    background-image: url(imagens/Hilton-Barra-Piscina.jpg);
+    display: none;
+    background-position: center;
+    background-size: cover;
+    width: 70%;
+    height: 90%;
+    border-radius: 15px;
+}
+
+.lightbox-content3 {
+    background-image: url(imagens/Hilton-barra-Quarto.jpg);
+    display: none;
+    background-position: center;
+    background-size: cover;
+    width: 70%;
+    height: 90%;
+    border-radius: 15px;
+}
+
+.lightbox-content4 {
+    background-image: url(imagens/hilton-barra-rio-de-janeiro.jpg);
+    display: none;
+    background-position: center;
+    background-size: cover;
+    width: 70%;
+    height: 90%;
+    border-radius: 15px;
+}
+
+#lightbox-img1 {
+    display: flex;
+}
+
+#lightbox-img2 {
+    display: none;
+}
+
+#lightbox-img3 {
+    display: none;
+}
+
+#lightbox-img4 {
+    display: none;
 }
 
 .outras_imagens_lightbox {
-    width: 40%;
-    height: 40%;
+    width: 90%;
+    height: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .close {
     position: absolute;
     top: 20px;
     right: 35px;
-    color: white;
+    color: black;
     font-size: 40px;
     cursor: pointer;
+}
+
+.imagem_1 {
+    background-image: url(imagens/Hilton-Barra-Frente.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 40%;
+    border: 1px solid rgba(0, 0, 0, 0.123);
+    border-radius: 15px;
+    width: 20%;
+    height: 80%;
+}
+
+.imagem_2 {
+    background-image: url(imagens/Hilton-Barra-Piscina.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 40%;
+    border: 1px solid rgba(0, 0, 0, 0.123);
+    border-radius: 15px;
+    width: 20%;
+    height: 80%;
+}
+
+.imagem_3 {
+    background-image: url(imagens/Hilton-barra-Quarto.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 40%;
+    border: 1px solid rgba(0, 0, 0, 0.123);
+    border-radius: 15px;
+    width: 20%;
+    height: 80%;
+}
+
+.imagem_4 {
+    background-image: url(imagens/hilton-barra-rio-de-janeiro.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 40%;
+    border: 1px solid rgba(0, 0, 0, 0.123);
+    border-radius: 15px;
+    width: 20%;
+    height: 80%;
+}
+/*========================================================================*/
+
+.imagem_menor_1 {
+    width: 20%;
+    height: 80%;
+}
+
+.imagem_menor_2 {
+    width: 20%;
+    height: 80%;
+}
+
+.imagem_menor_3 {
+    width: 20%;
+    height: 80%;
+}
+
+.imagem_menor_4 {
+    width: 20%;
+    height: 80%;
+}
+
+#main_menor_img {
+    opacity: 100%;
 }
