@@ -11,7 +11,7 @@
     }
 
     main {
-        width:90%;
+        width:100%;
         margin:auto;
     }
 
@@ -24,9 +24,9 @@
     }
 
     .one{
-        width: 90%;
+        width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         top: 0;
         /* left: 0; */
         z-index: 1000;
@@ -41,6 +41,10 @@
     }
     .dsp2{
         display: block;
+    }
+
+    .alte{
+        height: 20vh;
     }
 
     .dsp1{
@@ -60,9 +64,7 @@
         height: 15vh;
     }
 
-    .cabecalho1{
-       padding-top: 8vh;
-    }
+
 
     .cabecalho1 a{
         text-decoration: none;
@@ -105,17 +107,40 @@
         outline: none;
     }
 
+    .menuGrupo{
+        display: flex;
+        align-items: center;
+    }
+
     /*Final do cabecalho*/
 
     /*Inicio personalize o pacote*/
 
-     .pacotePerson {
+    .imgInput {
+        align-items: center;
+        border-radius: 2vh;
+        width: 35vh;
+        display: flex;
+        background-color: white;
+        height: 7vh;
+    }
+
+    #imgOrg{
         background-image:url('imagens/fundo.png');
-        background-size:cover;
-        /* position: absolute; */
+        background-size:cover; 
         position:relative;
+        width: 100%;
+        height: 70vh;
+        background-position: center;
+
+    }
+
+     .pacotePerson {
+         
+        /* position: absolute; */
+        align-items: center;
         text-align:center;
-        padding:42vh;
+        /* padding:42vh; */
         display: flex;
         justify-content: space-around;
         margin-bottom: 5vh;
@@ -129,7 +154,7 @@
         gap:1vh;
         padding:2vh;
         border-radius:2vh;
-        width:90%;
+        width:85%;
         display:flex;
         align-items:center;
         position:absolute;
@@ -175,11 +200,12 @@
         width: 36vh;
     }
 
+
     .ipt1{
-        width: 31vh;
+        /* width: 31vh;
         height: 3vh;
-        margin-bottom:2vw;
-        border-radius:2vh;
+        margin-bottom:2vw; */
+        /* border-radius:2vh; */
         padding:1vh;
         cursor:pointer;
         color:black;
@@ -189,7 +215,7 @@
 
     .ipt {
         height: 3vh;
-        margin-bottom:2vw;
+        /* margin-bottom:2vw; */
         width:100%;
         padding:10px;
         border-radius:2vh;
@@ -230,6 +256,16 @@
         display: flex;
     }
 
+    .olay input{
+        /* width: 0vh; */
+        display: flex;
+        background-color: white;
+        height: 5vh;
+        border-radius: 2vh;
+        
+    }
+
+
     .esconde5 h5{
         margin-bottom: 0;
         font-size: 16px;
@@ -259,7 +295,7 @@
     .sobrep {
         height: 40vh;
         border-radius:2vh;
-        width:28%;
+        width:40%;
         
         background-color:rgba(255, 255, 255, 0.747);
         box-shadow:0 10px 20px rgba(0, 0, 0, 0.61);
@@ -313,7 +349,8 @@
 
 
     .container1{
-        width: 100%;
+        margin: auto;
+        width: 90%;
         display: flex;
         flex-direction: column;
         overflow: hidden;
@@ -340,7 +377,6 @@
     }
 
     .c h4{
-        margin-bottom: 2vh;
         font-size: 20px;
         color: #003847;
     }
@@ -360,7 +396,7 @@
 
     .imgFundo3{
         background-image: url('imagens/Rio-de-Janeiro.jpg');
-        width: 20.7vw;
+        width: 20.5vw;
         height: 27vh;
         background-size:cover;
         border-radius: 2vh;
@@ -369,7 +405,7 @@
 
     .imgFundo5{
         background-image: url('imagens/bahia.png');
-        width: 20.7vw;
+        width: 20.5vw;
         height: 27vh;
         background-size:cover;
         border-radius: 2vh;
@@ -377,7 +413,7 @@
 
     .imgFundo6{
         background-image: url('imagens/bonito.png');
-        width: 20.7vw;
+        width: 20.5vw;
         height: 27vh;
         background-size:cover;
         border-radius: 2vh;
@@ -385,7 +421,7 @@
 
     .imgFundo7{
         background-image: url('imagens/pantanal.png');
-        width: 20.7vw;
+        width: 20.5vw;
         height: 27vh;
         background-size:cover;
         border-radius: 2vh;
@@ -423,7 +459,7 @@
 
     .redir{
         width: 1.5vw;
-        height: 3.5vh;
+        height: 3.2vh;
     }
 
     .money{
@@ -433,7 +469,7 @@
     .btn4{
         align-items: center;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         height: 7vh;
         width: 7vw;
         background-color: #B36E00;
@@ -448,6 +484,7 @@
     }
 
     .btn4 a{
+        font-size: 15px;
         text-decoration: none;
         color: white;
     }
@@ -589,6 +626,11 @@
         margin-right: 2vh;
     }
 
+    .hotel21{
+        width: 90%;
+        margin: auto;
+    }
+
     .cidade{
         border-radius: 2vh;
         text-align: center;
@@ -672,7 +714,7 @@
 
    .imgFundo9{
         background-image: url('imagens/lancha2.png');
-        width: 45vh;
+        width: 100%;
         height: 30vh;
         background-size:cover;
         border-radius: 2vh;
@@ -680,7 +722,7 @@
 
    .imgFundo10{
         background-image: url('imagens/passeioBonito.png');
-        width: 45vh;
+        width: 100%;
         height: 30vh;
         background-size:cover;
         border-radius: 2vh;
@@ -688,7 +730,7 @@
 
    .imgFundo11{
         background-image: url('imagens/passeioChapada.png');
-        width: 45vh;
+        width: 100%;
         height: 30vh;
         background-size:cover;
         border-radius: 2vh;
@@ -696,21 +738,21 @@
 
    .imgFundo12{
         background-image: url('imagens/passeioJangada.png');
-        width: 45vh;
+        width: 100%;
         height: 30vh;
         background-size:cover;
         border-radius: 2vh;
    }
    .imgFundo13{
         background-image: url('imagens/passeioLençol.png');
-        width: 45vh;
+        width: 100%;
         height: 30vh;
         background-size:cover;
         border-radius: 2vh;
    }
    .imgFundo14{
         background-image: url('imagens/passeioSalvador.png');
-        width: 45vh;
+        width: 100%;
         height: 30vh;
         background-size:cover;
         border-radius: 2vh;
@@ -736,6 +778,11 @@
    .bot{
     display: none;
 
+   }
+
+   .passeio25{
+    margin: auto;
+    width: 90%;
    }
    
     /*Passeio Fim*/
@@ -816,6 +863,7 @@
         align-items: center;
         justify-content: space-between;
         margin: auto;
+        width: 90%;
     }
 
     .footer a{
