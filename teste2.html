@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Definitivo de Imagem</title>
+    <link rel="stylesheet" href="teste2.css">
+</head>
+<body>
+    
+    <div class="externa_quadrado">
+        <div class="externa_imagens">
+            <div id="imagem_maior-1" class="imagem_menor"></div>
+            <div class="externa_imagens_menores">
+                <div id="imagem_maior-2" class="imagem_menor"></div>
+                <div id="imagem_maior-3" class="imagem_menor"></div>
+            </div>
+        </div>
+
+        <hr>
+        
+    </div>
+
+    <div id="externa_imagem_sobreposta" class="imagem_sobreposta">
+        <span class="icone_fechar">&times;</span>
+        <img src="imagens/Hilton-Barra-Frente.jpg" class="imagem_principal">
+        <div class="imagens_sobrepostas_menores">
+            <div id="imagem-1" class="imagem_menor_sobreposta" onclick="slider('imagens/Hilton-Barra-Frente.jpg')"></div>
+            <div id="imagem-2" class="imagem_menor_sobreposta" onclick="slider('imagens/hilton-barra-rio-de-janeiro.jpg')"></div>
+            <div id="imagem-3" class="imagem_menor_sobreposta" onclick="slider('imagens/Hilton-barra-Quarto.jpg')"></div>
+            <div id="imagem-4" class="imagem_menor_sobreposta" onclick="slider('imagens/Hilton-Barra-Piscina.jpg')"></div>
+        </div>
+    </div>
+
+    <script src="teste2.js"></script>
+</body>
+</html>
