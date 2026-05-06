@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+@media screen and (min-width: 400px) {
+    #no-Mobile {
+        display: none ;
+    }
+
+    #no-Desktop {
+        display: none ;
+    }
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -217,6 +227,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-right: 5px;
 }
 
+    #no-Desktop {
+        display: none !important;
+    }
+        
+
 /*-------------------------------------------- Inicio Desktop ---------------------------*/
 
 @media screen and (min-width: 1024px) {
@@ -252,5 +267,30 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .hch {
         font-size: 35px;
     }
+
+    .oinput {
+        width: 300px;
+    }
+
+    .cartao {
+        width: 50%;
+        justify-self: center;
+        
+    }
+
+    .opcard {
+        width: 100%;
+        height: 30%;
+        align-items: center;
+    }
+
+    .separador {
+        width: 90%;
+    }
+
+    #no-Mobile {
+        display: none ;
+    }
+        
 
 }
