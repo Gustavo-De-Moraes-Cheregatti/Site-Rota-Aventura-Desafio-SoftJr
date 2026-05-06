@@ -125,6 +125,55 @@ function clickMenu2(){
     }
         
 }
+//final clickmenu
 
 
+//inicio carrosel promocao
+const carrosselProm = document.querySelectorAll('.fundo2');
+const promocao = document.querySelector('.container3');
+const totalCarrosel = carrosselProm.length;
+let counter = 0;
+
+function carroselPromocao(){
+    counter++;
+    if(counter === totalCarrosel){
+        counter = 0;
+    }
+
+    let tamanhoItem = carrosselProm[0].clientWidth;
+
+    let move = -counter * tamanhoItem;
+
+        promocao.style.transform = `translateX(${move}px)`
+}
+
+setInterval(carroselPromocao, 3000);
+//final carrosel promocao
+
+//inicio enviaWhats
+
+function enviarWhats(){
+    let number = "5519993243013"
+
+    let origem = document.getElementById('origem').value;
+    let destino = document.getElementById('destino').value;
+    let dataIda = document.getElementById('dataIda').value;
+    let dataVolta = document.getElementById('dataVolta').value;
+    let passagQuarto = document.getElementById('passagQuarto').value;
+
+    let mensagem = `Ola! Tenho interesse em um pacote de viagens.\n\n`;
+
+    mensagem += `*Origem: * ${origem}\n \n`;
+    mensagem += `*Destino: * ${destino}\n \n`;
+    mensagem += `*Ida: * ${dataIda}\n \n`;
+    mensagem += `*Volta: * ${dataVolta}\n \n`;
+    mensagem += `*Passageiros e Quartos* ${passagQuarto}`;
+
+    let verMens = encodeURIComponent(mensagem);
+    let urlWhats = `http://wa.me/${number}?text=${verMens}`;
+
+    window.open(urlWhats, '_blank');
+}
+
+//finalWhats
 

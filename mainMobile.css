@@ -24,7 +24,7 @@
     } */
 
     main {
-        width:90%;
+        width:100%;
         margin:auto;
     }
 
@@ -41,7 +41,7 @@
         justify-content:space-around;
         align-items:flex-start;
         position: fixed;
-        width: 90%;
+        width: 100%;
         top: 0;
         z-index: 1000;
         background-color: white;
@@ -74,7 +74,7 @@
     
 
     .menuGrupo{
-        width: 14vh;
+        
         background-color: #ffffff;
     }
 
@@ -115,8 +115,15 @@
     }
 
     #esconder2{
+        text-align: center;
+        margin-top: 10vh;
+        background-color: #ffffff;
         display: none;
     }
+
+    /* #esconder2{
+        display: none;
+    } */
 
     #esconder3{
         display: none;
@@ -149,7 +156,7 @@
     }
 
     .ipt2 {
-        height: 44vh;
+        height: 40vh;
         background-color:#f5ebe09c;
         justify-content:center;
         gap:1vh;
@@ -209,7 +216,7 @@
     }
 
     .teste {
-        height: 27vh;
+        height: 25vh;
         padding-top:0vh;
     }
     /*Final personalize seu pacote*/
@@ -222,7 +229,8 @@
     }
 
     .org3{
-        display: flex;
+        width: 90%;
+        margin: auto;
     }
 
     .org2{
@@ -230,30 +238,36 @@
     }
 
     .img3{
-        background-image:url('imagens/fundo2.png');
-        background-size:cover;
+        
         width: 100%;
-        height: 44vh;
+        
     }
 
 
     .fundo2 {
-        
+        /* scroll-snap-align: center; */
+        flex-shrink: 0;
+        height: 45vh;
+        width: 42vh;
+        background-image:url('imagens/fundo2.png'); 
+        background-size:cover;
         border-radius: 2vh;
         /* position: absolute; */
         position:relative;
         text-align:center;
-        padding:20px;
+        padding:20px; 
         display: flex;
         align-items:flex-end;
         justify-content: flex-end;
         margin-bottom: 2vh;
-        
+        margin-top: 3vh;
+        box-sizing: border-box;
     }
 
     .sobrep {
+        height: 30vh;
         border-radius:2vh;
-        width:60%;
+        width:84vh;
         margin-top:5vh;
         background-color:rgba(255, 255, 255, 0.678);
         box-shadow:0 10px 20px rgba(0, 0, 0, 0.61);
@@ -293,6 +307,23 @@
         margin-bottom: 1vh;
     }
 
+    .container3{
+        display: flex;
+        margin-bottom: 2vh;
+        /* overflow-x: auto; */
+        /* overflow-x: auto;  */
+        /* overflow: hidden; */
+        transition: transform 0.5s ease-in-out;
+
+        
+    }
+
+    #promoc{
+        width: 90%;
+        margin: auto;
+        overflow: hidden;
+    }
+
     
 
     /*Fim Promoção*/
@@ -304,7 +335,8 @@
     }
 
     .container1{
-        width: 100%;
+        margin: auto;
+        width: 90%;
         display: flex;
         flex-direction: column;
         overflow: hidden;
@@ -316,7 +348,7 @@
 
 
     .cardmain{
-        width: 50%;
+        width: 67%;
         text-align: center;
         background-color: #f5ebe0c0;
         border-radius: 2vh;
@@ -329,7 +361,7 @@
 
     .imgFundo3{
         background-image: url('imagens/Rio-de-Janeiro.jpg');
-        width: 45vw;
+        width: 58vw;
         height: 20vh;
         background-size:cover;
         border-radius: 2vh;
@@ -337,7 +369,7 @@
 
     .imgFundo5{
         background-image: url('imagens/bahia.png');
-        width: 45vw;
+        width: 58vw;
         height: 20vh;
         background-size:cover;
         border-radius: 2vh;
@@ -345,7 +377,7 @@
 
     .imgFundo6{
         background-image: url('imagens/bonito.png');
-        width: 45vw;
+        width: 58vw;
         height: 20vh;
         background-size:cover;
         border-radius: 2vh;
@@ -353,14 +385,40 @@
 
     .imgFundo7{
         background-image: url('imagens/pantanal.png');
-        width: 45vw;
+        width: 58vw;
         height: 20vh;
         background-size:cover;
         border-radius: 2vh;
     }
 
+    .imgFundo8{
+        background-image: url('imagens/Gramado.png');
+        width: 58vw;
+        height: 20vh;
+        background-size:cover;
+        border-radius: 2vh;
+    }
+
+    .imgFundo15{
+        background-image: url('imagens/monteVerde.png');
+        width: 58vw;
+        height: 20vh;
+        background-size:cover;
+        border-radius: 2vh;
+    }
+
+    .imgFundo16{
+        background-image: url('imagens/Manaus.png');
+        width: 58vw;
+        height: 20vh;
+        background-size:cover;
+        border-radius: 2vh;
+    }
+
+
+
     .starTamImg{
-        width: 4vw;
+        width: 7vw;
         height: 3vh;
     }
 
@@ -605,7 +663,7 @@
     /*Passeio Inicio*/
 
    .passeio25{
-        width: 100%;
+        width: 90%;
         margin: auto;
         display: flex;
         flex-direction: column;
@@ -626,7 +684,6 @@
         background-color: #f5ebe044;
         border-radius: 2vh;
         justify-content: center;
-        margin-right: 2vh;
         border: solid 0.5px #0038470e;
         box-shadow:0 10px 10px rgba(0,0,0, 0.1);
         margin-bottom: 2vh;
@@ -715,7 +772,7 @@
 
     /*Quem somos inicio*/
    .pnulSec{
-    width: 100%;
+    width: 90%;
     margin: auto;
     text-align: center;
     align-items: center;
@@ -762,7 +819,7 @@
     .footer{
         align-items: center;
         text-align: center;
-        /* width: 70%; */
+        width: 80%;
         margin: auto;
     }
 
@@ -826,6 +883,10 @@
     margin-top: 10vh;
     text-align: center;
     font-size: 15px;
+   }
+
+   .iconss{
+    padding-bottom: 3vh;
    }
 
     /*Footer final*/

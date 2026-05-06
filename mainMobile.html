@@ -39,11 +39,7 @@
                         <button onclick="clickMenu2()" id="btn2">
                             <img src="imagens/usuario.png" alt="" id="user" >
                         </button>
-                        <nav class="cabecalho" id="esconder2">
-                            <a href="">Login</a>
-                            <a href="">Cadastre-se</a>
-                            <a href="" class="hm">Sair</a>
-                        </nav>
+                        
                         <nav class="cabecalho1" id="esconder3">
                             <a href="#header" class="hm">Home</a>
                             <a href="#Promocao">Ofertas</a>
@@ -66,6 +62,13 @@
                             <a href="#hotel">Passeios</a>
                             <a href="#quemSomos">Quem somos</a>
                             <a href="#termoMain">Termos</a>
+                            <hr>
+                        </nav>
+
+                        <nav class="cabecalho" id="esconder2">
+                            <a href="">Login</a>
+                            <a href="">Cadastre-se</a>
+                            <a href="" class="hm">Sair</a>
                             <hr>
                         </nav>
                     
@@ -125,60 +128,91 @@
 
                     <div class="olay">
                         <div class="ipt3">
-                            <div class="imgInput">
+                            <div class="imgInput1">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#525252" viewBox="0 0 256 256" style="margin-left: 1vh;"><path d="M128,66a38,38,0,1,0,38,38A38,38,0,0,0,128,66Zm0,64a26,26,0,1,1,26-26A26,26,0,0,1,128,130Zm0-112a86.1,86.1,0,0,0-86,86c0,30.91,14.34,63.74,41.47,94.94a252.32,252.32,0,0,0,41.09,38,6,6,0,0,0,6.88,0,252.32,252.32,0,0,0,41.09-38c27.13-31.2,41.47-64,41.47-94.94A86.1,86.1,0,0,0,128,18Zm0,206.51C113,212.93,54,163.62,54,104a74,74,0,0,1,148,0C202,163.62,143,212.93,128,224.51Z"></path></svg>
-                                <input type="text" placeholder="Origem" class="ipt1">
+                                <input type="text" placeholder="Origem" class="ipt1" id="origem">
 
                             </div>
                         
                         <!-- <input type="text" placeholder="Destino" class="ipt1"> -->
 
-                        <div class="imgInput">
+                        <div class="imgInput1">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#525252" viewBox="0 0 256 256" style="margin-left: 1vh;"><path d="M128,66a38,38,0,1,0,38,38A38,38,0,0,0,128,66Zm0,64a26,26,0,1,1,26-26A26,26,0,0,1,128,130Zm0-112a86.1,86.1,0,0,0-86,86c0,30.91,14.34,63.74,41.47,94.94a252.32,252.32,0,0,0,41.09,38,6,6,0,0,0,6.88,0,252.32,252.32,0,0,0,41.09-38c27.13-31.2,41.47-64,41.47-94.94A86.1,86.1,0,0,0,128,18Zm0,206.51C113,212.93,54,163.62,54,104a74,74,0,0,1,148,0C202,163.62,143,212.93,128,224.51Z"></path></svg>
-                                <input type="text" placeholder="Destino" class="ipt1">
+                                <input type="text" placeholder="Destino" class="ipt1" id="destino">
 
                             </div>
                     </div>
 
 
                     <div class="ipt3">
-                        <div class="imgInput">
+                        <div class="imgInput2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#525252" viewBox="0 0 256 256" style="margin-left: 1vh;"><path d="M208,34H182V24a6,6,0,0,0-12,0V34H86V24a6,6,0,0,0-12,0V34H48A14,14,0,0,0,34,48V208a14,14,0,0,0,14,14H208a14,14,0,0,0,14-14V48A14,14,0,0,0,208,34ZM48,46H74V56a6,6,0,0,0,12,0V46h84V56a6,6,0,0,0,12,0V46h26a2,2,0,0,1,2,2V82H46V48A2,2,0,0,1,48,46ZM208,210H48a2,2,0,0,1-2-2V94H210V208A2,2,0,0,1,208,210Z"></path></svg>
                             <input  class="ipt"
                                 type="text"
                                 placeholder="Data de Ida" 
                                 onfocus="this.type='date'"
-                                onblur="if(this.type) this.type='text'" type="date" placeholder="Ida" class="ipt">
+                                onblur="if(this.type) this.type='text'" type="date" placeholder="Ida" class="ipt" id="dataIda">
                             </div>
                          
-                        <!-- <div class="ipt3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#525252" viewBox="0 0 256 256"><path d="M208,34H182V24a6,6,0,0,0-12,0V34H86V24a6,6,0,0,0-12,0V34H48A14,14,0,0,0,34,48V208a14,14,0,0,0,14,14H208a14,14,0,0,0,14-14V48A14,14,0,0,0,208,34ZM48,46H74V56a6,6,0,0,0,12,0V46h84V56a6,6,0,0,0,12,0V46h26a2,2,0,0,1,2,2V82H46V48A2,2,0,0,1,48,46ZM208,210H48a2,2,0,0,1-2-2V94H210V208A2,2,0,0,1,208,210Z"></path></svg>
-                            <input class="ipt"
+                    
+                        <div class="imgInput2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#525252" viewBox="0 0 256 256" style="margin-left: 1vh;"><path d="M208,34H182V24a6,6,0,0,0-12,0V34H86V24a6,6,0,0,0-12,0V34H48A14,14,0,0,0,34,48V208a14,14,0,0,0,14,14H208a14,14,0,0,0,14-14V48A14,14,0,0,0,208,34ZM48,46H74V56a6,6,0,0,0,12,0V46h84V56a6,6,0,0,0,12,0V46h26a2,2,0,0,1,2,2V82H46V48A2,2,0,0,1,48,46ZM208,210H48a2,2,0,0,1-2-2V94H210V208A2,2,0,0,1,208,210Z"></path></svg>
+                            <input  class="ipt"
                                 type="text"
                                 placeholder="Data de Volta" 
                                 onfocus="this.type='date'"
-                                onblur="if(this.type) this.type='text'" type="date" placeholder="Ida" class="ipt">
-                        </div> -->
-                        <div class="imgInput">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#525252" viewBox="0 0 256 256" style="margin-left: 1vh;"><path d="M208,34H182V24a6,6,0,0,0-12,0V34H86V24a6,6,0,0,0-12,0V34H48A14,14,0,0,0,34,48V208a14,14,0,0,0,14,14H208a14,14,0,0,0,14-14V48A14,14,0,0,0,208,34ZM48,46H74V56a6,6,0,0,0,12,0V46h84V56a6,6,0,0,0,12,0V46h26a2,2,0,0,1,2,2V82H46V48A2,2,0,0,1,48,46ZM208,210H48a2,2,0,0,1-2-2V94H210V208A2,2,0,0,1,208,210Z"></path></svg>
-                            <input  class="ipt"
-                                type="text"
-                                placeholder="Data de Ida" 
-                                onfocus="this.type='date'"
-                                onblur="if(this.type) this.type='text'" type="date" placeholder="Ida" class="ipt">
+                                onblur="if(this.type) this.type='text'" type="date" placeholder="Ida" class="ipt" id="dataVolta">
                             </div>
 
 
                     </div>
 
-                    <div class="ipt3">
-                        <div class="imgInput">
+                    <div class="ipt3" id="coluna">
+                        <div class="imgInput3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#525252" viewBox="0 0 256 256" style="margin-left: 1vh;"><path d="M128,26A102,102,0,1,0,230,128,102.12,102.12,0,0,0,128,26Zm0,192a90,90,0,1,1,90-90A90.1,90.1,0,0,1,128,218Zm46-90a6,6,0,0,1-6,6H134v34a6,6,0,0,1-12,0V134H88a6,6,0,0,1,0-12h34V88a6,6,0,0,1,12,0v34h34A6,6,0,0,1,174,128Z"></path></svg>
-                            <input type="text" placeholder="Passageiros e quartos" class="ipt">
+                            <input type="text" placeholder="Passageiros e quartos" class="ipt" id="passagQuarto">
+                        </div>
+
+                        <div class="infDemais">
+                            <div class="passager1" id="passager">
+
+                                <div class="org2">
+                                    <button id="btnPassag">+</button>
+                                </div>
+
+                                <div>
+                                    <p>Passageiros</p>
+                                </div>
+                                
+
+                                <div class="org2">
+                                    <button id="btnPassag">-</button>
+                                </div>
+                            </div>
+
+                            <div class="passager2" id="Quart">
+
+                                <div class="org3">
+                                    <button id="btnQuart">+</button>
+                                </div> 
+
+                                <div>
+                                    <p>Quartos</p>
+                                </div>
+
+                                <div class="org3">
+                                    <button id="btnQuart">-</button>
+                                </div>
+                                
+                            </div>
+
+
                         </div>
                         
-                        <button id="btn3"><a href="https://web.whatsapp.com/" target="_blank">Buscar</a></button>
+
+                        
                     </div>
+                    <button id="btn3" type="button" onclick="enviarWhats()">Buscar</button>
                 </div>
             </div>
 
@@ -193,11 +227,11 @@
                     
         </section>
 
-        <section>
+        <section id="promoc">
 
             <div class="container3">
             
-                            <div class="fundo2">
+                            <div class="fundo2" id="fundoimg1">
                                 <div class="img3"></div>
                                 <div class="sobrep">
                                     <h4>
@@ -213,7 +247,38 @@
                                 </div>
                             </div>
 
-                            <div class="fundo2">
+                            <div class="fundo2" id="fundoimg2">
+                                <div class="img3"></div>
+                                <div class="sobrep">
+                                    <h4>
+                                        Aproveite!!
+                                    </h4>
+                                    <h4>
+                                        Cruzeiro Jorge e a partir de R$ 3.500,00
+                                    </h4>
+                                    <h5 id="esconde7">Inclui acomodação para duas pessoas por quarto. O pacote contempla todas as refeições diárias — café da manhã, almoço.</h5>
+                                    <p>Para mais detalhes entre em contato. </p>
+                                    <div>
+                                    <a href="https://web.whatsapp.com/" target="_blank"><img src="imagens/whatsappColorido.png" alt="" id="zapp"></a></div>
+                                </div>
+                            </div>
+
+                            <div class="fundo2" id="fundoimg3">
+                                <div class="img3"></div>
+                                <div class="sobrep">
+                                    <h4>
+                                        Presenteie sua mãe!
+                                    </h4>
+                                    <h4>
+                                        All Incluse em Maragogi a partir de R$ 7.000,00
+                                    </h4>
+                                    <h5 id="esconde7">Inclui passagem aérea de ida e volta, bagagem despachada de pequeno porte e todas as refeições.</h5>
+                                    <p>Para mais detalhes entre em contato. </p>
+                                    <div>
+                                    <a href="https://web.whatsapp.com/" target="_blank"><img src="imagens/whatsappColorido.png" alt="" id="zapp"></a></div>
+                                </div>
+                            </div>
+                            <div class="fundo2" id="fundoimg1">
                                 <div class="img3"></div>
                                 <div class="sobrep">
                                     <h4>
@@ -229,37 +294,38 @@
                                 </div>
                             </div>
 
-                            <div class="fundo2">
+                            <div class="fundo2" id="fundoimg2">
                                 <div class="img3"></div>
                                 <div class="sobrep">
                                     <h4>
-                                        Promoção!!!
+                                        Aproveite!!
                                     </h4>
                                     <h4>
-                                        Pacotes para Alagoas a partir de R$ 3.500,00
+                                        Cruzeiro Jorge e a partir de R$ 3.500,00
                                     </h4>
-                                    <h5 id="esconde7">Inclui passagem aérea de ida e volta, bagagem despachada de pequeno porte e hospedagem com café da manhã.</h5>
+                                    <h5 id="esconde7">Inclui acomodação para duas pessoas por quarto. O pacote contempla todas as refeições diárias — café da manhã, almoço.</h5>
                                     <p>Para mais detalhes entre em contato. </p>
                                     <div>
                                     <a href="https://web.whatsapp.com/" target="_blank"><img src="imagens/whatsappColorido.png" alt="" id="zapp"></a></div>
                                 </div>
                             </div>
-                
-                            <div class="fundo2">
+
+                            <div class="fundo2" id="fundoimg3">
                                 <div class="img3"></div>
                                 <div class="sobrep">
                                     <h4>
-                                        Promoção!!!
+                                        Presenteie sua mãe!
                                     </h4>
                                     <h4>
-                                        Pacotes para Alagoas a partir de R$ 3.500,00
+                                        All Incluse em Maragogi a partir de R$ 7.000,00
                                     </h4>
-                                    <h5 id="esconde7">Inclui passagem aérea de ida e volta, bagagem despachada de pequeno porte e hospedagem com café da manhã.</h5>
+                                    <h5 id="esconde7">Inclui passagem aérea de ida e volta, bagagem despachada de pequeno porte e todas as refeições.</h5>
                                     <p>Para mais detalhes entre em contato. </p>
                                     <div>
                                     <a href="https://web.whatsapp.com/" target="_blank"><img src="imagens/whatsappColorido.png" alt="" id="zapp"></a></div>
                                 </div>
                             </div>
+                           
 
                 </div>
             
@@ -441,7 +507,7 @@
 
                 <div class="cardmain">
 
-                    <div class="imgFundo7"></div>
+                    <div class="imgFundo8"></div>
 
                     <div class="c">
                         <h4>Gramado</h4>
@@ -482,7 +548,7 @@
 
                 <div class="cardmain">
 
-                    <div class="imgFundo7"></div>
+                    <div class="imgFundo15"></div>
 
                     <div class="c">
                         <h4>Monte Verde</h4>
@@ -523,7 +589,7 @@
 
                 <div class="cardmain">
 
-                    <div class="imgFundo7"></div>
+                    <div class="imgFundo16"></div>
 
                     <div class="c">
                         <h4>Manaus</h4>
@@ -564,10 +630,135 @@
 
                 <div class="cardmain">
 
+                    <div class="imgFundo3"></div>
+
+                    <div class="c">
+                        <h4>Rio de Janeiro</h4>
+
+                        <div class="star">
+                            <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
+                            <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
+                            <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
+                            <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
+                            <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
+                        </div>
+
+                    </div>
+
+                    
+                        <div>
+                        <p class="pCor">Mais Vendidos</p>
+                    </div>
+
+                    <div class="esconde6">
+                        <p>4 dias a partir de: </p>
+                        <p class="money">R$ 2.500,00</p>
+                    </div>
+
+                    <div class="tx2">
+                        <div class="esconde5">
+                            <h5>A partir de : R$ 2.500,00 | 6 dias</h5>
+                        </div>
+                        <p class="pTam">Em até 12x sem juros</p>
+                    </div>
+
+                    <div class="manuBtn">
+                        <button class="btn4">
+                            <a href="comprar_pacote.html"> Ver mais</a>
+                                                                                      
+                            <div><img src="imagens/seta.png" alt="" class="redir"></div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cardmain">
+
+                    <div class="imgFundo5"></div>
+
+                    <div class="c">
+                        <h4>Salvador</h4>
+
+                        <div class="star">
+                            <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
+                            <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
+                            <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
+                            <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
+                            <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
+                        </div>
+
+                    </div>
+ 
+                        <p class="pCor">Mais Vendidos</p>
+
+                    <div class="tx2">
+                        <div class="esconde5">
+                            <h5>A partir de : R$ 1.000,00 | 8 dias</h5>
+                        </div>
+                        <p class="pTam">Em até 12x sem juros</p>
+                    </div>
+
+                    <div class="esconde6">
+                        <p>4 dias a partir de: </p>
+                        <p class="money">R$ 1.000,00</p>
+                    </div>
+                    
+
+                    <div class="manuBtn">
+                        <button class="btn4">
+                            <a href="comprar_pacote.html"> Ver mais</a>
+                                                                                      
+                            <div><img src="imagens/seta.png" alt="" class="redir"></div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cardmain">
+
+                    <div class="imgFundo6"></div>
+
+                    <div class="c">
+                        <h4>Bonito</h4>
+
+                        <div class="star">
+                            <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
+                            <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
+                            <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
+                            <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
+                            <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
+                        </div>
+
+                    </div>
+                   
+                        <p class="pCor">Mais Vendidos</p>
+                   
+
+                    <div class="esconde6">
+                        <p>4 dias a partir de: </p>
+                        <p class="money">R$ 3.000,00</p>
+                    </div>
+
+                    <div class="tx2">
+                        <div class="esconde5">
+                            <h5>A partir de : R$ 3.000,00 | 6 dias</h5>
+                        </div>
+                        <p class="pTam">Em até 12x sem juros</p>
+                    </div>
+
+                    <div class="manuBtn">
+                        <button class="btn4">
+                            <a href="comprar_pacote.html"> Ver mais</a>
+                                                                                      
+                            <div><img src="imagens/seta.png" alt="" class="redir"></div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cardmain">
+
                     <div class="imgFundo7"></div>
 
                     <div class="c">
-                        <h4>Foz do Iguaçu</h4>
+                        <h4>Pantanal</h4>
 
                         <div class="star">
                             <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
@@ -583,13 +774,13 @@
                   
 
                     <div class="esconde6">
-                        <p>6 dias a partir de: </p>
-                        <p class="money">R$ 2.000,00</p>
+                        <p>4 dias a partir de: </p>
+                        <p class="money">R$ 5.000,00</p>
                     </div>
 
                     <div class="tx2">
                         <div class="esconde5">
-                            <h5>A partir de : R$ 3.000,00 | 6 dias</h5>
+                            <h5>A partir de : R$ 5.000,00 | 4 dias</h5>
                         </div>
                         <p class="pTam">Em até 12x sem juros</p>
                     </div>
@@ -605,10 +796,10 @@
 
                 <div class="cardmain">
 
-                    <div class="imgFundo7"></div>
+                    <div class="imgFundo8"></div>
 
                     <div class="c">
-                        <h4>Maranhão</h4>
+                        <h4>Gramado</h4>
 
                         <div class="star">
                             <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
@@ -625,135 +816,53 @@
 
                     <div class="esconde6">
                         <p>8 dias a partir de: </p>
-                        <p class="money">R$ 7.000,00</p>
-                    </div>
-
-                    <div class="tx2">
-                        <div class="esconde5">
-                            <h5>A partir de : R$ 7.000,00 | 8 dias</h5>
-                        </div>
-                        <p class="pTam">Em até 12x sem juros</p>
-                    </div>
-
-                  <div class="manuBtn">
-                        <button class="btn4">
-                            <a href="comprar_pacote.html"> Ver mais</a>
-                                                                                      
-                            <div><img src="imagens/seta.png" alt="" class="redir"></div>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="cardmain">
-
-                    <div class="imgFundo7"></div>
-
-                    <div class="c">
-                        <h4>São Paulo</h4>
-
-                        <div class="star">
-                            <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
-                            <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
-                            <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
-                            <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
-                            <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
-                        </div>
-
-                    </div>
-                   
-                        <p class="pCor">Mais Vendidos</p>
-                  
-
-                    <div class="esconde6">
-                        <p>7 dias a partir de: </p>
-                        <p class="money">R$ 1.900,00</p>
-                    </div>
-
-                    <div class="tx2">
-                        <div class="esconde5">
-                            <h5>A partir de : R$ 1.900,00 | 7 dias</h5>
-                        </div>
-                        <p class="pTam">Em até 12x sem juros</p>
-                    </div>
-
-                  <div class="manuBtn">
-                        <button class="btn4">
-                            <a href="comprar_pacote.html"> Ver mais</a>
-                                                                                      
-                            <div><img src="imagens/seta.png" alt="" class="redir"></div>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="cardmain">
-
-                    <div class="imgFundo7"></div>
-
-                    <div class="c">
-                        <h4>Maceio</h4>
-
-                        <div class="star">
-                            <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
-                            <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
-                            <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
-                            <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
-                            <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
-                        </div>
-
-                    </div>
-                   
-                        <p class="pCor">Mais Vendidos</p>
-                  
-
-                    <div class="esconde6">
-                        <p>12 dias a partir de: </p>
-                        <p class="money">R$ 8.000,00</p>
-                    </div>
-
-                    <div class="tx2">
-                        <div class="esconde5">
-                            <h5>A partir de : R$ 8.000,00 | 12 dias</h5>
-                        </div>
-                        <p class="pTam">Em até 12x sem juros</p>
-                    </div>
-
-                  <div class="manuBtn">
-                        <button class="btn4">
-                            <a href="comprar_pacote.html"> Ver mais</a>
-                                                                                      
-                            <div><img src="imagens/seta.png" alt="" class="redir"></div>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="cardmain">
-
-                    <div class="imgFundo7"></div>
-
-                    <div class="c">
-                        <h4>São Roque</h4>
-
-                        <div class="star">
-                            <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
-                            <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
-                            <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
-                            <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
-                            <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
-                        </div>
-
-                    </div>
-                   
-                        <p class="pCor">Mais Vendidos</p>
-                  
-
-                    <div class="esconde6">
-                        <p>5 dias a partir de: </p>
                         <p class="money">R$ 1.000,00</p>
                     </div>
 
                     <div class="tx2">
                         <div class="esconde5">
-                            <h5>A partir de : R$ 1.000,00 | 5 dias</h5>
+                            <h5>A partir de : R$ 1.000,00 | 8 dias</h5>
+                        </div>
+                        <p class="pTam">Em até 12x sem juros</p>
+                    </div>
+
+                  <div class="manuBtn">
+                        <button class="btn4">
+                            <a href="comprar_pacote.html"> Ver mais</a>
+                                                                                      
+                            <div><img src="imagens/seta.png" alt="" class="redir"></div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cardmain">
+
+                    <div class="imgFundo15"></div>
+
+                    <div class="c">
+                        <h4>Monte Verde</h4>
+
+                        <div class="star">
+                            <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
+                            <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
+                            <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
+                            <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
+                            <img src="imagens/estrela-avaliação-amarela.png" alt="" class="starTamImg">
+                        </div>
+
+                    </div>
+                   
+                        <p class="pCor">Mais Vendidos</p>
+                  
+
+                    <div class="esconde6">
+                        <p>3 dias a partir de: </p>
+                        <p class="money">R$ 1.300,00</p>
+                    </div>
+
+                    <div class="tx2">
+                        <div class="esconde5">
+                            <h5>A partir de : R$ 1.300,00 | 3 dias</h5>
                         </div>
                         <p class="pTam">Em até 12x sem juros</p>
                     </div>
@@ -984,7 +1093,7 @@
                             <div class="imgFundo13"></div>
 
                             <div class="c2">
-                                <h4>Expediçã nos Lençóis Maranhenses (MA)</h4>
+                                <h4>Expedição nos Lençóis Maranhenses (MA)</h4>
 
                                 <p class="pCor2">Lorem ipsum dolor sit amet consectetur adipisicing elit.!</p>
 

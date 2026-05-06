@@ -116,6 +116,60 @@
 
     /*Inicio personalize o pacote*/
 
+    .org2{
+        display: flex;
+        align-items: center;
+    }
+
+    #coluna{
+        flex-direction: column;
+    }
+
+    #btnPassag{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        background-color: transparent;
+        border-radius: 100%;
+        width: 3vh;
+        height: 3vh;
+        border: solid 0.5px #727374a2
+    }
+
+    #btnQuart{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        background-color: transparent;
+        border-radius: 100%;
+        width: 3vh;
+        height: 3vh;
+        border: solid 0.5px #727374a2
+    }
+
+    .infDemais{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+        background-color: #ffffff;
+        width: 36vh;
+        height: 14vh;
+        border-radius: 2vh;
+    }
+
+    .passager1{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .passager2{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
     .prevBtn{
         font-size: 15px;
         color: #0038478f;
@@ -138,11 +192,30 @@
 
     }
 
-    .imgInput {
+    .imgInput1 {
         margin-right: 1vh;
         align-items: center;
         border-radius: 2vh;
         width: 32vh;
+        display: flex;
+        background-color: white;
+        height: 7vh;
+    }
+
+    .imgInput2 {
+        margin-right: 1vh;
+        align-items: center;
+        border-radius: 2vh;
+        width: 19vh;
+        display: flex;
+        background-color: white;
+        height: 7vh;
+    }
+    .imgInput3 {
+        margin-right: 1vh;
+        align-items: center;
+        border-radius: 2vh;
+        width: 36vh;
         display: flex;
         background-color: white;
         height: 7vh;
@@ -153,7 +226,7 @@
         background-size:cover; 
         position:relative;
         width: 100%;
-        height: 70vh;
+        height: 74vh;
         background-position: center;
 
     }
@@ -175,9 +248,9 @@
         background-color:#f5ebe09c; 
         justify-content:center;
         gap:1vh;
-        height: 30vh;
+        height: 35vh;
         border-radius:2vh;
-        width:100%;
+        width:98%;
         display:flex;
         align-items:center;
         position:absolute;
@@ -218,6 +291,8 @@
     .ipt3 input{
         margin-right: 3vh;
     }
+
+
 
     .char{
         width: 36vh;
@@ -298,22 +373,27 @@
 
     /*Promocao inicio*/
 
+    #promoc{
+        width: 98%;
+        margin: auto;
+        overflow: hidden;
+    }
 
     .container3{
         display: flex;
         margin-bottom: 2vh;
-        overflow-x: auto;
-        margin: auto;
-        width: 98%;
+        /* overflow-x: auto; */
         /* overflow-x: auto;  */
-        overflow: hidden;
+        /* overflow: hidden; */
+        transition: transform 0.5s ease-in-out;
+
         
     }
 
-    .org3{
+    /* .org3{
         width: 90%;
         margin: auto;
-    }
+    } */
 
     .org4{
         width: 100%;
@@ -323,11 +403,12 @@
         width: 100%;
     }
 
-     .fundo2 {
-        scroll-snap-align: center;
+     #fundoimg1 {
+        /* scroll-snap-align: center; */
+        background-position: center;
         flex-shrink: 0;
         height: 65vh;
-        min-width: 95vw;
+        min-width: 100%;
         background-image:url('imagens/fundo2.png');
         background-size:cover;
         border-radius: 2vh;
@@ -340,7 +421,52 @@
         justify-content: flex-end;
         margin-bottom: 2vh;
         margin-top: 3vh;
+        box-sizing: border-box;
     }
+
+    #fundoimg2 {
+        /* scroll-snap-align: center; */
+        background-position: center;
+        flex-shrink: 0;
+        height: 65vh;
+        min-width: 100%;
+        background-image:url('imagens/cruzeiro.png');
+        background-size:cover;
+        border-radius: 2vh;
+        /* position: absolute; */
+        position:relative;
+        text-align:center;
+        padding:20px; 
+        display: flex;
+        align-items:flex-end;
+        justify-content: flex-end;
+        margin-bottom: 2vh;
+        margin-top: 3vh;
+        box-sizing: border-box;
+    }
+
+     #fundoimg3 {
+        /* scroll-snap-align: center; */
+        background-position: center;
+        flex-shrink: 0;
+        height: 65vh;
+        min-width: 100%;
+        background-image:url('imagens/maes.png');
+        background-size:cover;
+        border-radius: 2vh;
+        /* position: absolute; */
+        position:relative;
+        text-align:center;
+        padding:20px; 
+        display: flex;
+        align-items:flex-end;
+        justify-content: flex-end;
+        margin-bottom: 2vh;
+        margin-top: 3vh;
+        box-sizing: border-box;
+    }
+
+
 
     .sobrep {
         height: 40vh;
@@ -450,6 +576,7 @@
         height: 27vh;
         background-size:cover;
         border-radius: 2vh;
+        background-position: center;
     }
 
 
@@ -459,6 +586,7 @@
         height: 27vh;
         background-size:cover;
         border-radius: 2vh;
+        background-position: center;
     }
 
     .imgFundo6{
@@ -467,6 +595,7 @@
         height: 27vh;
         background-size:cover;
         border-radius: 2vh;
+        background-position: center;
     }
 
     .imgFundo7{
@@ -475,6 +604,34 @@
         height: 27vh;
         background-size:cover;
         border-radius: 2vh;
+        background-position: center;
+    }
+
+    .imgFundo8{
+        background-image: url('imagens/Gramado.png');
+        width: 20.5vw;
+        height: 27vh;
+        background-size:cover;
+        border-radius: 2vh;
+        background-position: center;
+    }
+
+    .imgFundo15{
+        background-image: url('imagens/monteVerde.png');
+        width: 20.5vw;
+        height: 27vh;
+        background-size:cover;
+        border-radius: 2vh;
+        background-position: center;
+    }
+
+    .imgFundo16{
+        background-image: url('imagens/Manaus.png');
+        width: 20.5vw;
+        height: 27vh;
+        background-size:cover;
+        border-radius: 2vh;
+        background-position: center;
     }
 
 
@@ -768,7 +925,7 @@
    }
 
    .redir2{
-        width: 2vw;
+        width: 3.5vh;
         height: 4vh;
         margin-bottom: 2vh;
 
@@ -780,6 +937,7 @@
    }
 
    .imgFundo9{
+        background-position: center;
         background-image: url('imagens/lancha2.png');
         width: 100%;
         height: 30vh;
@@ -788,6 +946,7 @@
    }
 
    .imgFundo10{
+        background-position: center;
         background-image: url('imagens/passeioBonito.png');
         width: 100%;
         height: 30vh;
@@ -796,6 +955,7 @@
    }
 
    .imgFundo11{
+        background-position: center;
         background-image: url('imagens/passeioChapada.png');
         width: 100%;
         height: 30vh;
@@ -804,6 +964,7 @@
    }
 
    .imgFundo12{
+        background-position: center;
         background-image: url('imagens/passeioJangada.png');
         width: 100%;
         height: 30vh;
@@ -811,6 +972,7 @@
         border-radius: 2vh;
    }
    .imgFundo13{
+        background-position: center;
         background-image: url('imagens/passeioLençol.png');
         width: 100%;
         height: 30vh;
@@ -818,6 +980,7 @@
         border-radius: 2vh;
    }
    .imgFundo14{
+        background-position: center;
         background-image: url('imagens/passeioSalvador.png');
         width: 100%;
         height: 30vh;
