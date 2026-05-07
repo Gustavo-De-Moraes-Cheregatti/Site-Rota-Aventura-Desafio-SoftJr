@@ -102,6 +102,96 @@ btnNextEsq3.addEventListener('click', () => {
 });
 // final carrossel passeio mobile
 
+
+// inicio add ou remove
+
+
+function clickPassaQuart(){
+
+    const infDemais = document.querySelector('.infDemais');
+        if(infDemais.style.display == 'block'){
+            infDemais.style.display = 'none'
+        }else{
+            infDemais.style.display = 'block'
+        }
+}
+
+// inicio add ou remove
+
+let displayPassag = document.getElementById('valorPassag');
+let contadorPassag = 1;
+
+function incrementoPassag(){
+    contadorPassag++;
+    displayPassag.innerText = contadorPassag;
+}
+
+function decrementoPassag(){
+    if(contadorPassag > 1){
+        contadorPassag --;
+        displayPassag.innerText = contadorPassag;
+    }
+}
+
+//-------------------------------------------------------
+
+let displayQuart = document.getElementById('valorQuart');
+let contadorQuart = 1;
+
+function incrementoQuart(){
+    contadorQuart++;
+    displayQuart.innerText = contadorQuart;
+}
+
+function decrementoQuart(){
+    if(contadorQuart > 1){
+        contadorQuart--;
+        displayQuart.innerText = contadorQuart;
+    }
+    
+}
+
+
+
+
+
+// fim add ou remove
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //inicio clickmenu
 
 function clickMenu(){
@@ -150,7 +240,7 @@ function carroselPromocao(){
 setInterval(carroselPromocao, 3000);
 //final carrosel promocao
 
-//inicio enviaWhats
+//inicio enviaWhats desktop
 
 function enviarWhats(){
     let number = "5519993243013"
@@ -175,5 +265,30 @@ function enviarWhats(){
     window.open(urlWhats, '_blank');
 }
 
-//finalWhats
+//finalWhats desktop
 
+//inicio enviaWhats desktop
+
+function enviarWhats2(){
+
+    let number2 = "5519993243013"
+
+    let origem2 = document.getElementById('origem2').value;
+    let destino2 = document.getElementById('destino2').value;
+    let dataIda2 = document.getElementById('dataIda2').value;
+    let dataVolta2 = document.getElementById('dataVolta2').value;
+    let passagQuarto2 = document.getElementById('passagQuarto2').value;
+
+    let mensagem2 = `Ola! Tenho interesse em um pacote de viagens.\n\n`;
+
+    mensagem2 += `*Origem: * ${origem2}\n \n`;
+    mensagem2 += `*Destino: * ${destino2}\n \n`;
+    mensagem2 += `*Ida: * ${dataIda2}\n \n`;
+    mensagem2 += `*Volta: * ${dataVolta2}\n \n`;
+    mensagem2 += `*Passageiros e Quartos* ${passagQuarto2}`;
+
+    let verMens2 = encodeURIComponent(mensagem2);
+    let urlWhats2 = `http://wa.me/${number2}?text=${verMens2}`;
+
+    window.open(urlWhats2, '_blank');
+}
