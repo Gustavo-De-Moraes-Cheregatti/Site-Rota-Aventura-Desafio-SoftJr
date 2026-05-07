@@ -2,11 +2,12 @@
 
 @media screen and (min-width: 400px) {
     #no-Mobile {
-        display: none ;
+        display: none;
     }
 
     #no-Desktop {
         display: none ;
+        
     }
 }
 
@@ -128,7 +129,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .cartao {
-    
+
     align-items: center;
     justify-content: center;
     box-shadow: -3px 3px 10px 0px #FFF4DD;
@@ -173,6 +174,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .dimgp {
     display: flex;
     
+}
+
+.colunas {
+    background-color: #FFF4DD;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 0px 0px 15px 15px;
+    display: block;
 }
 
 .verdinho {
@@ -222,35 +231,84 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .wifi {
     display: flex;
-    width: 3vh;
-    height: 4vw;
+    width: 6vw;
+    height: 4vh;
     margin-right: 5px;
 }
 
     #no-Desktop {
-        display: none !important;
+        display: block !important;
     }
-        
+      
+    .coluna-nova-1 {
+        display: none;
+    }
+
+    .coluna-nova-2 {
+        display: none;
+    }
 
 /*-------------------------------------------- Inicio Desktop ---------------------------*/
 
 @media screen and (min-width: 1024px) {
 
+    #input-calendario {
+        width: 100%;
+    }
+
+    .colunas {
+        display: none;
+    }
+
+     .colunas-novas {
+        display: flex;
+    }
+
+    .coluna-nova-1 {
+        display: block;
+        flex: 1;
+        align-items: center;
+        width: 25%;
+    }
+
+    .coluna-nova-2 {
+        display: block;
+        width: 25%;
+        
+    }
 
     .pcor {
-       display: flex;
+    background-color: #ffffff;
+    border: 2px solid white;
+    border-radius: 15px;
+    opacity: 80%;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     }
 
     .pimg {
        width: 5vw;
        height: 6vh;
        display: flex;
+       justify-self: center;
        
+    }
+
+    .umso1 {
+        display: flex;
+        width: 50%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
     }
 
     .inputs {
         display: flex;
         justify-content: space-between;
+        width: 50%;
     }
 
     #escondeDesktop {
@@ -269,13 +327,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
 
     .oinput {
-        width: 300px;
+        width: 100%;
+        display: flex;
     }
 
     .cartao {
         width: 50%;
         justify-self: center;
-        
+        background-color: white;
+        box-shadow: none;
+        margin: 0px;
     }
 
     .opcard {
@@ -284,13 +345,31 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         align-items: center;
     }
 
-    .separador {
-        width: 90%;
+    .wifi {
+        width: 2vw;
+        height: 4vh;
     }
 
-    #no-Mobile {
-        display: none ;
+    .coluna1 {
+        display: none;
     }
+
+    .coluna2 {
+        display: none;
+    }
+
+    .verdao {
+        width: 200px;
+    }
+
+    .verdinho {
+        width: 50px;
         
+    }
+
+    .mtobm {
+        display: flex;
+        justify-content: center;
+    }
 
 }
