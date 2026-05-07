@@ -3,7 +3,7 @@ var externaSobreposta = document.getElementById('externa_imagem_sobreposta');
 var imagemMenorSobreposta = document.querySelectorAll('.imagem_menor_sobreposta');
 var fechar = document.querySelector('.icone_fechar');
 
-// Abrir lightbox
+// Abrir sobreposição
 imagemMenor.forEach(item => {
     item.addEventListener('click', () => {
         externaSobreposta.style.display = 'flex';
@@ -11,16 +11,15 @@ imagemMenor.forEach(item => {
     });
 });
 
-// Fechar lightbox no X
+// Fechar sobreposição no X
 fechar.addEventListener('click', () => {
     externaSobreposta.style.display = 'none';
 });
 
+// Fechar sobreposição ao clicar no fundo (área externa)
 externaSobreposta.addEventListener('click', (event) => {
-    if (event.target===this) {
-        alert('clicou na maior');
-    } else {
-        alert('clicou na menor');
+    if (event.target.id === 'externa_imagem_sobreposta') {
+        externaSobreposta.style.display = 'none';
     }
 });
 

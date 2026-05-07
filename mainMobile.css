@@ -39,7 +39,7 @@
     .one {
         display:flex;
         justify-content:space-around;
-        align-items:flex-start;
+        align-items:center;
         position: fixed;
         width: 100%;
         top: 0;
@@ -141,6 +141,58 @@
 
     /*Personalize seu pacote*/
 
+     .infDemais{
+        display: none;
+        margin-top: 0.5vh;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #ffffff;
+        width: 28vh;
+        height: 12.5vh;
+        border-radius: 2vh;
+    }
+
+    .passager1{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .passager2{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    #btnPassag{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        background-color: transparent;
+        border-radius: 100%;
+        width: 3vh;
+        height: 3vh;
+        border: solid 0.5px #727374a2;
+        color: #727374a2;
+        font-size: 18px;
+    }
+
+    .pp p{
+        width: 12vh;
+    }
+
+
+    #btn5 {
+        color:white;
+        background-color:#003847;
+        border:none;
+        height:7vh;
+        width:10vh;
+        border-radius:2vh;
+        font-size: 15px;
+    }
+
     .pacotePerson {
         background-image:url('imagens/fundo.png');
         background-size:cover;
@@ -156,7 +208,7 @@
     }
 
     .ipt2 {
-        height: 40vh;
+        height: 49vh;
         background-color:#f5ebe09c;
         justify-content:center;
         gap:1vh;
@@ -190,7 +242,7 @@
 
     .ipt {
         margin-bottom:2vw;
-        width:100%;
+        width:28vh;
         padding:10px;
         border-radius:2vh;
         padding:1vh;
@@ -228,12 +280,15 @@
         width: 100%;
     }
 
-    .org3{
-        width: 90%;
-        margin: auto;
-    }
+    
 
     .org2{
+        align-items: center;
+        display: flex;
+    }
+
+    .org3{
+        align-items: center;
         display: flex;
     }
 
