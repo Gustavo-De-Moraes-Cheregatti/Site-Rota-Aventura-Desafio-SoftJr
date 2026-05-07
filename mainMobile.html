@@ -89,15 +89,15 @@
 
                     <div class="olay">
                         <div class="ipt3">
-                        <input type="text" placeholder="Origem" class="ipt">
-                        <input type="text" placeholder="Destino" class="ipt">
+                        <input type="text" placeholder="Origem" class="ipt" id="origem2">
+                        <input type="text" placeholder="Destino" class="ipt" id="destino2">
                     </div>
                     <div class="ipt3">
                         <input  class="ipt"
                             type="text"
                             placeholder="Data de Ida" 
                             onfocus="this.type='date'"
-                            onblur="if(this.type) this.type='text'" type="date" placeholder="Ida" class="ipt">
+                            onblur="if(this.type) this.type='text'" type="date" placeholder="Ida" class="ipt" id="dataIda2">
 
 
 
@@ -105,14 +105,52 @@
                             type="text"
                             placeholder="Data de Volta" 
                             onfocus="this.type='date'"
-                            onblur="if(this.type) this.type='text'" type="date" placeholder="Ida" class="ipt">
+                            onblur="if(this.type) this.type='text'" type="date" placeholder="Ida" class="ipt" id="dataVolta2">
 
 
                     </div>
+
+
                     <div class="ipt3">
-                        <input type="text" placeholder="Passageiros e quartos" class="ipt">
-                        <button id="btn3"><a href="https://web.whatsapp.com/" target="_blank">Buscar</a></button>
+                        <input type="text" placeholder="Passageiros e quartos" class="ipt" id="passagQuarto2" onclick="clickPassaQuart2()">
+                         <div class="infDemais">
+                            <div class="passager1" id="passager" >
+
+                                <div class="org2">
+                                    <button id="btnPassag" onclick="incrementoPassag3()">+</button>
+                                </div>
+
+                                <div>
+                                    <p>Passageiros: <span id="valorPassag2"></span></p>
+                                </div>
+                                
+
+                                <div class="org2">
+                                    <button id="btnPassag" onclick="decrementoPassag3()">-</button>
+                                </div>
+                            </div>
+
+                            <div class="passager2">
+
+                                <div class="org3">
+                                    <button id="btnQuart" onclick="incrementoQuart3()">+</button>
+                                </div> 
+
+                                <div class="pp">
+                                    <p>  Quartos : <span id="valorQuart2"></span></p>
+                                </div>
+
+                                <div class="org3" >
+                                    <button id="btnQuart" onclick="decrementoQuart3()">-</button>
+                                </div>
+                                
+                            </div>
+
+
+                        </div>
+                        <button id="btn5" type="button" onclick="enviarWhats2()">Buscar</button>
                     </div>
+
                 </div>
 
                 <div class="teste">
@@ -128,7 +166,7 @@
 
                     <div class="olay">
                         <div class="ipt3">
-                            <div class="imgInput1">
+                            <div class="imgInput1 ">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#525252" viewBox="0 0 256 256" style="margin-left: 1vh;"><path d="M128,66a38,38,0,1,0,38,38A38,38,0,0,0,128,66Zm0,64a26,26,0,1,1,26-26A26,26,0,0,1,128,130Zm0-112a86.1,86.1,0,0,0-86,86c0,30.91,14.34,63.74,41.47,94.94a252.32,252.32,0,0,0,41.09,38,6,6,0,0,0,6.88,0,252.32,252.32,0,0,0,41.09-38c27.13-31.2,41.47-64,41.47-94.94A86.1,86.1,0,0,0,128,18Zm0,206.51C113,212.93,54,163.62,54,104a74,74,0,0,1,148,0C202,163.62,143,212.93,128,224.51Z"></path></svg>
                                 <input type="text" placeholder="Origem" class="ipt1" id="origem">
 
@@ -170,38 +208,38 @@
                     <div class="ipt3" id="coluna">
                         <div class="imgInput3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#525252" viewBox="0 0 256 256" style="margin-left: 1vh;"><path d="M128,26A102,102,0,1,0,230,128,102.12,102.12,0,0,0,128,26Zm0,192a90,90,0,1,1,90-90A90.1,90.1,0,0,1,128,218Zm46-90a6,6,0,0,1-6,6H134v34a6,6,0,0,1-12,0V134H88a6,6,0,0,1,0-12h34V88a6,6,0,0,1,12,0v34h34A6,6,0,0,1,174,128Z"></path></svg>
-                            <input type="text" placeholder="Passageiros e quartos" class="ipt" id="passagQuarto">
+                            <input type="text" placeholder="Passageiros e quartos" class="ipt" id="passagQuarto" onclick="clickPassaQuart()">
                         </div>
 
                         <div class="infDemais">
-                            <div class="passager1" id="passager">
+                            <div class="passager1" id="passager" >
 
                                 <div class="org2">
-                                    <button id="btnPassag">+</button>
+                                    <button id="btnPassag" onclick="incrementoPassag()">+</button>
                                 </div>
 
                                 <div>
-                                    <p>Passageiros</p>
+                                    <p>Passageiros: <span id="valorPassag">1</span></p>
                                 </div>
                                 
 
                                 <div class="org2">
-                                    <button id="btnPassag">-</button>
+                                    <button id="btnPassag1" onclick="decrementoPassag()">-</button>
                                 </div>
                             </div>
 
-                            <div class="passager2" id="Quart">
+                            <div class="passager2">
 
                                 <div class="org3">
-                                    <button id="btnQuart">+</button>
+                                    <button id="btnQuart" onclick="incrementoQuart()">+</button>
                                 </div> 
 
                                 <div class="pp">
-                                    <p>  Quartos  </p>
+                                    <p>  Quartos : <span id="valorQuart">1</span></p>
                                 </div>
 
-                                <div class="org3">
-                                    <button id="btnQuart">-</button>
+                                <div class="org3" >
+                                    <button id="btnQuart1" onclick="decrementoQuart()">-</button>
                                 </div>
                                 
                             </div>
