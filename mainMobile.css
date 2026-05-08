@@ -12,6 +12,10 @@
         
     }
 
+    input:focus {
+    outline: none;
+}
+
 
     /*Cabeçalho*/
 
@@ -36,10 +40,14 @@
         display: none;
     }
 
+    .menu1{
+        width: 100%;
+    }
+
     .one {
         display:flex;
         justify-content:space-around;
-        align-items:center;
+        /* align-items:center; */
         position: fixed;
         width: 100%;
         top: 0;
@@ -71,10 +79,15 @@
         flex-direction:column;
     }
 
-    
+    .menu2{
+        width: 8vh;
+    }
 
     .menuGrupo{
-        
+        width: 8vh;
+        margin-top: 1vh;
+        display: flex;
+        align-items: flex-start;
         background-color: #ffffff;
     }
 
@@ -107,14 +120,23 @@
 
     }
 
+    .menu2 hr{
+        width: 30vh;
+    }
+
+
+
     #esconder{
+        width: 35vh;
         text-align: center;
-        margin-top: 5vh;
+        margin-top: 10vh;
         background-color: #ffffff;
         display: none;
     }
 
     #esconder2{
+        transform: rotateY(180deg);
+        width: 35vh;
         text-align: center;
         margin-top: 10vh;
         background-color: #ffffff;
@@ -140,6 +162,69 @@
     /*Final Cabecalho*/
 
     /*Personalize seu pacote*/
+
+    #fundoimg1 {
+        /* scroll-snap-align: center; */
+        background-position: center;
+        flex-shrink: 0;
+        height: 40vh;
+        min-width: 100%;
+        background-image:url('imagens/fundo2.png');
+        background-size:cover;
+        border-radius: 2vh;
+        /* position: absolute; */
+        position:relative;
+        text-align:center;
+        padding:20px; 
+        display: flex;
+        align-items:flex-end;
+        justify-content: flex-end;
+        margin-bottom: 2vh;
+        margin-top: 3vh;
+        box-sizing: border-box;
+    }
+
+    #fundoimg2 {
+        /* scroll-snap-align: center; */
+        background-position: center;
+        flex-shrink: 0;
+        height: 40vh;
+        min-width: 100%;
+        background-image:url('imagens/cruzeiro.png');
+        background-size:cover;
+        border-radius: 2vh;
+        /* position: absolute; */
+        position:relative;
+        text-align:center;
+        padding:20px; 
+        display: flex;
+        align-items:flex-end;
+        justify-content: flex-end;
+        margin-bottom: 2vh;
+        margin-top: 3vh;
+        box-sizing: border-box;
+    }
+
+     #fundoimg3 {
+        /* scroll-snap-align: center; */
+        background-position: center;
+        flex-shrink: 0;
+        height: 40vh;
+        min-width: 100%;
+        background-image:url('imagens/maes.png');
+        background-size:cover;
+        border-radius: 2vh;
+        /* position: absolute; */
+        position:relative;
+        text-align:center;
+        padding:20px; 
+        display: flex;
+        align-items:flex-end;
+        justify-content: flex-end;
+        margin-bottom: 2vh;
+        margin-top: 3vh;
+        box-sizing: border-box;
+    }
 
      .infDemais{
         display: none;
@@ -187,15 +272,14 @@
         color:white;
         background-color:#003847;
         border:none;
-        height:7vh;
-        width:10vh;
+        height:4vh;
+        width:25vh;
         border-radius:2vh;
         font-size: 15px;
     }
 
     .pacotePerson {
-        background-image:url('imagens/fundo.png');
-        background-size:cover;
+        
         /* position: absolute; */
         position:relative;
         text-align:center;
@@ -208,7 +292,7 @@
     }
 
     .ipt2 {
-        height: 49vh;
+        height: 45vh;
         background-color:#f5ebe09c;
         justify-content:center;
         gap:1vh;
@@ -241,6 +325,7 @@
     }
 
     .ipt {
+        height: 2.3vh;
         margin-bottom:2vw;
         width:28vh;
         padding:10px;
@@ -535,8 +620,8 @@
     .bot button{
         background-color: transparent;
         border: solid 1px #0038478f;
-        width: 3vh;
-        height: 3vh;
+        width: 4vh;
+        height: 4vh;
         border-radius: 100%;
     }
 
