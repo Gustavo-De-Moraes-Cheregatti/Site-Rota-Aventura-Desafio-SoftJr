@@ -14,21 +14,32 @@
 
             
             <div class="alte"> 
-            
-            
+                        
                 <div class="one">
 
-                    <div class="dsp2">
-                        <img src="imagens/logo-Rota-Aventura.jpeg" alt="" id="logo">
-                    </div>
                     <div class="menuGrupo">
                         <button onclick="clickMenu()" id="btn1">
-                            <img src="imagens/menu.png" alt="" id="menu" class="dsp">
-                        </button>
+                                <img src="imagens/menu.png" alt="" id="menu" class="dsp">
+                            </button>
+
+                        <div class="menu2">
+                            <nav class="cabecalho" id="esconder">
+                            <a href="#header" class="hm">Home</a>
+                            <a href="#promoc">Ofertas</a>
+                            <a href="#Pacotess">Pacotes</a>
+                            <a href="#hotel">Hotel</a>
+                            <a href="#passeio2">Passeios</a>
+                            <a href="#quemSomos">Quem somos</a>
+                            <a href="termos-e-condicoes.css">Termos</a>
+                            <a href="login-ou-cadastro.html">Login</a>
+                            <a href="login-ou-cadastro.html">Cadastre-se</a>
+                            <hr>
+                        </nav>
+                    </div>
 
                         <div class="dsp1">
                         <img src="imagens/logo-Rota-Aventura.jpeg" alt="" id="logo">
-                    </div>
+                        </div>
                    
                     </div>
 
@@ -36,41 +47,41 @@
                         <img src="imagens/logo-Rota-Aventura.jpeg" alt="" id="logo">
                     </div>
                     <div class="menuGrupo">
-                        <button onclick="clickMenu2()" id="btn2">
-                            <img src="imagens/usuario.png" alt="" id="user" >
-                        </button>
+                        <!-- <button onclick="clickMenu2()" id="btn2">
+                                <img src="imagens/usuario.png" alt="" id="user" >
+                                
+                            </button>
+                        <div class="menu2">
+                            
+
+                            <nav class="cabecalho" id="esconder2">
+                            <a href="">Login</a>
+                            <a href="">Cadastre-se</a>
+                            <a href="" class="hm">Sair</a>
+                            <hr>
+                        </nav>
+                    </div> -->
                         
                         <nav class="cabecalho1" id="esconder3">
                             <a href="#header" class="hm">Home</a>
-                            <a href="#Promocao">Ofertas</a>
+                            <a href="#promoc">Ofertas</a>
                             <a href="#Pacotess">Pacotes</a>
-                            <a href="#hotel">Passeios</a>
+                            <a href="#hotel">Hotel</a>
+                            <a href="#passeio2">Passeios</a>
                             <a href="#quemSomos">Quem somos</a>
                             <a href="termos-e-condicoes.html">Termos</a>
-                            <a href="">Login</a>
-                            <a href="">Cadastre-se</a>
-                            <a href="" class="hm">Sair</a>
+                            <a href="login-ou-cadastro.html">Login</a>
+                            <a href="login-ou-cadastro.html">Cadastre-se</a>
+                            
                         </nav>
                     </div>
-                </div>
-            </div>
-             
-                        <nav class="cabecalho" id="esconder">
-                            <a href="#header" class="hm">Home</a>
-                            <a href="#Promocao">Ofertas</a>
-                            <a href="#Pacotess">Pacotes</a>
-                            <a href="#hotel">Passeios</a>
-                            <a href="#quemSomos">Quem somos</a>
-                            <a href="#termoMain">Termos</a>
-                            <hr>
-                        </nav>
 
-                        <nav class="cabecalho" id="esconder2">
-                            <a href="">Login</a>
-                            <a href="">Cadastre-se</a>
-                            <a href="" class="hm">Sair</a>
-                            <hr>
-                        </nav>
+                    
+                    
+                </div>
+                
+            </div>
+                        
                     
         </section>
 
@@ -91,6 +102,7 @@
                         <div class="ipt3">
                         <input type="text" placeholder="Origem" class="ipt" id="origem2">
                         <input type="text" placeholder="Destino" class="ipt" id="destino2">
+                        
                     </div>
                     <div class="ipt3">
                         <input  class="ipt"
@@ -107,47 +119,12 @@
                             onfocus="this.type='date'"
                             onblur="if(this.type) this.type='text'" type="date" placeholder="Ida" class="ipt" id="dataVolta2">
 
-
                     </div>
 
 
                     <div class="ipt3">
-                        <input type="text" placeholder="Passageiros e quartos" class="ipt" id="passagQuarto2" onclick="clickPassaQuart2()">
-                         <div class="infDemais">
-                            <div class="passager1" id="passager" >
-
-                                <div class="org2">
-                                    <button id="btnPassag" onclick="incrementoPassag3()">+</button>
-                                </div>
-
-                                <div>
-                                    <p>Passageiros: <span id="valorPassag2"></span></p>
-                                </div>
-                                
-
-                                <div class="org2">
-                                    <button id="btnPassag" onclick="decrementoPassag3()">-</button>
-                                </div>
-                            </div>
-
-                            <div class="passager2">
-
-                                <div class="org3">
-                                    <button id="btnQuart" onclick="incrementoQuart3()">+</button>
-                                </div> 
-
-                                <div class="pp">
-                                    <p>  Quartos : <span id="valorQuart2"></span></p>
-                                </div>
-
-                                <div class="org3" >
-                                    <button id="btnQuart" onclick="decrementoQuart3()">-</button>
-                                </div>
-                                
-                            </div>
-
-
-                        </div>
+                        <input type="text" placeholder="Passageiros" class="ipt" id="passagQuarto2" onclick="clickPassaQuart2()">
+                        <input type="text" placeholder="Quartos" class="ipt" id="passagQuarto2" onclick="clickPassaQuart2()">
                         <button id="btn5" type="button" onclick="enviarWhats2()">Buscar</button>
                     </div>
 
@@ -208,45 +185,15 @@
                     <div class="ipt3" id="coluna">
                         <div class="imgInput3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#525252" viewBox="0 0 256 256" style="margin-left: 1vh;"><path d="M128,26A102,102,0,1,0,230,128,102.12,102.12,0,0,0,128,26Zm0,192a90,90,0,1,1,90-90A90.1,90.1,0,0,1,128,218Zm46-90a6,6,0,0,1-6,6H134v34a6,6,0,0,1-12,0V134H88a6,6,0,0,1,0-12h34V88a6,6,0,0,1,12,0v34h34A6,6,0,0,1,174,128Z"></path></svg>
-                            <input type="text" placeholder="Passageiros e quartos" class="ipt" id="passagQuarto" onclick="clickPassaQuart()">
+                            <input type="text" placeholder="Passageiros" class="ipt" id="passagQuarto" onclick="clickPassaQuart()">
+                            
                         </div>
-
-                        <div class="infDemais">
-                            <div class="passager1" id="passager" >
-
-                                <div class="org2">
-                                    <button id="btnPassag" onclick="incrementoPassag()">+</button>
-                                </div>
-
-                                <div>
-                                    <p>Passageiros: <span id="valorPassag">1</span></p>
-                                </div>
-                                
-
-                                <div class="org2">
-                                    <button id="btnPassag1" onclick="decrementoPassag()">-</button>
-                                </div>
-                            </div>
-
-                            <div class="passager2">
-
-                                <div class="org3">
-                                    <button id="btnQuart" onclick="incrementoQuart()">+</button>
-                                </div> 
-
-                                <div class="pp">
-                                    <p>  Quartos : <span id="valorQuart">1</span></p>
-                                </div>
-
-                                <div class="org3" >
-                                    <button id="btnQuart1" onclick="decrementoQuart()">-</button>
-                                </div>
-                                
-                            </div>
-
-
+                        <div class="imgInput3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#525252" viewBox="0 0 256 256" style="margin-left: 1vh;"><path d="M128,26A102,102,0,1,0,230,128,102.12,102.12,0,0,0,128,26Zm0,192a90,90,0,1,1,90-90A90.1,90.1,0,0,1,128,218Zm46-90a6,6,0,0,1-6,6H134v34a6,6,0,0,1-12,0V134H88a6,6,0,0,1,0-12h34V88a6,6,0,0,1,12,0v34h34A6,6,0,0,1,174,128Z"></path></svg>
+                            <input type="text" placeholder="Quartos" class="ipt" id="passagQuarto" onclick="clickPassaQuart()">
+                            
                         </div>
-                        
+                      
 
                         
                     </div>
@@ -281,7 +228,7 @@
                                     <h5 id="esconde7">Inclui passagem aérea de ida e volta, bagagem despachada de pequeno porte e hospedagem com café da manhã.</h5>
                                     <p>Para mais detalhes entre em contato. </p>
                                     <div>
-                                    <a href="https://web.whatsapp.com/" target="_blank"><img src="imagens/whatsappColorido.png" alt="" id="zapp"></a></div>
+                                    <a href="https://web.whatsapp.com/" target="_blank"><img src="imagens/whatsappColorido.png" alt="" class="zapp"></a></div>
                                 </div>
                             </div>
 
@@ -297,7 +244,7 @@
                                     <h5 id="esconde7">Inclui acomodação para duas pessoas por quarto. O pacote contempla todas as refeições diárias — café da manhã, almoço.</h5>
                                     <p>Para mais detalhes entre em contato. </p>
                                     <div>
-                                    <a href="https://web.whatsapp.com/" target="_blank"><img src="imagens/whatsappColorido.png" alt="" id="zapp"></a></div>
+                                    <a href="https://web.whatsapp.com/" target="_blank"><img src="imagens/whatsappColorido.png" alt="" class="zapp"></a></div>
                                 </div>
                             </div>
 
@@ -313,7 +260,7 @@
                                     <h5 id="esconde7">Inclui passagem aérea de ida e volta, bagagem despachada de pequeno porte e todas as refeições.</h5>
                                     <p>Para mais detalhes entre em contato. </p>
                                     <div>
-                                    <a href="https://web.whatsapp.com/" target="_blank"><img src="imagens/whatsappColorido.png" alt="" id="zapp"></a></div>
+                                    <a href="https://web.whatsapp.com/" target="_blank"><img src="imagens/whatsappColorido.png" alt="" class="zapp"></a></div>
                                 </div>
                             </div>
                             <div class="fundo2" id="fundoimg1">
@@ -328,7 +275,7 @@
                                     <h5 id="esconde7">Inclui passagem aérea de ida e volta, bagagem despachada de pequeno porte e hospedagem com café da manhã.</h5>
                                     <p>Para mais detalhes entre em contato. </p>
                                     <div>
-                                    <a href="https://web.whatsapp.com/" target="_blank"><img src="imagens/whatsappColorido.png" alt="" id="zapp"></a></div>
+                                    <a href="https://web.whatsapp.com/" target="_blank"><img src="imagens/whatsappColorido.png" alt="" class="zapp"></a></div>
                                 </div>
                             </div>
 
@@ -344,7 +291,7 @@
                                     <h5 id="esconde7">Inclui acomodação para duas pessoas por quarto. O pacote contempla todas as refeições diárias — café da manhã, almoço.</h5>
                                     <p>Para mais detalhes entre em contato. </p>
                                     <div>
-                                    <a href="https://web.whatsapp.com/" target="_blank"><img src="imagens/whatsappColorido.png" alt="" id="zapp"></a></div>
+                                    <a href="https://web.whatsapp.com/" target="_blank"><img src="imagens/whatsappColorido.png" alt="" class="zapp"></a></div>
                                 </div>
                             </div>
 
@@ -360,7 +307,7 @@
                                     <h5 id="esconde7">Inclui passagem aérea de ida e volta, bagagem despachada de pequeno porte e todas as refeições.</h5>
                                     <p>Para mais detalhes entre em contato. </p>
                                     <div>
-                                    <a href="https://web.whatsapp.com/" target="_blank"><img src="imagens/whatsappColorido.png" alt="" id="zapp"></a></div>
+                                    <a href="https://web.whatsapp.com/" target="_blank"><img src="imagens/whatsappColorido.png" alt="" class="zapp"></a></div>
                                 </div>
                             </div>
                            
@@ -1050,7 +997,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="passeio2">
             <div class="passeio25">
                 <h4 class="pssio">Passeios</h4>
                     <div class="desp">
