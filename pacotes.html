@@ -8,11 +8,24 @@
 </head>
 <body>
 
+     <div id="meuModal" class="modal-simples">
+        <span class="fechar" onclick="fecharModal()">&times;</span>
+        <div class="modal-conteudo">
+          
+            <img id="imgDestaque" src="" alt="Destaque">
+            
+            
+            <div id="listaMiniaturas" class="miniaturas-container">
+                
+            </div>
+        </div>
+    </div>
+
 <!---------------------------------------- Inicio do Header ------------------------------------>
 
     <div class="mae" id="escondeDesktop">
         <div class="pcor">
-                <div class="pimg">
+                <div class="pimg"> <a href="mainMobile.html" class="imagem-link-pacotes"></a>
             </div>
                 <div class="inputs">
                     <div class="umso"><input type="text" placeholder="Onde você deseja ir? " class="oinput"></div>
@@ -33,13 +46,20 @@
 
     <div class="mae" id="escondeMobile">
         <div class="pcor">
-                <div class="pimg"> </div>
+                <div class="pimg"> <a href="mainMobile.html" class="imagem-link-pacotes"></a> </div>
 
                 <div class="inputs">
                     
                 <div class="umso1">
-                    <div class="umso"><input type="text" placeholder="Origem" class="oinput"></div>
-                    <div class="umso"><input type="text" placeholder="Destino" class="oinput"></div>
+                    <div class="date1">
+                    <p>Origem:</p>
+                        <div class="umso"><input type="text" placeholder="Informe a origem" class="oinput"></div>
+                    </div>
+
+                     <div class="date1">
+                        <p>Destino:</p>
+                        <div class="umso"><input type="text" placeholder="Informe o destino" class="oinput"></div>
+                    </div>
                 </div>
 
 
@@ -100,11 +120,11 @@
                     </div>
                                
                     
-                                <div class="cartao"><img src="imagens/copacabana-predio.webp"    class="opcard" alt="">
+                    <div class="cartao"><img src="imagens/copacabana-predio.webp"    class="opcard" alt="" onclick="abrirModal(this)">
                     <div class="copa1">
-                        <img src="imagens/copacabana-quarto.jpg" alt="" class="copa">
-                        <img src="imagens/copacabana-restaurante.avif" alt="" class="copa">
-                        <img src="imagens/copacabana-quarto.jpg" alt="" class="copa">
+                        <img src="imagens/copacabana-quarto.jpg" alt="" class="copa" onclick="abrirModal(this)">
+                        <img src="imagens/copacabana-restaurante.avif" alt="" class="copa" onclick="abrirModal(this)">
+                        <img src="imagens/copacabana-quarto.jpg" alt="" class="copa" onclick="abrirModal(this)">
                     </div>
                                 </div>
 
@@ -116,7 +136,9 @@
                                 <p class="blu">Pague em até 12x sem juros</p> <br>
                                 <br>
                                 <div class="overdao">
-                                    <p class="verdao">Realize sua Reserva</p>
+                                    <a href="realizar_reserva.html" class="link-realizar-reserva">
+                                        <p class="verdao">Realize sua Reserva</p>
+                                    </a>
                                 </div>
                         </div>
                     </div>
@@ -148,7 +170,9 @@
                         <br> <p class="blu">R$2.800,00</p> 
                         <p class="blu">Pague em até 12x sem juros</p> <br>
                         <br>
-                        <p class="verdao">Realize sua Reserva</p>
+                        <a href="realizar_reserva.html" class="link-realizar-reserva">
+                            <p class="verdao">Realize sua Reserva</p>
+                        </a>
 
                     </div>
                 </div>
@@ -189,11 +213,11 @@
                     </div>
                                
                     
-                                <div class="cartao"><img src="imagens/hotel-fasano-predio.jpg"    class="opcard1" alt="">
+                                <div class="cartao"><img src="imagens/hotel-fasano-predio.jpg"    class="opcard1" alt="" onclick="abrirModal(this)">
                     <div class="copa1">
-                        <img src="imagens/hotel-fasano-quarto.jpg" alt="" class="copa">
-                        <img src="imagens/hotel-fasano-piscina.jpg" alt="" class="copa">
-                        <img src="imagens/fasano-piscina-1.jpg" alt="" class="copa">
+                        <img src="imagens/hotel-fasano-quarto.jpg" alt="" class="copa" onclick="abrirModal(this)">
+                        <img src="imagens/hotel-fasano-piscina.jpg" alt="" class="copa" onclick="abrirModal(this)">
+                        <img src="imagens/fasano-piscina-1.jpg" alt="" class="copa" onclick="abrirModal(this)">
                     </div>
                                 </div>
 
@@ -205,7 +229,9 @@
                                 <p class="blu">Pague em até 12x sem juros</p> <br>
                                 <br>
                                 <div class="overdao">
-                                    <p class="verdao">Realize sua Reserva</p>
+                                    <a href="realizar_reserva.html" class="link-realizar-reserva">
+                                        <p class="verdao">Realize sua Reserva</p>
+                                    </a>
                                 </div>
                         </div>
                     </div>
@@ -237,7 +263,9 @@
                         <br> <p class="blu">R$2.800,00</p> 
                         <p class="blu">Pague em até 12x sem juros</p> <br>
                         <br>
-                        <p class="verdao">Realize sua Reserva</p>
+                        <a href="realizar_reserva.html" class="link-realizar-reserva">
+                            <p class="verdao">Realize sua Reserva</p>
+                        </a>
 
                     </div>
                 </div>
@@ -279,11 +307,11 @@
                     </div>
                                
                     
-                                <div class="cartao"><img src="imagens/txai-resort-predio.webp"    class="opcard" alt="">
+                                <div class="cartao"><img src="imagens/txai-resort-predio.webp"    class="opcard" alt="" onclick="abrirModal(this)">
                     <div class="copa1">
-                        <img src="imagens/txai-quarto1.jpg" alt="" class="copa">
-                        <img src="imagens/txai-restaurante.jpg" alt="" class="copa">
-                        <img src="imagens/txai-piscina2.jpg" alt="" class="copa">
+                        <img src="imagens/txai-quarto1.jpg" alt="" class="copa" onclick="abrirModal(this)">
+                        <img src="imagens/txai-restaurante.jpg" alt="" class="copa" onclick="abrirModal(this)">
+                        <img src="imagens/txai-piscina2.jpg" alt="" class="copa" onclick="abrirModal(this)">
                     </div>
                                 </div>
 
@@ -295,7 +323,9 @@
                                 <p class="blu">Pague em até 12x sem juros</p> <br>
                                 <br>
                                 <div class="overdao">
-                                    <p class="verdao">Realize sua Reserva</p>
+                                    <a href="realizar_reserva.html" class="link-realizar-reserva">
+                                        <p class="verdao">Realize sua Reserva</p>
+                                    </a>
                                 </div>
                         </div>
                     </div>
@@ -327,7 +357,9 @@
                         <br> <p class="blu">R$2.800,00</p> 
                         <p class="blu">Pague em até 12x sem juros</p> <br>
                         <br>
-                        <p class="verdao">Realize sua Reserva</p>
+                        <a href="realizar_reserva.html" class="link-realizar-reserva">
+                            <p class="verdao">Realize sua Reserva</p>
+                        </a>
 
                     </div>
                 </div>
@@ -380,7 +412,9 @@
                         <br> <p class="blu">R$2.800,00</p> 
                         <p class="blu">Pague em até 12x sem juros</p> <br>
                         <br>
-                        <p class="verdao">Realize sua Reserva</p>
+                        <a href="realizar_reserva.html" class="link-realizar-reserva">
+                            <p class="verdao">Realize sua Reserva</p>
+                        </a>
 
                     </div>
                 </div>
@@ -432,7 +466,9 @@
                         <br> <p class="blu">R$2.800,00</p> 
                         <p class="blu">Pague em até 12x sem juros</p> <br>
                         <br>
-                        <p class="verdao">Realize sua Reserva</p>
+                        <a href="realizar_reserva.html" class="link-realizar-reserva">
+                            <p class="verdao">Realize sua Reserva</p>
+                        </a>
 
                     </div>
                 </div>
@@ -486,7 +522,9 @@
                         <br> <p class="blu">R$2.800,00</p> 
                         <p class="blu">Pague em até 12x sem juros</p> <br>
                         <br>
-                        <p class="verdao">Realize sua Reserva</p>
+                        <a href="realizar_reserva.html" class="link-realizar-reserva">
+                            <p class="verdao">Realize sua Reserva</p>
+                        </a>
 
                     </div>
                    </div>
@@ -496,6 +534,8 @@
     </div> 
  </div> 
 <!------------------------------------ Fim do Terceiro Card ------------------------------------>
+
+   
 
      <script src="pacotes.js"></script>
 </body>
