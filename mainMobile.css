@@ -83,13 +83,14 @@
         width: 8vh;
     }
 
-    /* .menuGrupo{
+     .menuGrupo{
+
         width: 8vh;
-        margin-top: 1vh;
+        margin-top: 3vh;
         display: flex;
         align-items: flex-start;
         background-color: #ffffff;
-    } */
+    } 
 
     #btn1 {
         background-color:white;
