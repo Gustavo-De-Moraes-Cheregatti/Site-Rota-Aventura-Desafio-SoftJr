@@ -1100,7 +1100,7 @@
     .linha{
         margin-top: 8vh;
         color: #003847;
-        width: 100%;
+        width: auto;
         font-size: 30px;
         margin-bottom: 8vh;
     }
